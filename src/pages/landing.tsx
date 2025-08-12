@@ -5,7 +5,7 @@ import SecurityProcessSection from "../components/landing/components/SecurityPro
 import { VulnerabilityManagementDemo } from "../components/landing/components/VulnerabilityManagementDemo";
 import HeroVideoDemo from "../components/landing/components/HeroVideoDemo";
 import FAQSection from "../components/landing/components/FAQSection";
-// import Header from "../components/landing/components/Header";
+import Header from "../components/landing/components/Header";
 import { HeroSection } from "../components/landing/components/HeroSection";
 
 const Landing = () => {
@@ -29,7 +29,7 @@ const Landing = () => {
 
   return (
     <div className="min-h-screen bg-black w-screen">
-      {/* <Header /> */}
+      <Header />
       <HeroSection onRegisterClick={() => setShowRegisterDialog(true)} />
       <HeroVideoDemo />
       <SecurityAnalystSection />

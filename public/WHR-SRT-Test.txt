@@ -1,0 +1,263 @@
+1
+00:00:03,660 --> 00:00:05,720
+Hello and welcome to White Hat Riddles.
+
+2
+00:00:06,040 --> 00:00:12,500
+I'm Angel and I'm Krasi and today we're gonna talk about first steps in your cybersecurity strategy.
+
+3
+00:00:12,780 --> 00:00:13,040
+Indeed.
+
+4
+00:00:13,580 --> 00:00:15,560
+So what is why this is important right?
+
+5
+00:00:15,640 --> 00:00:29,820
+There's a lot of compliance regulations and other requirements that are happening in multiple industries right now and we think that it's very important to take a step back and see how to start implementing a comprehensive cybersecurity strategy.
+
+6
+00:00:30,120 --> 00:00:36,600
+That being said our CEO Krasi here will tell you what's the best first steps.
+
+7
+00:00:37,480 --> 00:01:37,360
+Yeah I think the first steps is actually knowing what you have to comply with right so so let's let's first differentiate compliance and security those are different things we talked about it in one of our episodes in more details but basically compliance gives you a framework that you have to comply with it gives you a set of rules security controls that you have to apply to your systems it defines how you manage your data your customers your employees data and then it gives you some guidance how you can establish basic measures and then on top of this one you start building your security so security doesn't come by default neither compliance you have to do some steps some initial steps so that you can start onboarding yourself with specific regulation or with some security framework the practice shows that the best steps to start is
+
+8
+00:01:37,360 --> 00:02:36,320
+knowing your threat model that's one of the first steps of course every organization takes different measures as a first step but one of the main things is knowing your threat model and establishing this across the organization so let's talk about this one I think that the first and most important part is to define what a threat is right so to define the threat first of all obviously this is based on the most important probably word in cyber security which is context what is the type of organization that you are managing what is the potential threat actor that would want to get access to your systems so by starting with these two we can narrow down essentially our search for the perfect protection for our systems in general organization right now there's obviously a lot of tools that will assist you in this right but there are there also general accepted industry-wide rules about establishing proper threat models right where would you start to
+
+9
+00:02:36,320 --> 00:03:36,040
+establish your threat model first you need to know what data you have to secure what data you provide to your customers what data you collect from your customers where is the data stored what happens with this data during transition so these are very important questions to start with when you are establishing the threat model and this also includes knowing your infrastructure knowing your architecture what happens with the data when the user provides the data from the user input from the user input fields then all the way from the front end to the back end how you store your data in in the database basically how the data transitions through the different boundaries the second thing is knowing who might be interested to compromise your company knowing your potential hacker knowing your malicious sector and this might
+
+10
+00:03:36,040 --> 00:04:35,720
+be your competitors or someone who is well funded and they have I don't know they have huge budget they can spend week or weeks or even months trying to break into your specific company and knowing your your person knowing your threat actor is very important so that you can define what security expertise the person needs to have so that they can break into your systems and based on this one you can secure your applications infrastructure based on this one you establish rules for the security of your employees the security awareness of your employees and the third approach is actually knowing what assets you have and what type of data and based on the the assets like what operating systems what type of infrastructure that's how you can also think about okay maybe some script kid is I have like publicly exposed infrastructure there is a lot of public services which are available to the internet
+
+11
+00:04:35,720 --> 00:05:35,520
+users which means that a lot of people with knowledge about OS security they can try and break into my organization or my asset is let's say an application which is only provided to the users upon request and let's say the users are only able to access the application with VPN or they have to reside in some specific network then that's a completely different threat model so to summarize knowing your threat model is about knowing your assets your infrastructure and your potential attackers I want to add something special which is obviously coming in for most of the companies right now that modeling right now is being assisted in the same way that is being abused by hackers via obviously artificial intelligence and other type of algorithms to assist with the speed and the quality of both sides good and bad but apart from the the speed of implementation is also something else this is a completely new paradigm for business operations right your
+
+12
+00:05:35,520 --> 00:06:33,820
+business continuity will depend a lot on what types of AI tools you implement starting from a simple chatbot even you have a chatbot on your website right unless it's your chatbot which means you have deployed local infrastructure which very rarely will happen you should also include any form of AI implementation as a multifaceted threat because you are inheriting the threats from different types of third-party applications or models which you usually implement via API so essentially you need to be very careful when you're designing your threat modeling in 2025 and beyond and you should take special care in identifying where AI instruments in which ones touch your points and make sure that you follow latest patches latest notifications about threats and specifically AI threats and one of the things that we will talk later on about but the important thing is to educate the people that are actually using the AI what can they expect as something that's expected result or unexpected
+
+13
+00:06:33,820 --> 00:06:57,700
+result and therefore make sure that your local developers or your internal team are properly implementing basic secure code rules to assist with deploying kind of like a more robust security for your AI infrastructure but that being said right for me this is one of the most critical parts but in general what is the rule to define what is your most critical asset how do you define this?
+
+14
+00:06:57,940 --> 00:07:57,900
+You started a very interesting topic we have to talk about supply chain attacks as well when you're creating your threat model you definitely have to consider what's your third-party suppliers maybe you're not using only internal applications but you're using some third-party applications which are available to your users or you're using some plugins or add-ons to your application and it might be that one of these plugins will get exploited and because of this one your application the one that you're providing to the users will also get exploited right so that's also something that you have to consider in your threat model but what's the most critical point in my infrastructure there is multiple criteria for us to define the most critical point the first and most obvious one is what asset is the most exposed what are my public facing assets which let's say they have some services and open ports which are unencrypted basically everybody who wants
+
+15
+00:07:57,900 --> 00:08:57,820
+to connect they can try and connect to those ports or some obsolete services which have not been updated for months or even years apparently these are vulnerable everybody can just go and try to exploit one of these unpatched services then we definitely have to think about what's my most critical assets if I have 50 assets exposed to the Internet which of those assets are the most critical to my company which of them are most important so that my users can access the application and basically these are the components that we consider when we think about what's the most critical the most critical point is the one which is which provides easiest access so if I have a gateway and then behind the gateway I have like 50 additional systems but these systems are isolated they don't provide direct access to anyone you have to be within the network you have to
+
+16
+00:08:57,820 --> 00:09:57,580
+to reside in the local network so that you can access one of these assets then these are not your most critical point the most critical point in that case is going to be the gateway the one which is publicly visible the one which is a common entry point for Internet traffic to your local infrastructure and the opposite the one point that your local systems are using to go outside to the Internet so that's going to be my most critical asset in that specific case and one thing because obviously we talk about assets or we use the general cybersecurity terms right but for someone let's say you're running your business it's a small enterprise something like 10 to 50 people for example I would think that these people would most likely think about their assets as I have 10 Windows computers to max I have like three different Galaxy phones my use Gmail for this but outlook for this one you know how does the different infrastructure affect threat modeling or the general security how should we
+
+17
+00:09:57,580 --> 00:10:57,040
+treat a system with multiple types of infrastructure elements in the core let's say I'm afraid of having some files executed on my on my local systems I'm trying to include some potential threats eventually somebody infecting my infrastructure with ransomware then considering in one infrastructure you typically have Windows systems Linux systems macOS you have some appliances which are some Unix based operating systems usually each one of these poses a different risk when it comes to ransomware when I when I consider my application server if the application is server is running on a Windows or a Linux machine and I consider this against the ransomware as a potential threat then I will definitely put the Windows systems to be more critical simply because they allow execution of
+
+18
+00:10:57,040 --> 00:11:56,680
+files and Linux doesn't work that way you need to have configuration files you need someone to unpackage the files for you so it's much more complicated to install to deploy something on a Linux box and that's why I would consider in that case the Windows system as posing bigger threat to the organization that's not necessarily the case but but most often hackers are actually targeting Windows systems there is more exploits available for the Windows systems and in general it's easier to compromise very often you have Active Directory and I see more Windows systems running LDAP and Active Directory providing management for the Active Directory these systems provide more functionalities therefore more interesting for that they are more interesting for the hackers and we might want to try and exploit one of these because it means that I can change a lot of things in the organization
+
+19
+00:11:56,680 --> 00:12:56,460
+after that would you say that in this case would you say that is better to use a unified system for your infrastructure let's say for example make sure that everyone is using the same type of devices same type of kind of let's say we you have a consistency across the board would you say that this is better in terms of building your system is is that why for example people are subscribing to things like G Suite and Microsoft Office and things like that you know the more operating systems you have in your infrastructure but harder to protect usually if you hire a system administrator he might be very good with protecting Windows systems and managing Windows systems in general but he might be terrible at securing Linux devices so I would definitely go for one operating system if possible if I have limited resources it's much easier to apply a specific set of security controls across the organization if you have
+
+20
+00:12:56,460 --> 00:13:42,820
+only Windows or only Mac systems yeah much harder to deal with different types of operating systems also to mention the smartphones you can run Android you can run different Chinese operating systems you can have again Apple operating system so each one of these requires different measures to be managed something that surprised me actually for what you're saying if I would assume if I was an uneducated user that a centralized system would be more secure let's say for example Windows comes from Microsoft right and Linux comes from a lot of places right my assumption will always be Microsoft a product should be safer why that's not the case why Linux is?
+
+21
+00:13:45,200 --> 00:14:44,860
+well Microsoft provides more security features by design again given that you configure things properly your firewall your endpoint security protection email filtering and etc this comes by design in Microsoft so usually when you have the Windows Defender even the Windows native Defender it already provides some security capabilities the Linux system can be more secure if you configure it the right way so by design out of the box Windows system would be more secure if you just spawn a freshly installed Linux Linux box you definitely need to limit the access to the file system root permissions you have to carefully define what's happening with the logging of the system things which Microsoft would come by design in Linux you have to configure them by yourself however we have to consider that
+
+22
+00:14:44,860 --> 00:15:44,740
+most of the exploits are designed to work on Windows systems so that's simply because Windows is more widely used in the average organization mostly because of the endpoints by the way not that much because of the servers the servers they they tend to use Linux or Ubuntu very often but the end-users are mostly using Windows in corporate environment so that's why you have more exploits for Windows systems and that's why you have more security features by design for Windows systems and also because it's it's an enterprise topic Linux is not it's not that much of an enterprise Linux you can be you can use either let's say Red Hat or CentOS you can use the free version or the paid version it's up to you you can use both but with Microsoft more often almost always you have to pay for it so you get the
+
+23
+00:15:44,740 --> 00:16:44,340
+security by design and that makes sense to be honest and and also I think that the open source community in Linux probably does more effort towards not profit but securing systems right the motivation to ecosystems is different right I don't obviously have an opinion I use Windows services I'm a newbie but one thing that we you mentioned but might not be fully understood by everyone is that when when you're creating threat models and when you're thinking about your your company security most of the time you're gonna come to the term code exposure right what what does it mean something to be exposed in the context of cybersecurity and therefore and what is the opposite I mean spoiler alert is isolated but what is the difference between these two types of assets in the context of threats imagine you have an organization with 50 assets you go to your office you start working on your computer
+
+24
+00:16:44,340 --> 00:17:44,340
+the minute you you start talking to your colleagues it might be that you're just communicating in in an isolated environment which means that you don't have a direct access to internet necessarily that's how military organizations work by the way they have an internal network of communication and only the people connected to the network can see each other and they can talk to each other at no points they would connect to Internet's to obtain third-party resources now imagine you go in a different type of organization where everybody needs to connect to Internet you work in a multinational environment you have to connect with your colleagues from the neighboring country and you have to to get outside of the bubble you have to go out and start talking to to other people on the street right it's like being in your own apartment versus going out on the on the street and trying to communicate with different people let's say during an event for example
+
+25
+00:17:44,340 --> 00:18:44,220
+so one is I'm completely isolated and my device is not visible from the Internet the other one is I go outside I connect to some gateways and servers outside some maybe Google or Microsoft servers which already means that I'm browsing the Internet I'm going outside of my of my bubble of my apartment and let's say we have an endpoints your laptop for example right now you have your laptop in front of you are you connected to the Internet do you do you need to be connected to the Internet right now yes why so I would say you don't have to be sure but we are okay I get your point but but we are in a studio right now I think you can go without Internet I can save this information on your system offline you're right what if you are running a server which is running some application it needs to be accessible to the users everybody should
+
+26
+00:18:44,220 --> 00:19:43,440
+be able to to go and visit your application sign up login browse your application then you need to not only to be positioned somewhere on the Internet but you need to be reachable by anyone on the Internet let's say you can limit geographies you can limit people from I don't know North Korea or Russia or the United States whoever you consider that might be your threat but still you are connected to most of the countries out there and it means that you have a server this server has an IP address or a domain name and a domain name and when you when you provide this server everybody can connect and they can see what's on your system what's your operating system they can try and fingerprint your device they can see what services you have running on the system what ports are open if the communication goes encrypted or unencrypted eventually you provide some certificates those certificates
+
+27
+00:19:43,440 --> 00:20:43,340
+might be valid or expired so but you're providing a lot of information and this means that your system is exposed it's residing outside on the Internet and and everybody can try and connect or break into your system yeah makes sense but the what the kind of like what I want to find out is that does if you're exposed does it necessarily mean that you are in danger or just another let's say vector of attack that you need to consider you know that's let's say let's put it this way the Google servers and the Microsoft servers they are all exposed to the Internet one way or another simply because they have to serve customize your bank your banking server your banks server is also exposed to the Internet if you visit some services which provides let's say capabilities you can pay your utilities in an application their systems are exposed to the
+
+28
+00:20:43,340 --> 00:21:42,400
+Internet because you can connect and you can log in to the to the web application so it doesn't necessarily mean that you're in danger that's why you have an attack surface that's something that you can consider and during the attack surface you are collecting information from threat intelligence solutions about who is trying to compromise your websites who is trying to attack systems like yours with the same operating system with the same services or if you have some open weaknesses and vulnerabilities on the system you can refer to the threat intelligence solutions to identify what threat actors are trying to exploit this kind of vulnerabilities like the ones you have in your environment so that's one step the other step is if you provide proper security assessment if you initiate proper security assessment to your systems you're running vulnerability scanning regular
+
+29
+00:21:42,400 --> 00:22:42,200
+you can run penetration testing or some other red teaming activities then you are securing your systems even though your system is exposed you have some services which are public and everybody can see them they are not weak they are not vulnerable which means that nobody can exploit those services however in in two months time it could be that those services if you didn't update them they already became vulnerable and then you might you might allow someone to exploit a public facing system yep well that means at least for me as a user you know that should be very careful and obviously sharing information online but there's one thing that we usually talk about software right to talk about how the hacks happen and things like that but to have an effective software you obviously need to provide developers with the proper and adequate documentation right and now it's very
+
+30
+00:22:42,200 --> 00:23:41,960
+common and we have a lot of cases and a lot of memes online about people sharing documentation with LLM models for example do something let's say not necessarily confidential information but any form of information that might not necessarily be should be available for others and then we have seen examples of how this surfaces in LLM it's not necessarily as the information itself but it comes as a context in specific searches and things like that right so I think that there is a case to be made for taking special care of documentation whether it's API documentation whether it's like how they call that confidential information or even your internal policy in the company right what is the what we should we consider when we talk about sharing documentation the API documentation is your map it defines how your application connects to other applications to exchange information back and forth
+
+31
+00:23:41,960 --> 00:24:39,680
+while it doesn't pose security risk by itself it might reveal too much information to someone and because of this someone can compromise your company without an API documentation basically you cannot work with other applications you cannot work with your partners let's say if you are a bank and you have to provide some services to your merchants you cannot do it without an API it's simple as that so in order to work with someone you need to have a properly defined API documentation that you provide to your suppliers customers partners whatever and they using the API documentation to create communication from their API to your API now when we usually when we perform penetration testing usually we are requesting the API documentation simply because it's going to be much more
+
+32
+00:24:39,680 --> 00:25:39,640
+it's going to be much easier for us to exploit the API if we know how it works what's the authentication mechanisms what tokens are in use eventually some API keys they might be left over in the documentation what parameters that the API allows what security points what endpoints are in place for the the API to communicate what calls we can make with the API that's an information which is required so that you can examine the security of the API without this information an attacker or a pen tester as well we'll have to manually create an API documentation which is which is a very complex and very time-consuming process so on the one side you need this information so much so that you can provide API services on the other side you only have to provide this information to whoever wants to connect to your
+
+33
+00:25:39,640 --> 00:26:39,560
+API and whoever is authorized to connect to your API now you might end up having your API public because you might be your business might might demand that your API is public it's as simple as that your model allows all the third parties to connect to your API and then that's how you monetize your your business then your API documentation has to be public but make sure when you put it on the internet it doesn't provide any information about tokens tokens or any API keys anything which is too sensitive yeah and and this is this is coming back again to what I was telling before that about obviously the how do you call this thing the AI revolution right now now a lot of the AI models are open source right whether it's deep seek whether it's I mean most of them are actually open source and you also have like the instructions for cloud being leaked online so
+
+34
+00:26:39,560 --> 00:27:39,420
+this is not an unsolvable problem for hackers once you have the instruction documents for an LLM specifically the whole document right so if you are developing something and you're deploying it inside the pipeline of your organization you should specifically follow the models that you're using for 0-day vulnerabilities due to the the speed and the essentially the lower resources relative to physical resources required launch an AI attack I would think that 0-day is much more dangerous than a regular one exploitation will be much faster and it's very likely to actually be exploited on the time of discovery because that's obviously if you're discovering in in a system rather than in testing right so very very dangerous I would highly recommend to think about how do you implement AI security in your pipeline okay I want to go to something much more common something that everyone has seen but probably almost
+
+35
+00:27:39,420 --> 00:28:39,140
+no one knows what actually is it so when you go in a browser on the top left corner there is a little padlock that's named SSL certificate right and if you're a small business or someone that just does some websites for just for fun you know that these things expire this expires this is not endless right what is this tell us as a newbies what is an SSL certificate and why does it expire I guess you've seen the disclaimer this website is not secure don't move forward continue anyway now the connection to this site usually is secure even though your expire your certificate is expired however the the certificates proves who is behind the server who is the owner if that's a legit server is that if that's a legit application a legit provider of services and the
+
+36
+00:28:39,140 --> 00:29:38,880
+certificate defines if you can trust this person on the other side or not and by person I mean the organization the servers if you have a secure certificate valid certificate usually that means that your connection is your system is communicating with a trustworthy system on the other side and you can be confident who is providing the services now simply having a certificate doesn't guarantee that this is the correct server on the other side so if somebody compromised this organization and change the server with another and change the certificate with another certificate which is secure but issued by someone else you might still see the secure symbol it doesn't necessarily mean that that's the that doesn't guarantee that this is the trusted remote side that the one that you want to communicate with but it's something you know you
+
+37
+00:29:38,880 --> 00:29:42,340
+better trust the certificate I mean there is nothing else you can do.
+
+38
+00:29:42,560 --> 00:29:44,300
+Who is issuing the certificate?
+
+39
+00:29:44,580 --> 00:30:24,660
+There is two types of certificates once issued by issued by certificate authorities which is an industry approved organization trusted organization that all the organizations are paying and they are doing the due diligence for you they check if you are a legit organization if your domain names are matching your servers they check if you provide the encrypted communication to your users and they give you the certificates and they are saying this certificate is issued by this certificate authority which guarantees that this connection is secure for the user.
+
+40
+00:30:25,380 --> 00:30:47,340
+However it could be that the organization is self-issuing certificates especially if you have internal applications which are serving your employees for example some ERP system which is meant to be used only inside the organization then you can self generate certificates it doesn't have to be a certificate generated by officially approved certificate authority.
+
+41
+00:30:48,340 --> 00:30:56,260
+Now when it comes to security a lot of people are asking me is it safe if my certificate has expired?
+
+42
+00:30:56,720 --> 00:31:30,780
+Now the fact that your certificate expired more often doesn't mean that the connection is not secure it might be the case but usually the connection is still going to be secure it's still going to be encrypted however the other side cannot be verified which means that you might be communicating with a malicious server instead of the legit server so nobody can sniff the communication however if you're communicating with a malicious server then the person who is controlling the remote server they have your connection your communication anyways.
+
+43
+00:31:31,940 --> 00:31:35,780
+Sounds much more important than I expected from a little padlock in the corner right?
+
+44
+00:31:36,060 --> 00:32:16,600
+Yeah that's why if you're running an application make sure that you renew your certificate also there is different forms of certificates some of them provide extended information about the organization for example if you're a bank or let's say a very important institution like I don't know revenue agency then you might you probably you would like to to provide more information to the users and then you're getting the extended certificate which provides additional information about the organization but if I'm just a small online shop and I don't care that much about this one I would probably be fine with the normal certificate.
+
+45
+00:32:17,240 --> 00:32:23,380
+I know what I'm curious I actually don't know this but do you think that SSL certification matters for search?
+
+46
+00:32:24,260 --> 00:32:34,440
+Do you think that Google or other Google okay no other search engines but do you think they promote or demote sites without an SSL?
+
+47
+00:32:34,460 --> 00:32:43,380
+I believe Google considers the SSL certificates of the organization when they are doing the SEO optimization ranking.
+
+48
+00:32:43,760 --> 00:32:49,640
+Yeah I think so as well because otherwise I wouldn't think that they were promoting people without an SSL but yeah.
+
+49
+00:32:49,920 --> 00:33:24,020
+Yeah also important to consider by the way you might have a secure connection but if you are running a certificate which is let's say pretty old it has a lot of vulnerabilities it might be that someone can be able to crack the conversation they might be able to crack the certificate in a way that they will start sniffing the communication even though it says it's encrypted you know so also make sure that you're using the the latest possible certificates the latest possible encryption methods for your certificates.
+
+50
+00:33:24,760 --> 00:34:24,620
+Yeah so there's something different that I want to ask you right now and I will give you guys the context so you know and I was living in the UK right I had let's say for example that's 10 years 10-15 years ago right I have like 200 accounts in different types of things right and I recently got like notification from Google that I have 200 accounts leaked right but these are all like accounts that I haven't used in like 10-15 years and they are all using the same password back in the day I was using exactly the same password like now this is a completely different one obviously maybe but I got this this notification so I was like thinking what does this mean right that means that Google or Apple in this case like because it's an iPhone has the ability to read from somewhere what type of my non encrypted information is shared because how would they know if my account is leaked if they don't know both
+
+51
+00:34:24,620 --> 00:35:22,900
+things right and then I started thinking about some of the conversations that we had in the office and you told me even even our product has the capabilities with some help to actually find information on the dark web right yeah so this is a topic I think we will have an episode for this like a full one just to give like a little bit of a for myself actually some information about what actually is happening on the dark web what can you find there and how does Apple know that my password leaked I'm very curious you know just give you a brief answer I'm not going in details because indeed we'll have a separate episode on topic it's extremely interesting I have a lot of people asking me have you ever been on darknet what does it look like can you really find information about drugs about weapons leaked passwords and databases and is it so dangerous well yes you can find this information but are they not gonna put me in jail if I visit darknet I mean they were going to detect me and then
+
+52
+00:35:22,900 --> 00:36:22,580
+they put me in jail no it doesn't work like that but if you go and buy weapons from darknet it might be that the agencies will find out even though it's an it's a closed network like separate network and however yes the agencies they also have servers on darknet so sometimes they might be sniffing the communication which you think is quite secure because you're running on darknet so but yeah on darknet you can literally find anything it's like a hidden hidden game you know it provides passwords weapons databases so usually if I compromise someone's database and I'm looking to monetize my activities I would probably go on darknet and I'll say hey I have Amazon's database because I compromised 2,000 accounts yesterday and I have emails passwords sidebans some juicy information and then I'm putting this information on darknet I'm selling it to someone who might be interested
+
+53
+00:36:22,580 --> 00:37:22,560
+and that's how the organizations like Microsoft's and that's how the all synths providers know if your account has been breached it has to be announced by someone that there is a data breach in one platform or vendor and they have the information and they have this and that and usually they're requesting some some money they are extorting the the vendor to pay some ransom otherwise they're leaking the information on the internet there is a lot of different scenarios but basically yes that's how that's how you know if you for if your information is on darknet then the vendors know about it and they they ask you to change your password okay but let's say dark web right I've seen some videos online from people that use that I haven't like you know been myself you know but they say they use it not necessarily for crime right can you use the dark web for not crime you know there's a you're not gonna discuss politics here but you know this if you
+
+54
+00:37:22,560 --> 00:38:22,460
+are libertarian for example you don't want a government to track you can you use dark web in in a light way let's call it this way probably you can even though I've never seen it okay so it's not a common I mean why using the only the only means of using darknet as a as a network as a way to communicate to the world is not having yourself exposed the the one that we talked in the beginning right I want you to be completely anonymous maybe I want to reveal some spicy secrets about corruption about politics which I want to be secure that nobody's gonna find me probably I want to to browse something let's say I might be a journalist and I'm collecting information information about the mafia and then I want to stay behind the scene I want to collect as much information as possible then I'm gonna going to use darknet as a as a network through it to connect to the world like publishing things on darknet
+
+55
+00:38:22,460 --> 00:39:21,680
+or looking for something using it as a marketplace like accessing all the the websites which are only available when you're connected to darknet I I wouldn't I've never seen anyone using it in you know in an ethical or legit way or with with good intentions I cannot think of such scenario you know okay so I might be wrong so information gathering well I think what's the I would say drop in the comments if you guys think that darknet can be used formally for non malicious and ethical purposes if if it can be beneficial for for something for the society somehow drop it in the comments let us know yeah let's see I mean I'm curious I want to know there's no usually when you use a technology there needs to be a motivation right that either let's say a monetary motivation or convenience or something like this and I just don't see it you know when someone say multilayer Tor browser I'm like yeah yeah cool hey chrome card
+
+56
+00:39:21,680 --> 00:40:21,320
+okay so I have something for the for the episode something that you haven't seen which is a hacker movie scene right I think the name of the movie is swordfish in English in Bulgaria is a little bit different very actually it's very close they still use the fishes name but it sounds much better in this and you know how many passwords like this I've seen in my so I actually forgot I watched the video a little bit before we started if you are a child or you are a parent of a child that's with you now it's time to stop watching because that let's say that specific scene on the movie is explicit so are you saying that we are an adult adult content we definitely will need to put the above 18 marker for this episode for sure so I'm not quite sure actually how to I
+
+57
+00:40:21,320 --> 00:41:21,260
+won't give you any leeway it's a hacker scene from the movie swordfish they're showing something I want to I want to see your reaction on specifically the way that the motivation for them hacking fast you know I still remember when I was 14 12 14 and my parents were watching American movies on the Internet and on the TV and then at some point they were like close your eyes now but it's alright yeah we can play the movie now just think all right let's go that's our friends John Travolta and I mean I wish we would we had an office like this that's what people imagine when they see hackers by the way oh that's that's a
+
+58
+00:41:21,260 --> 00:42:21,620
+hacking office right yeah I mean all these hackers out there yeah the hacking is lashing right on hacking they wouldn't be shortage of talent if this was the actual I totally forgot that he plays in the movie by I think he did as well that was a long time ago Wolverine man of many talents big Stan nice suit thanks they say it's the clothes that make the man buy it hope not think look I flew 1,500 miles for this meeting how about we get to the point no actually all right go the movie clips thank you Helga meet Stanley how
+
+59
+00:42:21,620 --> 00:43:21,380
+do I say this in a non-offensive way this is an HR from the 90s I think I think we'll crop this part you already said it what do you think so this is just the department of justice is this is this hacking or is this social engineering like I feel like they're trying to convince him to provide his username and password I mean five bodyguards oh that's already a six bodyguards you're playing in the game now and that's a good way to convince someone in providing information and I've always said that it's much easier to convince someone that way with probably with with a baseball ball or with a baseball bat or with a pistol it's much easier to convince someone to provide information instead of hacking them I think she will update the strategy right now
+
+60
+00:43:21,380 --> 00:44:17,880
+it's much more convincing but I want you despite this scene I want you to see how he's pressing how he's pressing the buttons I'll focus on the thing yes I promise he's in the hacking mode I think yeah I think we lost the sound but maybe we can read by the lips the most important part is the way that he hacks right I'll just watch this again helps I told you don't remember the movie it was a long time ago but I told you a gun always helps one minute to hack the Ministry of Justice yeah how about that look at that is he a piano player or is it look look at that he
+
+61
+00:44:17,880 --> 00:44:23,940
+tried to Trump jr.
+
+62
+00:44:24,380 --> 00:45:24,300
+and I think he is now training his focus skills he's not pressing enter I think I think he's not playing fast enough on the keyboard focus no he's coming I think this club is is it stands for backslash yeah I think I think that we should add this to the to the workflow once they complete once the hacker completes a task he claps so we know they're working I think that's more than 60 seconds was it Slavic language I wish we had more time to check I'm quite sure that these IPs will lead somewhere you know could be I think you mean that these IPs are exposed yeah yeah oh I was
+
+63
+00:45:24,300 --> 00:46:24,140
+distracted as well did he he succeed yeah yeah he did I think yeah yeah nice access granted access granted world that that's a lot of amazing out there so just quickly close this one do we even have to discuss it I mean yeah please please go with your question apologies so my question is about the motivational strategies right I think working on the pressure I think when when you have the right motivation you can crack any system in the world yes but don't do the Department of Justice guys it's not worth it you know it's yeah unless you are doing it from the dark web that we discussed I think it's not gonna be okay with with this one sharing my professional opinion on this one though please yeah how King doesn't happen that way it's not you don't just play with your fingers on the keyboard and then some magic happens apparently he was trying different passwords from what I saw he was trying to brute force something but but it doesn't
+
+64
+00:46:24,140 --> 00:46:56,880
+work this way you have to configure your systems a lot of stuff is automated already and you're not typing right like crazy things on the terminal it simply doesn't work like that you have to research your system you have to I mean your target system you have to identify what services you have play with the let's say with the authentication with the privileges and it takes much more time you need to use some exploits or develop some exploits so these are a lot of things which I didn't see in that movie I've seen them more in mr.
+
+65
+00:46:56,960 --> 00:47:56,760
+robot for example if you if you know the series but this was this one wasn't about hacking you know I think they should make more movies like this because there were no shortage of hackers in 2008 10 years after the show unfortunately right now it's not exactly like that I think we should emphasize cinema on focusing on the good things in hacking right yep all right cool well I think that this will be the end of this episode guys hope you learned something what I would say most important things in this make sure that you understand what's what's your attack surface where can threats come from and most importantly from my perspective if you're using AI this is not completely safe make sure that you understand what the threats are and how you can handle them obviously in the cheapest in the soonest way the sooner you start implementing a security the better for your organization drop and let us know in the comments what security topics you would like to talk about is there some some
+
+66
+00:47:56,760 --> 00:48:27,500
+topics that some topics that you're very interested to hear maybe everybody's going to type Facebook security but let's give it a try yeah and what movie would you like to see next movies it should be hacking movies yeah just to say all right have a good one guys and if you need if you want to see something make sure that you put a comment down or reach out from the contacts below if you need any help with your cyber security from our team thanks for being with us see you next time see
