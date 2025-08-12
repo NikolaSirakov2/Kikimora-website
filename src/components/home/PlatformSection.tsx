@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function PlatformSection() {
   const [isScheduleDemoModalOpen, setIsScheduleDemoModalOpen] = useState(false);
 
   return (
     <>
-      <div className="bg-[#001E38]">
+      <AnimatedBackground>
         <section className="py-24 bg-[#24317f] relative z-2 w-[1200px] mx-auto rounded-lg">
           <div className="flex items-center">
             {/* Left side - Dashboard Image */}
@@ -38,7 +39,7 @@ export function PlatformSection() {
             </div>
           </div>
         </section>
-      </div>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal

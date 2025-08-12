@@ -1,15 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { useCallback } from "react";
-import { loadSlim } from "tsparticles-slim";
-import Particles from "react-tsparticles";
-import type { Engine } from "tsparticles-engine";
 import { FloatingStatsImage } from "@/components/ui/FloatingStatsImage";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function Hero() {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
-  }, []);
-
   const stats = [
     {
       text: "Reduce security incidents by up to",
@@ -53,83 +46,7 @@ export function Hero() {
   ];
 
   return (
-    <div className="bg-[#001E38] relative w-[99.1vw]">
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          fullScreen: {
-            enable: true,
-            zIndex: 0,
-          },
-          particles: {
-            number: {
-              value: 50,
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-            },
-            color: {
-              value: "#3EDDCA",
-            },
-            shape: {
-              type: "image",
-              image: {
-                src: "/logos/color_and_black.svg",
-                width: 20,
-                height: 20,
-              },
-            },
-            opacity: {
-              value: 0.5,
-              random: true,
-            },
-            size: {
-              value: 10,
-              random: true,
-            },
-            move: {
-              enable: true,
-              speed: 1,
-              direction: "none",
-              random: true,
-              straight: false,
-              outModes: {
-                default: "out",
-              },
-            },
-            links: {
-              enable: false,
-            },
-          },
-          interactivity: {
-            events: {
-              onHover: {
-                enable: false,
-                mode: "grab",
-              },
-              onClick: {
-                enable: false,
-                mode: "push",
-              },
-            },
-            modes: {
-              grab: {
-                distance: 140,
-                links: {
-                  opacity: 1,
-                },
-              },
-              push: {
-                quantity: 4,
-              },
-            },
-          },
-          detectRetina: true,
-        }}
-        className="absolute inset-0"
-      />
+    <AnimatedBackground className="w-[99.1vw]">
       <div className="max-w-[1500px] mx-auto py-20">
         <section className="h-3/5 relative z-10">
           <div className="h-3/4 flex items-center">
@@ -170,6 +87,6 @@ export function Hero() {
           </div>
         </section>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }

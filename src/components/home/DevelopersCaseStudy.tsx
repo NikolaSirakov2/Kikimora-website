@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function DevelopersCaseStudy() {
   return (
-    <div className="bg-[#001E38] py-16">
+    <AnimatedBackground className="py-16">
       <div className="w-full px-[5%] flex flex-col items-center">
         <div className="w-full max-w-[1400px] bg-[#2A1D4C] rounded-3xl p-10 flex justify-between z-10">
           {/* Left side content */}
@@ -44,6 +45,6 @@ export function DevelopersCaseStudy() {
           </div>
         </div>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }

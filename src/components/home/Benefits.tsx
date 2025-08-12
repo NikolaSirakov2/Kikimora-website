@@ -6,10 +6,11 @@ import {
   DocumentCheckIcon,
   Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function Benefits() {
   return (
-    <div className="bg-[#001E38] py-24">
+    <AnimatedBackground className="py-24">
       <div className="w-full px-[10%] flex flex-col items-center">
         {/* Header */}
         <h2 className="text-5xl text-white   text-center mb-6">Benefits</h2>
@@ -121,6 +122,6 @@ export function Benefits() {
           </div>
         </div>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }

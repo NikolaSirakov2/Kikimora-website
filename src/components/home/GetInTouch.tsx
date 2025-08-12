@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function GetInTouch() {
   const today = new Date();
@@ -28,7 +29,7 @@ export function GetInTouch() {
   };
 
   return (
-    <div className="bg-[#001E38]">
+    <AnimatedBackground>
       {/* Full-width section with gradient background */}
       <div className="w-screen relative -ml-[50vw] left-1/2">
         <div className="bg-gradient-to-r from-[#2A1D4C] via-[#1B4E5F] to-[#003D37] py-20">
@@ -157,6 +158,6 @@ export function GetInTouch() {
           </div>
         </div>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }

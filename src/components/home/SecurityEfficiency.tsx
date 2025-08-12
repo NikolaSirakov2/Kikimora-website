@@ -1,6 +1,8 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function SecurityEfficiency() {
   return (
-    <div className="bg-[#001E38] py-20">
+    <AnimatedBackground className="py-20">
       <div className="w-full px-[5%] flex flex-col items-center">
         <div className="max-w-[1400px] w-full">
           <h2 className="text-5xl text-white   text-center mb-4">
@@ -38,6 +40,6 @@ export function SecurityEfficiency() {
           </div>
         </div>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }

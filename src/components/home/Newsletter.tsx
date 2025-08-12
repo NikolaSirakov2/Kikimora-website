@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Resend } from "resend";
 import { Button } from "@/components/ui/button";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const resend = new Resend("re_4yQzv6Uz_FKEzv4TbmCYo4tWXqejqA5F7");
 
@@ -40,7 +41,7 @@ export function Newsletter() {
 
   return (
     <>
-      <div className="bg-[#001E38] border-t border-white/10">
+      <AnimatedBackground className="border-t border-white/10">
         <div className="w-full px-[5%] py-6">
           <div className="max-w-[1400px] mx-auto flex items-start justify-between">
             {/* Left side navigation */}
@@ -134,7 +135,7 @@ export function Newsletter() {
             </div>
           </div>
         </div>
-      </div>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal
