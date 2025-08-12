@@ -159,44 +159,41 @@ export class YouTubeApiService {
         }
       );
 
-      // Filter out YouTube Shorts and sort by publish date
-      let filteredVideos = allVideos;
+      // Log all videos before filtering
+      console.log(
+        "🎬 ALL VIDEOS FROM YOUTUBE API (BEFORE FILTERING):",
+        allVideos.map((video) => ({
+          id: video.id,
+          title: video.title,
+          publishedAt: new Date(video.publishedAt).toLocaleDateString(),
+          duration: video.duration,
+          viewCount: video.viewCount,
+        }))
+      );
 
-      // Apply shorts filter if enabled
-      if (YOUTUBE_CONFIG.FILTER_SHORTS) {
-        filteredVideos = filteredVideos.filter((video) => {
-          // Skip videos without duration info
-          if (!video.duration) return true;
+      // Filter and log only videos with "Episode", "Ep", or "Ep." in the title
+      const episodeVideos = allVideos.filter((video) => {
+        const title = video.title.toLowerCase();
+        return (
+          title.includes("episode") ||
+          title.includes("ep ") ||
+          title.includes("ep.")
+        );
+      });
 
-          // Parse duration to check if it's a short
-          const durationParts = video.duration.split(":");
-          const minutes = parseInt(durationParts[0] || "0");
-          const seconds = parseInt(durationParts[1] || "0");
-          const totalSeconds = minutes * 60 + seconds;
-
-          // Filter out videos under the minimum duration (YouTube Shorts)
-          return totalSeconds >= YOUTUBE_CONFIG.MIN_VIDEO_DURATION;
-        });
-      }
-
-      // Apply date filter if enabled
-      if (YOUTUBE_CONFIG.FILTER_OLD_VIDEOS) {
-        filteredVideos = filteredVideos.filter((video) => {
-          const publishYear = new Date(video.publishedAt).getFullYear();
-          const isRecentEnough = publishYear >= YOUTUBE_CONFIG.MIN_PUBLISH_YEAR;
-
-          if (!isRecentEnough) {
-            console.log(
-              `📅 Channel: Filtered out old video: "${video.title.substring(0, 50)}..." (published ${publishYear})`
-            );
-          }
-
-          return isRecentEnough;
-        });
-      }
+      console.log(
+        "🎙️ VIDEOS WITH 'EPISODE', 'EP', OR 'EP.' IN TITLE:",
+        episodeVideos.map((video) => ({
+          id: video.id,
+          title: video.title,
+          publishedAt: new Date(video.publishedAt).toLocaleDateString(),
+          duration: video.duration,
+          viewCount: video.viewCount,
+        }))
+      );
 
       // Sort by publish date (newest first) and limit results
-      filteredVideos = filteredVideos
+      const finalVideos = episodeVideos
         .sort((a, b) => {
           return (
             new Date(b.publishedAt).getTime() -
@@ -205,17 +202,18 @@ export class YouTubeApiService {
         })
         .slice(0, maxResults);
 
-      // Debug logging to verify sorting and filtering
       console.log(
-        "📅 Channel videos - Sorted episodes by date (newest first):",
-        filteredVideos.map((v) => ({
-          title: v.title.substring(0, 50) + "...",
-          date: new Date(v.publishedAt).toLocaleDateString(),
-          duration: v.duration,
+        "🎙️ FINAL EPISODE VIDEOS FOR CAROUSEL:",
+        finalVideos.map((video) => ({
+          id: video.id,
+          title: video.title,
+          publishedAt: new Date(video.publishedAt).toLocaleDateString(),
+          duration: video.duration,
+          viewCount: video.viewCount,
         }))
       );
 
-      return filteredVideos;
+      return finalVideos;
     } catch (error) {
       console.error("Error fetching YouTube videos:", error);
       throw error;
@@ -275,44 +273,41 @@ export class YouTubeApiService {
         }
       );
 
-      // Filter out YouTube Shorts and sort by publish date
-      let filteredVideos = allVideos;
+      // Log all videos before filtering
+      console.log(
+        "🎬 ALL SEARCH VIDEOS FROM YOUTUBE API (BEFORE FILTERING):",
+        allVideos.map((video) => ({
+          id: video.id,
+          title: video.title,
+          publishedAt: new Date(video.publishedAt).toLocaleDateString(),
+          duration: video.duration,
+          viewCount: video.viewCount,
+        }))
+      );
 
-      // Apply shorts filter if enabled
-      if (YOUTUBE_CONFIG.FILTER_SHORTS) {
-        filteredVideos = filteredVideos.filter((video) => {
-          // Skip videos without duration info
-          if (!video.duration) return true;
+      // Filter and log only videos with "Episode", "Ep", or "Ep." in the title
+      const episodeVideos = allVideos.filter((video) => {
+        const title = video.title.toLowerCase();
+        return (
+          title.includes("episode") ||
+          title.includes("ep ") ||
+          title.includes("ep.")
+        );
+      });
 
-          // Parse duration to check if it's a short
-          const durationParts = video.duration.split(":");
-          const minutes = parseInt(durationParts[0] || "0");
-          const seconds = parseInt(durationParts[1] || "0");
-          const totalSeconds = minutes * 60 + seconds;
-
-          // Filter out videos under the minimum duration (YouTube Shorts)
-          return totalSeconds >= YOUTUBE_CONFIG.MIN_VIDEO_DURATION;
-        });
-      }
-
-      // Apply date filter if enabled
-      if (YOUTUBE_CONFIG.FILTER_OLD_VIDEOS) {
-        filteredVideos = filteredVideos.filter((video) => {
-          const publishYear = new Date(video.publishedAt).getFullYear();
-          const isRecentEnough = publishYear >= YOUTUBE_CONFIG.MIN_PUBLISH_YEAR;
-
-          if (!isRecentEnough) {
-            console.log(
-              `📅 Search: Filtered out old video: "${video.title.substring(0, 50)}..." (published ${publishYear})`
-            );
-          }
-
-          return isRecentEnough;
-        });
-      }
+      console.log(
+        "🎙️ SEARCH VIDEOS WITH 'EPISODE', 'EP', OR 'EP.' IN TITLE:",
+        episodeVideos.map((video) => ({
+          id: video.id,
+          title: video.title,
+          publishedAt: new Date(video.publishedAt).toLocaleDateString(),
+          duration: video.duration,
+          viewCount: video.viewCount,
+        }))
+      );
 
       // Sort by publish date (newest first) and limit results
-      filteredVideos = filteredVideos
+      const finalVideos = episodeVideos
         .sort((a, b) => {
           return (
             new Date(b.publishedAt).getTime() -
@@ -321,17 +316,18 @@ export class YouTubeApiService {
         })
         .slice(0, maxResults);
 
-      // Debug logging to verify sorting and filtering
       console.log(
-        "📅 Search videos - Sorted episodes by date (newest first):",
-        filteredVideos.map((v) => ({
-          title: v.title.substring(0, 50) + "...",
-          date: new Date(v.publishedAt).toLocaleDateString(),
-          duration: v.duration,
+        "🎙️ FINAL SEARCH EPISODE VIDEOS FOR CAROUSEL:",
+        finalVideos.map((video) => ({
+          id: video.id,
+          title: video.title,
+          publishedAt: new Date(video.publishedAt).toLocaleDateString(),
+          duration: video.duration,
+          viewCount: video.viewCount,
         }))
       );
 
-      return filteredVideos;
+      return finalVideos;
     } catch (error) {
       console.error("Error searching YouTube videos:", error);
       throw error;

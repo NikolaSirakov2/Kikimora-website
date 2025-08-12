@@ -106,6 +106,17 @@ export function SoCyberPodcast() {
   // Use fetched episodes or fallback to static data
   const podcastEpisodes = episodes.length > 0 ? episodes : fallbackEpisodes;
 
+  // Log the episodes being used in the carousel
+  console.log(
+    "🎙️ EPISODES BEING USED IN PODCAST CAROUSEL:",
+    podcastEpisodes.map((episode) => ({
+      id: episode.id,
+      title: episode.title,
+      publishedAt: episode.publishedAt,
+      duration: episode.duration,
+    }))
+  );
+
   const settings = {
     dots: true,
     infinite: true,
