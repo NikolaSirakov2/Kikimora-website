@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FreeTrialModal } from "./ui/FreeTrialModal";
 import { ScheduleDemoModal } from "./ui/ScheduleDemoModal";
 import { ArrowSquareRight } from "@phosphor-icons/react";
-import colorAndBlackLogo from "../assets/colorAndBlack.png";
+import colorAndBlackLogo from "/logos/color_and_white.png";
 
 interface NewNavbarProps {
   isAnnouncementVisible: boolean;
@@ -207,14 +207,8 @@ const NewNavbar: React.FC<NewNavbarProps> = ({ isAnnouncementVisible }) => {
               <img
                 src={colorAndBlackLogo}
                 alt="Kikimora Logo"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
-              <span
-                className="text-primary font-semibold text-xl"
-                style={{ fontFamily: "Montserrat, sans-serif" }}
-              >
-                Kikimora
-              </span>
             </Link>
           </div>
 
