@@ -3,6 +3,7 @@ import SecurityAnalysisInterface from "../components/ui/SecurityAnalysisInterfac
 import BookCallButton from "../components/ui/BookCallButton";
 import LearnMoreButton from "../components/ui/LearnMoreButton";
 import CompanyLogos from "../components/ui/CompanyLogos";
+import BulletPointsCard from "../components/ui/BulletPointsCard";
 
 const TestPage = () => {
   const [activeSection, setActiveSection] =
@@ -443,6 +444,27 @@ const TestPage = () => {
             </div>
           </div>
         )}
+
+        {/* Bullet Points Card Component */}
+        <div className="mt-12">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Bullet Points Card Component
+            </h3>
+            <div className="max-w-sm">
+              <BulletPointsCard
+                title="Lorem Ipsum Testing"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                bulletPoints={[
+                  "Lorem ipsum dolor sit amet (Annual)",
+                  "Consectetur adipiscing elit (Annual)",
+                  "Sed do eiusmod tempor incididunt",
+                  "Ut labore et dolore magna aliqua",
+                ]}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
