@@ -7,6 +7,7 @@ import BulletPointsCard from "../components/ui/BulletPointsCard";
 import Card_get_access from "../components/ui/Card_get_access";
 import ChallengeToOpportunity from "../components/ChallengeToOpportunity";
 import ConsoleSnippet from "../components/ui/ConsoleSnippet";
+import FeatureComparison from "../components/ui/FeatureComparison";
 
 const TestPage = () => {
   const [activeSection, setActiveSection] =
@@ -506,6 +507,47 @@ const TestPage = () => {
 
       {/* Challenge to Opportunity Component */}
       <ChallengeToOpportunity />
+
+      {/* Feature Comparison Component */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            Feature Comparison Component
+          </h3>
+          <p className="text-gray-600 mb-6">
+            A reusable comparison table component that highlights the advantages
+            of different approaches.
+          </p>
+          <FeatureComparison
+            features={[
+              {
+                name: "24/7 Monitoring",
+                softwareOnly: "✓ Automated",
+                managedTeamOnly: "✓ Human oversight",
+                combinedApproach: "✓ Both automated + human",
+              },
+              {
+                name: "Threat Context",
+                softwareOnly: "Limited",
+                managedTeamOnly: "✓ Expert analysis",
+                combinedApproach: "✓ AI + expert interpretation",
+              },
+              {
+                name: "Scalability",
+                softwareOnly: "✓ Unlimited",
+                managedTeamOnly: "Limited by team size",
+                combinedApproach: "✓ Best of both",
+              },
+              {
+                name: "Strategic Guidance",
+                softwareOnly: "None",
+                managedTeamOnly: "✓ Available",
+                combinedApproach: "✓ Built-in",
+              },
+            ]}
+          />
+        </div>
+      </div>
     </div>
   );
 };
