@@ -5,6 +5,8 @@ import LearnMoreButton from "../components/ui/LearnMoreButton";
 import CompanyLogos from "../components/ui/CompanyLogos";
 import BulletPointsCard from "../components/ui/BulletPointsCard";
 import Card_get_access from "../components/ui/Card_get_access";
+import ChallengeToOpportunity from "../components/ChallengeToOpportunity";
+import ConsoleSnippet from "../components/ui/ConsoleSnippet";
 
 const TestPage = () => {
   const [activeSection, setActiveSection] =
@@ -486,7 +488,24 @@ const TestPage = () => {
             </div>
           </div>
         </div>
+
+        {/* Console Snippet Component */}
+        <div className="mt-12">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Console Snippet Component
+            </h3>
+            <p className="text-gray-600 mb-6">
+              A terminal-style component that displays security reconnaissance
+              operations with status indicators and command output.
+            </p>
+            <ConsoleSnippet />
+          </div>
+        </div>
       </div>
+
+      {/* Challenge to Opportunity Component */}
+      <ChallengeToOpportunity />
     </div>
   );
 };
