@@ -2,6 +2,7 @@ import { useState } from "react";
 import SecurityAnalysisInterface from "../components/ui/SecurityAnalysisInterface";
 import BookCallButton from "../components/ui/BookCallButton";
 import LearnMoreButton from "../components/ui/LearnMoreButton";
+import CompanyLogos from "../components/ui/CompanyLogos";
 
 const TestPage = () => {
   const [activeSection, setActiveSection] =
@@ -205,6 +206,48 @@ const TestPage = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Company Logos Component */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                Company Logos Component
+              </h3>
+              <div className="max-w-md">
+                <CompanyLogos
+                  title="Lorem Ipsum Logos"
+                  logos={[
+                    {
+                      id: "full-color",
+                      name: "Lorem Ipsum Logo - Full Color",
+                      format: "PNG",
+                      size: "2.1 MB",
+                    },
+                    {
+                      id: "white",
+                      name: "Lorem Ipsum Logo - White",
+                      format: "PNG",
+                      size: "1.8 MB",
+                    },
+                    {
+                      id: "black",
+                      name: "Lorem Ipsum Logo - Black",
+                      format: "PNG",
+                      size: "1.9 MB",
+                    },
+                    {
+                      id: "vector",
+                      name: "Lorem Ipsum Logo - Vector",
+                      format: "SVG",
+                      size: "0.5 MB",
+                    },
+                  ]}
+                  onDownloadLogo={(logoId) =>
+                    console.log(`Downloading ${logoId}`)
+                  }
+                  onDownloadAll={() => console.log("Downloading all logos")}
+                />
               </div>
             </div>
           </div>
