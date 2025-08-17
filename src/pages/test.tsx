@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SecurityAnalysisInterface from "../components/ui/SecurityAnalysisInterface";
 import BookCallButton from "../components/ui/BookCallButton";
+import LearnMoreButton from "../components/ui/LearnMoreButton";
 
 const TestPage = () => {
   const [activeSection, setActiveSection] =
@@ -164,6 +165,44 @@ const TestPage = () => {
                     <BookCallButton size="sm">Book Call</BookCallButton>
                     <BookCallButton size="md">Book Call</BookCallButton>
                     <BookCallButton size="lg">Book Call</BookCallButton>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Learn More Button Component */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                Learn More Button Component
+              </h3>
+              <div className="space-y-6">
+                <div className="bg-gray-900 p-6 rounded-lg">
+                  <LearnMoreButton />
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-medium text-gray-900">Variants:</h4>
+                  <div className="bg-gray-900 p-6 rounded-lg">
+                    <div className="flex space-x-4">
+                      <LearnMoreButton variant="default">
+                        Learn More
+                      </LearnMoreButton>
+                      <LearnMoreButton variant="outline">
+                        Learn More
+                      </LearnMoreButton>
+                      <LearnMoreButton variant="ghost">
+                        Learn More
+                      </LearnMoreButton>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-medium text-gray-900">Sizes:</h4>
+                  <div className="bg-gray-900 p-6 rounded-lg">
+                    <div className="flex space-x-4">
+                      <LearnMoreButton size="sm">Learn More</LearnMoreButton>
+                      <LearnMoreButton size="md">Learn More</LearnMoreButton>
+                      <LearnMoreButton size="lg">Learn More</LearnMoreButton>
+                    </div>
                   </div>
                 </div>
               </div>
