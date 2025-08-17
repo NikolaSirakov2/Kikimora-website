@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SecurityAnalysisInterface from "../components/ui/SecurityAnalysisInterface";
+import BookCallButton from "../components/ui/BookCallButton";
 
 const TestPage = () => {
   const [activeSection, setActiveSection] =
@@ -78,6 +79,48 @@ const TestPage = () => {
                 A playground for testing new components and features
               </p>
             </div>
+            <div className="flex space-x-4">
+              <button
+                onClick={() => setActiveSection("security-interface")}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeSection === "security-interface"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                Security Interface
+              </button>
+              <button
+                onClick={() => setActiveSection("components")}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeSection === "components"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                Components
+              </button>
+              <button
+                onClick={() => setActiveSection("layouts")}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeSection === "layouts"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                Layouts
+              </button>
+              <button
+                onClick={() => setActiveSection("utilities")}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeSection === "utilities"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                Utilities
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -96,6 +139,34 @@ const TestPage = () => {
                 terminalSteps={terminalSteps}
                 onOptionSelect={handleOptionSelect}
               />
+            </div>
+
+            {/* Book Call Button Component */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                Book Call Button Component
+              </h3>
+              <div className="space-y-6">
+                <div className="bg-gray-900 p-6 rounded-lg">
+                  <BookCallButton />
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-medium text-gray-900">Variants:</h4>
+                  <div className="flex space-x-4">
+                    <BookCallButton variant="default">Book Call</BookCallButton>
+                    <BookCallButton variant="outline">Book Call</BookCallButton>
+                    <BookCallButton variant="ghost">Book Call</BookCallButton>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-medium text-gray-900">Sizes:</h4>
+                  <div className="flex space-x-4">
+                    <BookCallButton size="sm">Book Call</BookCallButton>
+                    <BookCallButton size="md">Book Call</BookCallButton>
+                    <BookCallButton size="lg">Book Call</BookCallButton>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -126,23 +197,6 @@ const TestPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  Button Examples
-                </h3>
-                <div className="space-y-3">
-                  <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                    Primary Button
-                  </button>
-                  <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 transition-colors">
-                    Secondary Button
-                  </button>
-                  <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-50 transition-colors">
-                    Outline Button
-                  </button>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   Card Examples
                 </h3>
                 <div className="space-y-3">
@@ -157,6 +211,34 @@ const TestPage = () => {
                     <p className="text-green-700 text-sm mt-1">
                       This is an example success card component.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Book Call Button Component */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                Book Call Button Component
+              </h3>
+              <div className="space-y-6">
+                <div className="bg-gray-900 p-6 rounded-lg">
+                  <BookCallButton />
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-medium text-gray-900">Variants:</h4>
+                  <div className="flex space-x-4">
+                    <BookCallButton variant="default">Book Call</BookCallButton>
+                    <BookCallButton variant="outline">Book Call</BookCallButton>
+                    <BookCallButton variant="ghost">Book Call</BookCallButton>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="font-medium text-gray-900">Sizes:</h4>
+                  <div className="flex space-x-4">
+                    <BookCallButton size="sm">Book Call</BookCallButton>
+                    <BookCallButton size="md">Book Call</BookCallButton>
+                    <BookCallButton size="lg">Book Call</BookCallButton>
                   </div>
                 </div>
               </div>
