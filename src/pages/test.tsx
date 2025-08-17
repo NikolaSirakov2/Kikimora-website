@@ -1,12 +1,75 @@
 import { useState } from "react";
+import SecurityAnalysisInterface from "../components/ui/SecurityAnalysisInterface";
 
 const TestPage = () => {
-  const [activeSection, setActiveSection] = useState<string>("components");
+  const [activeSection, setActiveSection] =
+    useState<string>("security-interface");
+
+  // Sample data for the Security Analysis Interface
+  const securityOptions = [
+    {
+      id: "lorem-ipsum-1",
+      title: "Lorem ipsum dolor sit amet",
+      description:
+        "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+    },
+    {
+      id: "lorem-ipsum-2",
+      title: "Sed ut perspiciatis unde omnis",
+      description:
+        "Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+    },
+    {
+      id: "lorem-ipsum-3",
+      title: "Nemo enim ipsam voluptatem quia",
+      description:
+        "Voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.",
+    },
+    {
+      id: "lorem-ipsum-4",
+      title: "At vero eos et accusamus et iusto",
+      description:
+        "Odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+    },
+  ];
+
+  const terminalSteps = [
+    {
+      id: "init",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      status: "completed" as const,
+    },
+    {
+      id: "discover",
+      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+      status: "completed" as const,
+    },
+    {
+      id: "scan",
+      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
+      status: "completed" as const,
+    },
+    {
+      id: "identify",
+      text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum...",
+      status: "in-progress" as const,
+    },
+    {
+      id: "process",
+      text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia...",
+      status: "pending" as const,
+    },
+  ];
+
+  const handleOptionSelect = (optionId: string) => {
+    console.log("Selected option:", optionId);
+    // You can add custom logic here when an option is selected
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200">
+      <div className="bg-white border-b border-gray-200 mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <div>
@@ -15,44 +78,28 @@ const TestPage = () => {
                 A playground for testing new components and features
               </p>
             </div>
-            <div className="flex space-x-4">
-              <button
-                onClick={() => setActiveSection("components")}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  activeSection === "components"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                Components
-              </button>
-              <button
-                onClick={() => setActiveSection("layouts")}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  activeSection === "layouts"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                Layouts
-              </button>
-              <button
-                onClick={() => setActiveSection("utilities")}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  activeSection === "utilities"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                Utilities
-              </button>
-            </div>
           </div>
         </div>
       </div>
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {activeSection === "security-interface" && (
+          <div className="space-y-8">
+            {/* The Security Analysis Interface Component */}
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <SecurityAnalysisInterface
+                title="Lorem ipsum dolor sit amet"
+                subtitle="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                terminalCommand="> lorem-ipsum-agent process --mode=test --verbose=true"
+                options={securityOptions}
+                terminalSteps={terminalSteps}
+                onOptionSelect={handleOptionSelect}
+              />
+            </div>
+          </div>
+        )}
+
         {activeSection === "components" && (
           <div className="space-y-8">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
