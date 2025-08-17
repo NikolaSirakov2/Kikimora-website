@@ -4,6 +4,7 @@ import BookCallButton from "../components/ui/BookCallButton";
 import LearnMoreButton from "../components/ui/LearnMoreButton";
 import CompanyLogos from "../components/ui/CompanyLogos";
 import BulletPointsCard from "../components/ui/BulletPointsCard";
+import Card_get_access from "../components/ui/Card_get_access";
 
 const TestPage = () => {
   const [activeSection, setActiveSection] =
@@ -462,6 +463,26 @@ const TestPage = () => {
                   "Ut labore et dolore magna aliqua",
                 ]}
               />
+            </div>
+          </div>
+        </div>
+
+        {/* Card Get Access Component */}
+        <div className="mt-12">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Card Get Access Component
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <div className="relative">
+              <Card_get_access />
             </div>
           </div>
         </div>
