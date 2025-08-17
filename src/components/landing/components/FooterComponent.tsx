@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FooterComponent = () => {
   return (
     <footer className="relative overflow-hidden bg-black py-20">
@@ -15,7 +13,12 @@ const FooterComponent = () => {
         <div className="absolute inset-0 opacity-20">
           <svg width="100%" height="100%" className="animate-pulse">
             <defs>
-              <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+              <pattern
+                id="grid"
+                width="50"
+                height="50"
+                patternUnits="userSpaceOnUse"
+              >
                 <path
                   d="M 50 0 L 0 0 0 50"
                   fill="none"
@@ -37,10 +40,13 @@ const FooterComponent = () => {
           {/* Logo/Brand section */}
           <div className="md:col-span-2">
             <div className="mb-6">
-              <h3 className="relative mb-2 text-2xl font-bold text-white">Kikimora Agent</h3>
+              <h3 className="relative mb-2 text-2xl font-bold text-white">
+                Kikimora Agent
+              </h3>
               <p className="max-w-md text-lg text-gray-400">
-                Advanced cybersecurity solutions for the modern digital landscape. Protect your
-                assets with intelligent threat detection.
+                Advanced cybersecurity solutions for the modern digital
+                landscape. Protect your assets with intelligent threat
+                detection.
               </p>
             </div>
 
@@ -62,29 +68,31 @@ const FooterComponent = () => {
           <div>
             <h4 className="mb-4 font-semibold text-white">Product</h4>
             <ul className="space-y-2">
-              {['Features', 'Security', 'Integrations', 'Pricing'].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="inline-block !font-normal !text-gray-400 transition-colors duration-300 hover:!text-gray-300 hover:!underline"
-                    style={{ textDecoration: 'none' }}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["Features", "Security", "Integrations", "Pricing"].map(
+                (item) => (
+                  <li key={item}>
+                    <a
+                      href="#"
+                      className="inline-block !font-normal !text-gray-400 transition-colors duration-300 hover:!text-gray-300 hover:!underline"
+                      style={{ textDecoration: "none" }}
+                    >
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
           <div>
             <h4 className="mb-4 font-semibold text-white">Company</h4>
             <ul className="space-y-2">
-              {['About', 'Blog', 'Careers', 'Contact'].map((item) => (
+              {["About", "Blog", "Careers", "Contact"].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
                     className="inline-block !font-normal !text-gray-400 transition-colors duration-300 hover:!text-gray-300 hover:!underline"
-                    style={{ textDecoration: 'none' }}
+                    style={{ textDecoration: "none" }}
                   >
                     {item}
                   </a>
@@ -113,9 +121,12 @@ const FooterComponent = () => {
           {/* Social links with glow effect */}
           <div className="flex space-x-6">
             {[
-              { name: 'LinkedIn', url: 'https://linkedin.com/company/kikimora-io' },
-              { name: 'Instagram', url: 'https://instagram.com/kikimora.io' },
-              { name: 'Youtube', url: 'https://youtube.com/@socyberbg' },
+              {
+                name: "LinkedIn",
+                url: "https://linkedin.com/company/kikimora-io",
+              },
+              { name: "Instagram", url: "https://instagram.com/kikimora.io" },
+              { name: "Youtube", url: "https://youtube.com/@socyberbg" },
             ].map((social) => (
               <a
                 key={`social-${social.name.toLowerCase()}`}

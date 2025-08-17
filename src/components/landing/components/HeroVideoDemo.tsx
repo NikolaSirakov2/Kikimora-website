@@ -24,7 +24,8 @@ interface Feature {
 // Main HeroVideoSection component with black background and full-width video
 const HeroVideoSection: React.FC<HeroVideoSectionProps> = ({ className }) => {
   // const localize = useLocalize(); // TODO: Uncomment when useLocalize is available
-  const [selectedFeature, setSelectedFeature] = useState<Feature | null>(null); // eslint-disable-line @typescript-eslint/no-unused-vars
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_selectedFeature, setSelectedFeature] = useState<Feature | null>(null);
 
   return (
     <section

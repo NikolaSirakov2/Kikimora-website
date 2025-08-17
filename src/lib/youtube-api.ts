@@ -50,6 +50,9 @@ export interface YouTubeApiResponse {
           height: number;
         };
       };
+      resourceId?: {
+        videoId: string;
+      };
     };
     contentDetails?: {
       duration: string;
@@ -123,7 +126,8 @@ export class YouTubeApiService {
 
       // Get video details including duration and view count
       const videoIds = playlistData.items
-        .map((item) => item.snippet.resourceId.videoId)
+        .map((item) => item.snippet.resourceId?.videoId)
+        .filter(Boolean)
         .join(",");
 
       const videoDetailsResponse = await fetch(
@@ -148,7 +152,7 @@ export class YouTubeApiService {
             : undefined;
 
           return {
-            id: item.snippet.resourceId.videoId,
+            id: item.snippet.resourceId?.videoId || item.id,
             title: item.snippet.title,
             description: item.snippet.description,
             publishedAt: item.snippet.publishedAt,

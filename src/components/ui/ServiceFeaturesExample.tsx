@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceFeatureCard from "./ServiceFeatureCard";
 
 // Example data for different sections

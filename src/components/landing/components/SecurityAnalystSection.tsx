@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { CircleCheckBig } from "lucide-react";
 import ServiceFeatureCard from "../../ui/ServiceFeatureCard";
 

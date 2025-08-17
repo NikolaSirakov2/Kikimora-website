@@ -1,0 +1,240 @@
+import { useState } from "react";
+
+const TestPage = () => {
+  const [activeSection, setActiveSection] = useState<string>("components");
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-6">
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900">Test Page</h1>
+              <p className="text-gray-600 mt-1">
+                A playground for testing new components and features
+              </p>
+            </div>
+            <div className="flex space-x-4">
+              <button
+                onClick={() => setActiveSection("components")}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeSection === "components"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                Components
+              </button>
+              <button
+                onClick={() => setActiveSection("layouts")}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeSection === "layouts"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                Layouts
+              </button>
+              <button
+                onClick={() => setActiveSection("utilities")}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  activeSection === "utilities"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                Utilities
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {activeSection === "components" && (
+          <div className="space-y-8">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                Component Testing Area
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Add your new components here to test them in isolation.
+              </p>
+
+              {/* Example component placeholder */}
+              <div className="bg-gray-100 rounded-lg p-8 text-center">
+                <div className="text-gray-500 text-lg mb-2">🧪</div>
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
+                  Component Test Zone
+                </h3>
+                <p className="text-gray-600">
+                  Import and render your new components in this area
+                </p>
+              </div>
+            </div>
+
+            {/* Component Examples */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  Button Examples
+                </h3>
+                <div className="space-y-3">
+                  <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                    Primary Button
+                  </button>
+                  <button className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-300 transition-colors">
+                    Secondary Button
+                  </button>
+                  <button className="border border-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-50 transition-colors">
+                    Outline Button
+                  </button>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  Card Examples
+                </h3>
+                <div className="space-y-3">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h4 className="font-medium text-blue-900">Info Card</h4>
+                    <p className="text-blue-700 text-sm mt-1">
+                      This is an example info card component.
+                    </p>
+                  </div>
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <h4 className="font-medium text-green-900">Success Card</h4>
+                    <p className="text-green-700 text-sm mt-1">
+                      This is an example success card component.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeSection === "layouts" && (
+          <div className="space-y-8">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                Layout Testing Area
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Test different layout patterns and responsive designs.
+              </p>
+
+              {/* Grid Layout Example */}
+              <div className="mb-8">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  Grid Layout
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {[1, 2, 3, 4, 5, 6].map((item) => (
+                    <div
+                      key={item}
+                      className="bg-gray-100 rounded-lg p-4 text-center"
+                    >
+                      <div className="text-2xl mb-2">📦</div>
+                      <p className="text-gray-600">Grid Item {item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Flexbox Layout Example */}
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  Flexbox Layout
+                </h3>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex-1 bg-gray-100 rounded-lg p-4 text-center">
+                    <div className="text-2xl mb-2">📱</div>
+                    <p className="text-gray-600">Flex Item 1</p>
+                  </div>
+                  <div className="flex-1 bg-gray-100 rounded-lg p-4 text-center">
+                    <div className="text-2xl mb-2">💻</div>
+                    <p className="text-gray-600">Flex Item 2</p>
+                  </div>
+                  <div className="flex-1 bg-gray-100 rounded-lg p-4 text-center">
+                    <div className="text-2xl mb-2">🖥️</div>
+                    <p className="text-gray-600">Flex Item 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeSection === "utilities" && (
+          <div className="space-y-8">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">
+                Utility Testing Area
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Test utility functions, hooks, and helper components.
+              </p>
+
+              {/* Utility Examples */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-100 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                    Color Utilities
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-4 h-4 bg-red-500 rounded"></div>
+                      <span className="text-sm text-gray-600">bg-red-500</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-4 h-4 bg-green-500 rounded"></div>
+                      <span className="text-sm text-gray-600">
+                        bg-green-500
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-4 h-4 bg-blue-500 rounded"></div>
+                      <span className="text-sm text-gray-600">bg-blue-500</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-4 h-4 bg-yellow-500 rounded"></div>
+                      <span className="text-sm text-gray-600">
+                        bg-yellow-500
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gray-100 rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                    Spacing Utilities
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="bg-white p-2 rounded border">
+                      <span className="text-sm text-gray-600">p-2 (8px)</span>
+                    </div>
+                    <div className="bg-white p-4 rounded border">
+                      <span className="text-sm text-gray-600">p-4 (16px)</span>
+                    </div>
+                    <div className="bg-white p-6 rounded border">
+                      <span className="text-sm text-gray-600">p-6 (24px)</span>
+                    </div>
+                    <div className="bg-white p-8 rounded border">
+                      <span className="text-sm text-gray-600">p-8 (32px)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default TestPage;

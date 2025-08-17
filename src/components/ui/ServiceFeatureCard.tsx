@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ServiceFeatureCardProps {
   title: string;
   description: string;

@@ -46,6 +46,7 @@ import PressKitPage from "@/pages/press-kit";
 import SecurityBundle from "@/pages/security-bundle";
 import AgenticPage from "@/pages/agentic";
 import Landing from "@/pages/landing";
+import TestPage from "@/pages/test";
 import { Toaster } from "@/components/ui/toaster";
 
 // Add ScrollToTop component
@@ -119,6 +120,7 @@ function App() {
             <Route path="/security-bundle" element={<SecurityBundle />} />
             <Route path="/agentic" element={<AgenticPage />} />
             <Route path="/landing" element={<Landing />} />
+            <Route path="/test" element={<TestPage />} />
           </Routes>
         </main>
         <Footer />
