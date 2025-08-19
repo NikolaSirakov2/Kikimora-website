@@ -248,9 +248,6 @@ const TestPage = () => {
                       size: "0.5 MB",
                     },
                   ]}
-                  onDownloadLogo={(logoId) =>
-                    console.log(`Downloading ${logoId}`)
-                  }
                   onDownloadAll={() => console.log("Downloading all logos")}
                 />
               </div>

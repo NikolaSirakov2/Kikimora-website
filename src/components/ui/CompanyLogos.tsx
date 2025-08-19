@@ -10,7 +10,6 @@ interface LogoItem {
 interface CompanyLogosProps {
   title?: string;
   logos?: LogoItem[];
-  onDownloadLogo?: (logoId: string) => void;
   onDownloadAll?: () => void;
   className?: string;
 }
@@ -43,15 +42,9 @@ const CompanyLogos = ({
       size: "0.5 MB",
     },
   ],
-  onDownloadLogo,
   onDownloadAll,
   className = "",
 }: CompanyLogosProps) => {
-  const handleDownloadLogo = (logoId: string) => {
-    onDownloadLogo?.(logoId);
-    console.log(`Downloading logo: ${logoId}`);
-  };
-
   const handleDownloadAll = () => {
     onDownloadAll?.();
     console.log("Downloading all logos");
@@ -82,9 +75,8 @@ const CompanyLogos = ({
               </h3>
               <p className="text-sm text-gray-500 mt-1">{logo.size}</p>
             </div>
-           
-              <FiDownload className="w-5 h-5 text-black" />
-            
+
+            <FiDownload className="w-5 h-5 text-black" />
           </div>
         ))}
       </div>
