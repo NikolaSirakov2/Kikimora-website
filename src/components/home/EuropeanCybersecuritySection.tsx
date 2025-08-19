@@ -4,7 +4,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 export function EuropeanCybersecuritySection() {
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <section className="bg-gray-900 py-16 px-4">
+      <section className=" py-16 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">

@@ -32,7 +32,7 @@ export function GetInTouch() {
     <AnimatedBackground className="w-[99.1vw]">
       {/* Full-width section with gradient background */}
       <div className="w-screen relative -ml-[50vw] left-1/2">
-        <div className="bg-gradient-to-r from-[#2A1D4C] via-[#1B4E5F] to-[#003D37] py-20">
+        <div className="py-20">
           <div className="px-[5%] mx-auto max-w-[1400px]">
             <h2 className="text-5xl text-white   text-center mb-4">
               Get in touch today
@@ -60,7 +60,7 @@ export function GetInTouch() {
                   rows={6}
                   className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE] resize-none"
                 />
-                <button className="font-montserrat font-semibold rounded-lg px-6 py-3 w-fit hover:bg-[#00E5BE]/90 transition-colors">
+                <button className="font-montserrat font-semibold text-white bg-gradient-to-b from-blue-500 to-blue-600 rounded-xl px-8 py-4 w-fit shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-400 hover:to-blue-500">
                   Get Started
                 </button>
               </div>

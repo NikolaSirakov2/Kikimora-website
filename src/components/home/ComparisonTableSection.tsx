@@ -3,10 +3,10 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 export function ComparisonTableSection() {
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <section className="py-16 px-4 bg-white relative">
+      <section className="py-16 px-4 relative">
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               The Perfect Synergy: Technology + Human Expertise
             </h2>
           </div>
@@ -93,7 +93,7 @@ export function ComparisonTableSection() {
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-sm text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm text-white max-w-3xl mx-auto">
               Our platform combines automated vulnerability detection with human
               expertise, giving you the speed of technology and the insight of
               experienced security professionals.

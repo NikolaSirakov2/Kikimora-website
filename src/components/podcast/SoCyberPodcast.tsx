@@ -156,7 +156,7 @@ export function SoCyberPodcast() {
 
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <section className="w-full bg-[#001E38] pt-20 pb-32">
+      <section className="w-full pt-20 pb-32">
         <style>
           {`
           .slick-prev:before,

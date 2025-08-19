@@ -20,14 +20,14 @@ export function ImageSwitcher() {
 
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <section className="py-4 px-4 bg-white relative z-2">
-        <div className="flex flex-col items-center gap-8 bg-white pb-8 max-w-[1200px] mx-auto rounded-lg relative z-2">
+      <section className="py-4 px-4 relative z-2">
+        <div className="flex flex-col items-center gap-8 text-white pb-8 max-w-[1200px] mx-auto rounded-lg relative z-2">
           {/* Header Section */}
           <div className="text-center max-w-3xl mx-auto mt-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl font-bold text-white mb-4">
               Comprehensive Security Solutions
             </h1>
-            <p className="text-lg text-gray-600 font-montserrat">
+            <p className="text-lg text-white font-montserrat">
               Explore our suite of advanced security features designed to
               protect your applications at every stage of development and
               deployment.

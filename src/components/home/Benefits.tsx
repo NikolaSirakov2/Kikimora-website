@@ -11,7 +11,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 export function Benefits() {
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <div className="w-full px-[10%] flex flex-col items-center">
+      <div className="w-full px-[10%] flex flex-col items-center py-16">
         {/* Header */}
         <h2 className="text-5xl text-white   text-center mb-6">Benefits</h2>
         <p className="text-white/80 text-lg font-montserrat text-center max-w-[800px] mb-16">

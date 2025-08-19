@@ -95,7 +95,7 @@ export function Testimonials() {
   ];
 
   return (
-    <AnimatedBackground className="w-[99.1vw]">
+    <AnimatedBackground className="w-[99.1vw] py-16">
       <div className="w-full px-[5%] flex flex-col items-center">
         <div className="max-w-[1400px] w-full">
           <h2 className="text-5xl text-white   text-center mb-4">

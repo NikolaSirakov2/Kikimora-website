@@ -9,11 +9,11 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 export function EUComplianceSection() {
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <section className="bg-gray-100 py-16 px-4">
+      <section className=" py-16 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Meet EU Compliance Through Proactive Vulnerability Management
             </h2>
           </div>

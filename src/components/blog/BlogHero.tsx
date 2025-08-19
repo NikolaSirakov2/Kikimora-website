@@ -67,12 +67,12 @@ export function BlogHero() {
     centerPadding: "0",
     nextArrow: (
       <div className="next-arrow">
-        <ArrowSquareRight size={32} weight="bold" className="text-black" />
+        <ArrowSquareRight size={32} weight="bold" className="text-white" />
       </div>
     ),
     prevArrow: (
       <div className="prev-arrow">
-        <ArrowSquareLeft size={32} weight="bold" className="text-black" />
+        <ArrowSquareLeft size={32} weight="bold" className="text-white" />
       </div>
     ),
     responsive: [
@@ -94,15 +94,15 @@ export function BlogHero() {
   };
 
   return (
-    <section className="blog-hero w-full bg-[#f2f4f6] pt-20 pb-32 relative z-10">
+    <section className="blog-hero w-full pt-20 pb-32 relative z-10">
       <style>
         {`
           .blog-hero .slick-dots li button:before {
-            color: #000 !important;
+            color: #fff !important;
             opacity: 0.5;
           }
           .blog-hero .slick-dots .slick-active button:before {
-            color: #000 !important;
+            color: #fff !important;
             opacity: 1;
           }
           .slick-prev:before,
@@ -131,8 +131,8 @@ export function BlogHero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl text-black   mb-4">In the news</h1>
-          <p className="text-black text-lg font-montserrat">
+          <h1 className="text-4xl text-white   mb-4">In the news</h1>
+          <p className="text-white text-lg font-montserrat">
             Key developments and breaking stories shaping the cybersecurity
             landscape.
           </p>
@@ -159,10 +159,10 @@ export function BlogHero() {
                       <div className="text-[#00E5BE] text-xs font-montserrat mb-2">
                         {format(post.date, "MMMM dd, yyyy")}
                       </div>
-                      <h3 className="text-black text-lg   mb-2 line-clamp-2">
+                      <h3 className="text-white text-lg   mb-2 line-clamp-2">
                         {post.title}
                       </h3>
-                      <p className="text-black font-montserrat text-sm line-clamp-3">
+                      <p className="text-white font-montserrat text-sm line-clamp-3">
                         {post.description}
                       </p>
                     </div>

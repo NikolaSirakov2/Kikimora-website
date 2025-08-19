@@ -468,10 +468,10 @@ const reportData = {
 
 const Header = () => (
   <header className="text-center mb-10">
-    <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-2">
+    <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">
       The New Frontline
     </h1>
-    <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto">
+    <p className="text-lg md:text-xl text-white max-w-4xl mx-auto">
       An Interactive Analysis of Europe's Premier Cybersecurity Challenges in
       the Era of NIS2 & DORA
     </p>
@@ -705,7 +705,7 @@ export function CybersecurityChallengesSection() {
 
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <div className="bg-slate-50 font-sans text-slate-800 relative">
+      <div className=" font-sans text-white relative">
         <div className="container mx-auto p-4 md:p-8 relative z-10">
           <Header />
           <main>

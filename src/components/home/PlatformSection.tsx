@@ -8,7 +8,7 @@ export function PlatformSection() {
 
   return (
     <>
-      <AnimatedBackground className="w-[99.1vw]">
+      <AnimatedBackground className="w-[99.1vw] py-16">
         <section className="py-24 bg-[#24317f] relative z-2 w-[1200px] mx-auto rounded-lg">
           <div className="flex items-center">
             {/* Left side - Dashboard Image */}

@@ -4,7 +4,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 export function CybersecurityShortageSection() {
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <section className="bg-blue-50 py-16 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Top Statistics Block */}
           <div className="bg-red-100/90 max-w-5xl mx-auto backdrop-blur-md rounded-lg p-8 mb-8 shadow-lg border border-red-200/50">
