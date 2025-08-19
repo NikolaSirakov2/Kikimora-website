@@ -322,13 +322,13 @@ const NewNavbar: React.FC<NewNavbarProps> = ({ isAnnouncementVisible }) => {
           <div className="flex items-center gap-3">
             <Button
               onClick={() => setIsScheduleDemoModalOpen(true)}
-              className="font-montserrat font-semibold text-white bg-gradient-to-b from-blue-500 to-blue-600 rounded px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-400 hover:to-blue-500 flex items-center justify-center"
+              className="font-montserrat font-semibold text-white bg-gradient-to-b from-blue-500 to-blue-600 rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-400 hover:to-blue-500 flex items-center justify-center"
               style={{
                 fontFamily: "Montserrat, sans-serif",
                 lineHeight: "1.1",
                 minWidth: "140px",
                 minHeight: "unset",
-                height: "42px",
+                height: "36px",
               }}
             >
               Book Demo
