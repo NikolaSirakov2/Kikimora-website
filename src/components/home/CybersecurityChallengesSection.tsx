@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 // --- TypeScript Interfaces ---
 interface Challenge {
@@ -703,41 +704,43 @@ export function CybersecurityChallengesSection() {
   );
 
   return (
-    <div className="bg-slate-50 font-sans text-slate-800 relative">
-      <div className="container mx-auto p-4 md:p-8 relative z-10">
-        <Header />
-        <main>
-          <section className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-gray-200/50 relative z-20 max-w-7xl mx-auto">
-            <div className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-900 mb-2">
-                Challenge Dashboard
-              </h2>
-              <p className="text-slate-600">
-                The European digital landscape is defined by six interconnected
-                challenges. Select a challenge below to explore its nature,
-                impact, and the data behind the threat.
-              </p>
-            </div>
-            <ChallengeTabs
-              challenges={reportData.challenges as Challenge[]}
-              activeChallengeId={activeChallengeId}
-              onTabClick={setActiveChallengeId}
-            />
+    <AnimatedBackground className="w-[99.1vw]">
+      <div className="bg-slate-50 font-sans text-slate-800 relative">
+        <div className="container mx-auto p-4 md:p-8 relative z-10">
+          <Header />
+          <main>
+            <section className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 border border-gray-200/50 relative z-20 max-w-7xl mx-auto">
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold text-slate-900 mb-2">
+                  Challenge Dashboard
+                </h2>
+                <p className="text-slate-600">
+                  The European digital landscape is defined by six
+                  interconnected challenges. Select a challenge below to explore
+                  its nature, impact, and the data behind the threat.
+                </p>
+              </div>
+              <ChallengeTabs
+                challenges={reportData.challenges as Challenge[]}
+                activeChallengeId={activeChallengeId}
+                onTabClick={setActiveChallengeId}
+              />
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {activeChallenge && (
-                <ChallengeContent challenge={activeChallenge} />
-              )}
-              {activeChallenge && (
-                <VisualizationPanel challenge={activeChallenge} />
-              )}
-            </div>
-          </section>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {activeChallenge && (
+                  <ChallengeContent challenge={activeChallenge} />
+                )}
+                {activeChallenge && (
+                  <VisualizationPanel challenge={activeChallenge} />
+                )}
+              </div>
+            </section>
 
-          <ImpactMatrix matrix={reportData.impactMatrix} />
-        </main>
-        <Footer />
+            <ImpactMatrix matrix={reportData.impactMatrix} />
+          </main>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, ChevronRight, Info, Loader } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 // Mock data simulating the output for each action
 const actionsData = {
@@ -222,51 +223,53 @@ export const AnimatedTerminalSection: React.FC = () => {
   const [selectedAction, setSelectedAction] = useState("analyze-endpoints");
 
   return (
-    <section className="bg-gray-900 text-white py-16 px-4 sm:px-8">
-      <div className="max-w-6xl mx-auto">
-        <header className="text-left mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
-            Perform complex actions
-          </h2>
-          <p className="text-lg text-gray-400 mt-2">
-            Choose your security analysis and watch our AI agent process it in
-            real-time.
-          </p>
-        </header>
+    <AnimatedBackground className="w-[99.1vw]">
+      <section className="bg-gray-900 text-white py-16 px-4 sm:px-8">
+        <div className="max-w-6xl mx-auto">
+          <header className="text-left mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
+              Perform complex actions
+            </h2>
+            <p className="text-lg text-gray-400 mt-2">
+              Choose your security analysis and watch our AI agent process it in
+              real-time.
+            </p>
+          </header>
 
-        <main className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="space-y-4 bg-gray-900/80 rounded-lg backdrop-blur-sm">
-            {actionItems.map((item) => (
-              <motion.div
-                key={item.id}
-                onClick={() => setSelectedAction(item.id)}
-                className="bg-gray-800/50 border border-gray-700 rounded-lg p-5 cursor-pointer transition-all duration-300 hover:bg-gray-800/80"
-                animate={{
-                  borderColor:
-                    selectedAction === item.id
-                      ? "rgba(59, 130, 246, 0.7)"
-                      : "#374151",
-                  boxShadow:
-                    selectedAction === item.id
-                      ? "0 0 15px rgba(59, 130, 246, 0.3)"
-                      : "none",
-                }}
-              >
-                <p className="text-gray-400">
-                  <span className="font-semibold text-lg text-gray-100">
-                    {item.title}
-                  </span>
-                  <span> - {item.description}</span>
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          <main className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            <div className="space-y-4 bg-gray-900/80 rounded-lg backdrop-blur-sm">
+              {actionItems.map((item) => (
+                <motion.div
+                  key={item.id}
+                  onClick={() => setSelectedAction(item.id)}
+                  className="bg-gray-800/50 border border-gray-700 rounded-lg p-5 cursor-pointer transition-all duration-300 hover:bg-gray-800/80"
+                  animate={{
+                    borderColor:
+                      selectedAction === item.id
+                        ? "rgba(59, 130, 246, 0.7)"
+                        : "#374151",
+                    boxShadow:
+                      selectedAction === item.id
+                        ? "0 0 15px rgba(59, 130, 246, 0.3)"
+                        : "none",
+                  }}
+                >
+                  <p className="text-gray-400">
+                    <span className="font-semibold text-lg text-gray-100">
+                      {item.title}
+                    </span>
+                    <span> - {item.description}</span>
+                  </p>
+                </motion.div>
+              ))}
+            </div>
 
-          <div className="h-[450px]">
-            <AnimatedTerminal actionId={selectedAction} />
-          </div>
-        </main>
-      </div>
-    </section>
+            <div className="h-[450px]">
+              <AnimatedTerminal actionId={selectedAction} />
+            </div>
+          </main>
+        </div>
+      </section>
+    </AnimatedBackground>
   );
 };

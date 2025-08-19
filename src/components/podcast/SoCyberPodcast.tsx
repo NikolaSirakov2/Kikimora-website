@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useYouTubePodcasts } from "../../hooks/use-youtube-podcasts";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 // Fallback episodes in case YouTube API fails
 const fallbackEpisodes = [
@@ -154,9 +155,10 @@ export function SoCyberPodcast() {
   };
 
   return (
-    <section className="w-full bg-[#001E38] pt-20 pb-32">
-      <style>
-        {`
+    <AnimatedBackground className="w-[99.1vw]">
+      <section className="w-full bg-[#001E38] pt-20 pb-32">
+        <style>
+          {`
           .slick-prev:before,
           .slick-next:before {
             display: none !important;
@@ -187,82 +189,83 @@ export function SoCyberPodcast() {
             opacity: 1;
           }
         `}
-      </style>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl text-white   mb-4">SoCyber Podcast</h1>
-          <p className="text-white/60 text-lg font-montserrat">
-            Expert insights and deep dives into the world of cybersecurity
-            through our engaging podcast series.
-          </p>
-        </div>
-
-        {/* Loading and Error States */}
-        {loading && (
-          <div className="text-center py-8">
-            <div className="text-white text-lg">
-              Loading podcast episodes...
-            </div>
+        </style>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl text-white   mb-4">SoCyber Podcast</h1>
+            <p className="text-white/60 text-lg font-montserrat">
+              Expert insights and deep dives into the world of cybersecurity
+              through our engaging podcast series.
+            </p>
           </div>
-        )}
 
-        {error && (
-          <div className="text-center py-8">
-            <div className="text-red-400 text-lg mb-4">
-              Error loading episodes: {error}
+          {/* Loading and Error States */}
+          {loading && (
+            <div className="text-center py-8">
+              <div className="text-white text-lg">
+                Loading podcast episodes...
+              </div>
             </div>
-            <div className="text-white/60">Using fallback episodes</div>
-          </div>
-        )}
+          )}
 
-        {/* Podcast Carousel */}
-        <div className="px-4">
-          <div className="max-w-[1200px] mx-auto">
-            <Slider {...settings}>
-              {podcastEpisodes.map((episode) => (
-                <div key={episode.id} className="px-2">
-                  <Link
-                    to={`/podcast/${episode.id}`}
-                    className="w-[300px] bg-gradient-to-b from-[#002A4E] to-[#001E38] rounded-xl overflow-hidden transition-transform hover:scale-[1.01] h-full"
-                  >
-                    <div className="aspect-[16/9] relative">
-                      <img
-                        src={
-                          episode.thumbnails?.medium?.url ||
-                          episode.thumbnails?.high?.url ||
-                          "/podcast-thumbs/AI Security.png"
-                        }
-                        alt={episode.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <div className="flex justify-between items-center mb-2">
-                        <div className="text-[#00E5BE] text-xs font-montserrat">
-                          {format(
-                            new Date(episode.publishedAt),
-                            "MMMM dd, yyyy"
-                          )}
-                        </div>
-                        <div className="text-[#00E5BE] text-xs font-montserrat">
-                          {episode.duration}
-                        </div>
+          {error && (
+            <div className="text-center py-8">
+              <div className="text-red-400 text-lg mb-4">
+                Error loading episodes: {error}
+              </div>
+              <div className="text-white/60">Using fallback episodes</div>
+            </div>
+          )}
+
+          {/* Podcast Carousel */}
+          <div className="px-4">
+            <div className="max-w-[1200px] mx-auto">
+              <Slider {...settings}>
+                {podcastEpisodes.map((episode) => (
+                  <div key={episode.id} className="px-2">
+                    <Link
+                      to={`/podcast/${episode.id}`}
+                      className="w-[300px] bg-gradient-to-b from-[#002A4E] to-[#001E38] rounded-xl overflow-hidden transition-transform hover:scale-[1.01] h-full"
+                    >
+                      <div className="aspect-[16/9] relative">
+                        <img
+                          src={
+                            episode.thumbnails?.medium?.url ||
+                            episode.thumbnails?.high?.url ||
+                            "/podcast-thumbs/AI Security.png"
+                          }
+                          alt={episode.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      <h3 className="text-white text-lg   mb-2 line-clamp-2">
-                        {episode.title}
-                      </h3>
-                      <p className="text-white/60 font-montserrat text-sm line-clamp-3">
-                        {episode.description}
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              ))}
-            </Slider>
+                      <div className="p-4">
+                        <div className="flex justify-between items-center mb-2">
+                          <div className="text-[#00E5BE] text-xs font-montserrat">
+                            {format(
+                              new Date(episode.publishedAt),
+                              "MMMM dd, yyyy"
+                            )}
+                          </div>
+                          <div className="text-[#00E5BE] text-xs font-montserrat">
+                            {episode.duration}
+                          </div>
+                        </div>
+                        <h3 className="text-white text-lg   mb-2 line-clamp-2">
+                          {episode.title}
+                        </h3>
+                        <p className="text-white/60 font-montserrat text-sm line-clamp-3">
+                          {episode.description}
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </AnimatedBackground>
   );
 }

@@ -29,7 +29,7 @@ export function GetInTouch() {
   };
 
   return (
-    <AnimatedBackground>
+    <AnimatedBackground className="w-[99.1vw]">
       {/* Full-width section with gradient background */}
       <div className="w-screen relative -ml-[50vw] left-1/2">
         <div className="bg-gradient-to-r from-[#2A1D4C] via-[#1B4E5F] to-[#003D37] py-20">

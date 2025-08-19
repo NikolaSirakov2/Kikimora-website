@@ -41,7 +41,7 @@ export function Newsletter() {
 
   return (
     <>
-      <AnimatedBackground className="border-t border-white/10">
+      <AnimatedBackground className="w-[99.1vw]">
         <div className="w-full px-[5%] py-6">
           <div className="max-w-[1400px] mx-auto flex items-start justify-between">
             {/* Left side navigation */}
