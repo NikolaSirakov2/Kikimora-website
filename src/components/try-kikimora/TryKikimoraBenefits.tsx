@@ -49,7 +49,7 @@ const BENEFITS = [
 
 export default function TryKikimoraBenefits() {
   return (
-    <AnimatedBackground className="w-full flex flex-col items-center py-20 px-2">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-2">
       <h1 className="text-3xl md:text-3xl   text-center mb-3 text-white">
         Benefits of a Vulnerability Management Tool for SMEs
       </h1>
