@@ -3,7 +3,6 @@ import CommunityFeatureSection from "@/components/try-kikimora/CommunityFeatureS
 import TryKikimoraBenefits from "@/components/try-kikimora/TryKikimoraBenefits";
 import QandASection from "@/components/try-kikimora/QandASection";
 import BookCallSection from "@/components/try-kikimora/BookCallSection";
-import TryKikimoraFooter from "@/components/try-kikimora/TryKikimoraFooter";
 
 export default function TryKikimora() {
   return (
@@ -13,7 +12,6 @@ export default function TryKikimora() {
       <TryKikimoraBenefits />
       <QandASection />
       <BookCallSection />
-      <TryKikimoraFooter />
     </main>
   );
 }

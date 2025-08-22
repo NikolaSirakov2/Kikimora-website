@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 import React from "react";
 
 function FeatureCard({
@@ -21,7 +22,7 @@ function FeatureCard({
 
 export default function TryKikimoraHero() {
   return (
-    <div className="min-h-[90vh] w-[99.1vw] flex flex-col items-center justify-center bg-gradient-to-b from-[#181F3A] to-[#1B2340]">
+    <AnimatedBackground className="min-h-[90vh] w-[99.1vw] flex flex-col items-center justify-center">
       <div className="flex flex-col items-center mb-12">
         <span className="bg-[#22305A] text-[#7FB3FF] px-6 py-2 rounded-full text-base font-medium mb-6">
           Everything you need
@@ -90,6 +91,6 @@ export default function TryKikimoraHero() {
           description="Maximize efficiency and reduce costs through intelligent resource allocation and automation."
         />
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }

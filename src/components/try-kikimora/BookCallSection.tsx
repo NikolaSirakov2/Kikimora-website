@@ -1,9 +1,10 @@
 import { Button } from "../ui/button";
 import { Phone } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export default function BookCallSection() {
   return (
-    <section className="w-[99.1vw] flex flex-col items-center justify-center bg-[#0D1321] py-16 px-4">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center justify-center py-16 px-4">
       <div className="flex flex-col items-center">
         <div className="mb-4">
           <Phone className="w-10 h-10 text-[#31c9b7]" />
@@ -23,6 +24,6 @@ export default function BookCallSection() {
           Book Call
         </Button>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

@@ -1,4 +1,5 @@
 
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const checkIcon = (
   <svg
@@ -52,11 +53,11 @@ const communityEssentials = [
 
 export default function CommunityFeatureSection() {
   return (
-    <section className="w-[99.1vw] flex flex-col items-center justify-center py-16 bg-white">
-      <h1 className="text-3xl md:text-4xl font-bold text-[#181F3A] text-center mb-2">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center justify-center py-16">
+      <h1 className="text-3xl md:text-4xl font-bold text-white text-center mb-2">
         Explore Kikimora Community
       </h1>
-      <p className="text-[#6B7280] text-lg text-center mb-10 max-w-2xl">
+      <p className="text-white/80 text-lg text-center mb-10 max-w-2xl">
         Kikimora Community is a lightweight client allowing you to improve your
         security posture at no starting cost.
       </p>
@@ -132,6 +133,6 @@ export default function CommunityFeatureSection() {
           </ul>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

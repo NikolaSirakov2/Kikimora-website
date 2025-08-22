@@ -1,5 +1,5 @@
 
-import TryKikimoraFooter from "../components/try-kikimora/TryKikimoraFooter";
+
 
 function ContactPage() {
   return (
@@ -74,7 +74,6 @@ function ContactPage() {
           </button>
         </form>
       </div>
-      <TryKikimoraFooter />
     </div>
   );
 }

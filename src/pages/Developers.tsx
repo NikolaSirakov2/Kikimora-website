@@ -3,7 +3,6 @@ import { SecurityFeatures } from "@/components/developers/SecurityFeatures";
 import { ProductStatsSection } from "@/components/developers/ProductStatsSection";
 import { DevelopersResourcesSection } from "@/components/developers/DevelopersResourcesSection";
 import { CodeDemoSection } from "@/components/developers/CodeDemoSection";
-import TryKikimoraFooter from "@/components/try-kikimora/TryKikimoraFooter";
 
 export function Developers() {
   return (
@@ -13,7 +12,6 @@ export function Developers() {
       <ProductStatsSection />
       <DevelopersResourcesSection />
       <CodeDemoSection />
-      <TryKikimoraFooter />
     </div>
   );
 }

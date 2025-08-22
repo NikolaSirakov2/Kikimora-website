@@ -1,11 +1,12 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { Button } from "../ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export default function TryKikimoraFooter() {
   const [state, handleSubmit] = useForm("mblkjgzo"); // Using the same form ID as other demo forms
 
   return (
-    <footer className="w-[99.1vw] bg-[#2B0A3D] font-montserrat">
+    <AnimatedBackground className="w-[99.1vw] font-montserrat">
       <div className="py-16 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0">
           {/* Left: Logo and Description */}
@@ -160,6 +161,6 @@ export default function TryKikimoraFooter() {
           </div>
         </div>
       </div>
-    </footer>
+    </AnimatedBackground>
   );
 }

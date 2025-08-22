@@ -1,5 +1,7 @@
 
 
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 const qandas = [
   {
     question:
@@ -38,17 +40,17 @@ const qandas = [
 
 export default function QandASection() {
   return (
-    <section className="w-full max-w-5xl mx-auto mt-20 mb-8">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-[#181F3A]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center justify-center py-16">
+      <div className="text-center mb-8 max-w-5xl">
+        <h1 className="text-3xl md:text-4xl font-bold mb-2 text-white">
           Q&amp;A: Vulnerability Management for SMEs
         </h1>
-        <p className="text-[#5A6273] text-base md:text-lg max-w-2xl mx-auto">
+        <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
           Here are some common questions that small and medium-sized business
           owners have about vulnerability management:
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-full">
         {qandas.map((item, idx) => (
           <div
             key={idx}
@@ -73,6 +75,6 @@ export default function QandASection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

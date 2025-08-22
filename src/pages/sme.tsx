@@ -7,7 +7,6 @@ import { SMEPlatformPartnershipSection } from "@/components/home/SMEPlatformPart
 import { FitForBusinessSection } from "@/components/home/FitForBusinessSection";
 import { TrustedByEuropeSection } from "@/components/home/TrustedByEuropeSection";
 import { SMEFinalCTASection } from "@/components/home/SMEFinalCTASection";
-import TryKikimoraFooter from "@/components/try-kikimora/TryKikimoraFooter";
 import { KikimoraAdvantageSection } from "@/components/home/KikimoraAdvantageSection";
 import { TwoPathsSection } from "@/components/home/TwoPathsSection";
 import { ComparisonChartSection } from "@/components/home/ComparisonChartSection";
@@ -27,7 +26,6 @@ function SME() {
       <SMEFinalCTASection />
       <TwoPathsSection />
       <ComparisonChartSection />
-      <TryKikimoraFooter />
     </main>
   );
 }
