@@ -4,6 +4,7 @@ import { SecurityTrainingCard } from "../components/ui/SecurityTrainingCard";
 import { InformationGatheringCard } from "../components/ui/InformationGatheringCard";
 import { SecurityAssessmentCard } from "../components/ui/SecurityAssessmentCard";
 import { DefenseMechanismsCard } from "../components/ui/DefenseMechanismsCard";
+import { AnimatedBackground } from "../components/ui/AnimatedBackground";
 // import { LoginCard } from "../components/ui/LoginCard";
 
 const SecurityBundle: React.FC = () => {
@@ -11,7 +12,7 @@ const SecurityBundle: React.FC = () => {
   const laptopRef = useRef<HTMLImageElement>(null);
 
   return (
-    <div className="min-h-screen w-[99.12vw] bg-gray-100">
+    <AnimatedBackground className="min-h-screen w-[99.1vw]">
       {/* Hero Section */}
       <section className="mt-10">
         <div className="max-w-[1300px] mx-auto py-20 flex flex-col md:flex-row gap-8 items-start relative">
@@ -54,7 +55,7 @@ const SecurityBundle: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+    </AnimatedBackground>
   );
 };
 
