@@ -1,7 +1,9 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 function FintechTestimonialSection() {
   return (
-    <section className="w-full py-16 px-4 flex flex-col items-center bg-white">
-      <h1 className="text-3xl md:text-4xl font-extrabold text-[#071C2C] text-center mb-16">
+    <AnimatedBackground className="w-[99.1vw] py-16 px-4 flex flex-col items-center">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-white text-center mb-16">
         How D Commerce Bank Optimized Vulnerability
         <br className="hidden md:block" />
         Management with Kikimora
@@ -12,7 +14,7 @@ function FintechTestimonialSection() {
           <span className="text-4xl md:text-5xl font-extrabold text-[#31c9b7] mb-2 text-center md:text-left">
             D Commerce Bank
           </span>
-          <span className="text-[#6b7280] text-base md:text-lg mt-2 text-center md:text-left">
+          <span className="text-white/60 text-base md:text-lg mt-2 text-center md:text-left">
             Leading Financial Institution
           </span>
         </div>
@@ -34,7 +36,7 @@ function FintechTestimonialSection() {
           </span>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

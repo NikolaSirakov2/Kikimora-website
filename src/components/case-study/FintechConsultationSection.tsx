@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function FintechConsultationSection() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#329a8e] to-[#31c9b7] py-24 flex flex-col items-center justify-center text-center px-4">
+    <AnimatedBackground className="w-[99.1vw] py-24 flex flex-col items-center justify-center text-center px-4">
       <h2 className="text-white font-bold text-3xl md:text-5xl mb-6">
         Secure Your Financial Innovation
       </h2>
@@ -18,7 +19,7 @@ function FintechConsultationSection() {
       >
         Request a Consultation
       </Button>
-    </section>
+    </AnimatedBackground>
   );
 }
 

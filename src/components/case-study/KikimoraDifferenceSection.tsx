@@ -1,3 +1,5 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 const KikimoraDifferenceSection = () => {
   const features = [
     {
@@ -33,14 +35,14 @@ const KikimoraDifferenceSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-white sm:py-16 lg:py-20">
+    <AnimatedBackground className="w-[99.1vw] py-12 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl  ">
+          <h2 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl  ">
             The Kikimora Difference: Secure Patients, Empower Clinicians,
             Protect Your Organization
           </h2>
-          <p className="mt-4 text-lg text-gray-600 sm:mt-6">
+          <p className="mt-4 text-lg text-white/80 sm:mt-6">
             Clear business outcomes that resonate with healthcare leadership.
           </p>
         </div>
@@ -82,7 +84,7 @@ const KikimoraDifferenceSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 };
 

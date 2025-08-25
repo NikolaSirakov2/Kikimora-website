@@ -1,4 +1,5 @@
 import { FiZap, FiDatabase, FiCloud, FiUsers } from "react-icons/fi";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface StatCardProps {
   icon: React.ReactNode;
@@ -49,7 +50,7 @@ export function FintechStatisticsSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-950">
+    <AnimatedBackground className="w-[99.1vw] py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-12">
@@ -68,6 +69,6 @@ export function FintechStatisticsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

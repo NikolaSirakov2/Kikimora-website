@@ -2,6 +2,7 @@ import React from "react";
 import { MdSecurity } from "react-icons/md";
 import { MdBalance } from "react-icons/md";
 import { MdTrendingUp } from "react-icons/md";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface ChallengeCardProps {
   icon: string;
@@ -50,10 +51,11 @@ export function FintechIntroSection() {
   ];
 
   return (
-    <section className="container w-[1300px] mx-auto py-20 px-4">
-      <h1 className="text-4xl font-bold text-center mb-16">
-        The Modern Financial Landscape: A Dual Challenge of Innovation and Risk
-      </h1>
+    <AnimatedBackground className="w-[99.1vw] py-20 px-4">
+      <div className="container w-[1300px] mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-16 text-white">
+          The Modern Financial Landscape: A Dual Challenge of Innovation and Risk
+        </h1>
       <div className="grid md:grid-cols-3 gap-12">
         {challenges.map((challenge, index) => (
           <ChallengeCard
@@ -64,6 +66,7 @@ export function FintechIntroSection() {
           />
         ))}
       </div>
-    </section>
+      </div>
+    </AnimatedBackground>
   );
 }

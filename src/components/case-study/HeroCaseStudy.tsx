@@ -1,22 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function HeroCaseStudy() {
   return (
-    <section className="relative w-screen min-h-[70vh] bg-[#071C2C] flex items-center justify-center overflow-hidden px-4 py-12">
-      {/* Blurred/darkened chart background overlay */}
-      <img
-        src="/public/illustrations/8.png" // Use a chart-like image from your assets
-        alt="Background chart"
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover opacity-60 blur-sm pointer-events-none select-none"
-        style={{ zIndex: 1 }}
-      />
-      {/* Blue gradient overlay for readability */}
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-[#071C2C]/80 to-[#071C2C]"
-        style={{ zIndex: 2 }}
-        aria-hidden="true"
-      />
+    <AnimatedBackground className="w-[99.1vw] min-h-[70vh] flex items-center justify-center overflow-hidden px-4 py-12">
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-7xl mx-auto text-center">
         <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-5xl leading-tight mb-4">
@@ -50,7 +37,7 @@ function HeroCaseStudy() {
           </Button>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

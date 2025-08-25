@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function FeaturesCaseStudy() {
   return (
-    <section className="w-full bg-[#f8f9fa] py-16 px-4 flex flex-col items-center">
-      <h1 className="text-4xl md:text-4xl font-bold text-[#071C2C] mb-12 text-center">
+    <AnimatedBackground className="w-[99.1vw] py-16 px-4 flex flex-col items-center">
+      <h1 className="text-4xl md:text-4xl font-bold text-white mb-12 text-center">
         Solutions That Scale With Your Organization
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
@@ -66,7 +67,7 @@ function FeaturesCaseStudy() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

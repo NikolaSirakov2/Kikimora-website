@@ -13,7 +13,7 @@ import { FintechPressureSection } from "@/components/case-study/FintechPressureS
 
 function Fintech() {
   return (
-    <main className="w-[99.1vw]">
+    <main>
       <HeroCaseStudy />
       <PartnersSection />
       <FintechIntroSection />

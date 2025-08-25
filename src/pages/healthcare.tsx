@@ -10,7 +10,7 @@ import { FreeAssessmentSection } from "@/components/case-study/FreeAssessmentSec
 
 function Healthcare() {
   return (
-    <main className="w-[99.1vw]">
+    <main>
       <HealthcareHeroSection />
       <TechnologyPartnersSection />
       <HealthcareThreatsSection />

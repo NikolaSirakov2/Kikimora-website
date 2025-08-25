@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const journeySteps = [
   {
@@ -25,13 +26,13 @@ const journeySteps = [
 
 export const CyberResilienceJourneySection: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-20">
+    <AnimatedBackground className="w-[99.1vw] py-20">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4">
             Your Journey to Cyber Resilience in Four Steps
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
             A clear, structured, and manageable journey to healthcare
             cybersecurity excellence.
           </p>
@@ -49,7 +50,7 @@ export const CyberResilienceJourneySection: React.FC = () => {
                   <div className="flex items-center">
                     {/* Left side - Title */}
                     <div className="w-1/2 pr-8 text-right">
-                      <h3 className="text-3xl font-bold text-gray-900">
+                      <h3 className="text-3xl font-bold text-white">
                         {step.title}
                       </h3>
                     </div>
@@ -59,7 +60,7 @@ export const CyberResilienceJourneySection: React.FC = () => {
 
                     {/* Right side - Description */}
                     <div className="w-1/2 pl-8">
-                      <p className="text-base text-gray-700 leading-relaxed">
+                      <p className="text-base text-white/80 leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -70,6 +71,6 @@ export const CyberResilienceJourneySection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 };

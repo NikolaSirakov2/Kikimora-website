@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface TabContentProps {
   isActive: boolean;
@@ -49,9 +50,9 @@ export function SecurityEcosystemSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <AnimatedBackground className="w-[99.1vw] py-16">
       <div className="container mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-12">
+        <h1 className="text-5xl font-bold text-center mb-12 text-white">
           A Unified Security and Compliance Ecosystem
         </h1>
 
@@ -66,7 +67,7 @@ export function SecurityEcosystemSection() {
                   ${
                     activeTab === index
                       ? "text-[#31c9b7] bg-white border-2 border-[#31c9b7] z-10"
-                      : "text-gray-800 bg-gray-50 border border-gray-200 hover:bg-gray-100"
+                      : "text-white bg-white/10 border border-white/20 hover:bg-white/20"
                   }
                   ${index === 0 ? "rounded-l-xl" : ""}
                   ${index === tabs.length - 1 ? "rounded-r-xl" : ""}

@@ -6,6 +6,7 @@ import {
   FiUsers,
   FiCpu,
 } from "react-icons/fi";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface PressureCardProps {
   icon: React.ReactNode;
@@ -70,7 +71,7 @@ export function FintechPressureSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-950">
+    <AnimatedBackground className="w-[99.1vw] py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -96,6 +97,6 @@ export function FintechPressureSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

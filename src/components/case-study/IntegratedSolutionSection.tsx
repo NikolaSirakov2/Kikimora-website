@@ -9,6 +9,7 @@ import {
   FiUsers,
   FiDatabase,
 } from "react-icons/fi";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -91,7 +92,7 @@ export function IntegratedSolutionSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-950">
+    <AnimatedBackground className="w-[99.1vw] py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">
@@ -119,6 +120,6 @@ export function IntegratedSolutionSection() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

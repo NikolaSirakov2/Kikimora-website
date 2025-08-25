@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface TabItem {
   id: string;
@@ -40,7 +41,7 @@ export function DigitalDefenseSection() {
   const activeTabData = tabs.find((tab) => tab.id === activeTab) || tabs[3];
 
   return (
-    <section className="w-full bg-gray-900 text-white py-16">
+    <AnimatedBackground className="w-[99.1vw] text-white py-16">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8">
@@ -97,6 +98,6 @@ export function DigitalDefenseSection() {
           </p>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

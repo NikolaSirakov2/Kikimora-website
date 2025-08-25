@@ -1,8 +1,9 @@
 import { FC } from "react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export const FreeAssessmentSection: FC = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-900 to-[#31c9b7]/20 py-20 text-white">
+    <AnimatedBackground className="w-[99.1vw] py-20 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold mb-4">
           Ready to Build a More Resilient Healthcare Organization?
@@ -50,6 +51,6 @@ export const FreeAssessmentSection: FC = () => {
           </form>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 };

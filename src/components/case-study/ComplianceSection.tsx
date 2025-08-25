@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const CheckIcon = () => (
   <svg
@@ -91,14 +92,14 @@ function ComplianceSection() {
   const activeTabData = complianceData.find((tab) => tab.id === activeTab);
 
   return (
-    <section className="py-16 bg-white sm:py-24">
+    <AnimatedBackground className="w-[99.1vw] py-16 sm:py-24">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             Master Your Compliance: Achieve and Maintain HIPAA & NIS2 Adherence
             with Confidence
           </h1>
-          <p className="max-w-2xl mx-auto mt-4 text-lg text-gray-500">
+          <p className="max-w-2xl mx-auto mt-4 text-lg text-white/80">
             Go beyond simple checklists with continuous compliance monitoring
             and expert guidance.
           </p>
@@ -150,7 +151,7 @@ function ComplianceSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

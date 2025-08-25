@@ -1,20 +1,8 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 function HealthcareHeroSection() {
   return (
-    <section className="relative w-screen min-h-[80vh] bg-[#071C2C] flex items-center justify-center overflow-hidden px-4 py-24">
-      {/* Background Image */}
-      <img
-        src="/public/illustrations/background 3.png" // Using a more subtle background
-        alt="Abstract background"
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none"
-        style={{ zIndex: 1 }}
-      />
-      {/* Blue gradient overlay for readability */}
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-[#071C2C]/80 to-[#071C2C]"
-        style={{ zIndex: 2 }}
-        aria-hidden="true"
-      />
+    <AnimatedBackground className="w-[99.1vw] min-h-[80vh] flex items-center justify-center overflow-hidden px-4 py-24">
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-7xl mx-auto text-center">
         <h1 className="text-white font-bold text-4xl md:text-5xl lg:text-5xl leading-tight mb-4">
@@ -51,7 +39,7 @@ function HealthcareHeroSection() {
           </button>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

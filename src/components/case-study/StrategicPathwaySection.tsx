@@ -1,3 +1,5 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 function StrategicPathwaySection() {
   const steps = [
     {
@@ -33,8 +35,8 @@ function StrategicPathwaySection() {
   ];
 
   return (
-    <section className="w-full flex flex-col items-center py-16 px-4 bg-">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0a1a2f]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-16 px-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
         Our Strategic Pathway to Resilience
       </h1>
       <div className="flex flex-col gap-8 w-full max-w-7xl mx-auto p-8 items-center">
@@ -46,17 +48,17 @@ function StrategicPathwaySection() {
               </div>
             </div>
             <div>
-              <div className="text-xl md:text-2xl font-bold text-[#0a1a2f] mb-1">
+              <div className="text-xl md:text-2xl font-bold text-white mb-1">
                 {step.title}
               </div>
-              <div className="text-base md:text-lg text-[#444] max-w-2xl">
+              <div className="text-base md:text-lg text-white/80 max-w-2xl">
                 {step.description}
               </div>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

@@ -1,4 +1,5 @@
 import { AlertTriangle, FileText, Target } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const HealthcareThreatsSection = () => {
   const threats = [
@@ -25,14 +26,14 @@ const HealthcareThreatsSection = () => {
     },
   ];
   return (
-    <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+    <AnimatedBackground className="w-[99.1vw] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Your Organization is a Target. The Consequences Are More Than
             Financial.
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-white/80">
             Healthcare organizations face unique cybersecurity challenges that
             directly impact patient safety and operational continuity.
           </p>
@@ -57,7 +58,7 @@ const HealthcareThreatsSection = () => {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 };
 export { HealthcareThreatsSection };

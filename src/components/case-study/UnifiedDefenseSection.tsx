@@ -8,6 +8,7 @@ import {
   Target,
   Users,
 } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const platformFeatures = [
   {
@@ -65,24 +66,24 @@ const securityFeatures = [
 
 function UnifiedDefenseSection() {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
+    <AnimatedBackground className="w-[99.1vw] py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="w-[70%] mx-auto text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+          <h1 className="w-[70%] mx-auto text-4xl md:text-5xl font-bold text-white mb-4">
             Your Complete Defense: A Unified Platform Backed by Expert Guardians
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
             A Unified Platform, Backed by Security Experts
           </p>
         </div>
 
         <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Kikimora.io Platform Card */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2 text-center">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-8">
+            <h3 className="text-2xl font-bold text-white mb-2 text-center">
               The Kikimora Platform
             </h3>
-            <p className="text-gray-500 dark:text-gray-400 mb-8 text-center">
+            <p className="text-white/60 mb-8 text-center">
               Your Centralized Command Center
             </p>
             <div className="space-y-6">
@@ -94,10 +95,10 @@ function UnifiedDefenseSection() {
                     {feature.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg text-gray-800 dark:text-white">
+                    <h4 className="font-semibold text-lg text-white">
                       {feature.title}
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-white/80">
                       {feature.description}
                     </p>
                   </div>
@@ -107,11 +108,11 @@ function UnifiedDefenseSection() {
           </div>
 
           {/* Kikimora Managed Security Card */}
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2 text-center">
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-8">
+            <h3 className="text-2xl font-bold text-white mb-2 text-center">
               Kikimora Managed Security
             </h3>
-            <p className="text-gray-500 dark:text-gray-400 mb-8 text-center">
+            <p className="text-white/60 mb-8 text-center">
               Your Dedicated Expert Team
             </p>
             <div className="space-y-6">
@@ -123,10 +124,10 @@ function UnifiedDefenseSection() {
                     {feature.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg text-gray-800 dark:text-white">
+                    <h4 className="font-semibold text-lg text-white">
                       {feature.title}
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-white/80">
                       {feature.description}
                     </p>
                   </div>
@@ -136,7 +137,7 @@ function UnifiedDefenseSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 
