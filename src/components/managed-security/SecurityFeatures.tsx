@@ -1,4 +1,5 @@
 import { ShieldCheck, Radar, Lock, Users, Eye } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface SecurityFeatureProps {
   title: string;
@@ -128,12 +129,12 @@ export function SecurityFeatures() {
   ];
 
   return (
-    <section className="w-full bg-[#F8F9FB] py-28 px-4">
+    <AnimatedBackground className="w-[99.1vw] py-28 px-4">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <h2 className="text-5xl font-bold text-gray-900 text-center mb-6 leading-tight">
+        <h2 className="text-5xl font-bold text-white text-center mb-6 leading-tight">
           Our Managed Security Services
         </h2>
-        <p className="text-lg text-gray-600 text-center max-w-4xl mb-16">
+        <p className="text-lg text-white/80 text-center max-w-4xl mb-16">
           Comprehensive cybersecurity solutions that protect your business from
           evolving threats while ensuring compliance and operational excellence
         </p>
@@ -163,7 +164,7 @@ export function SecurityFeatures() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

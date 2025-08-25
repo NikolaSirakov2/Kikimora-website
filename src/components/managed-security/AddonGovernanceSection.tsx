@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function AddonGovernanceSection() {
   const [isScheduleDemoModalOpen, setIsScheduleDemoModalOpen] = useState(false);
 
   return (
     <>
-      <section className="w-full flex flex-col items-center py-16 bg-white">
+      <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-16">
         <div
           className="w-full max-w-7xl rounded-lg p-8 shadow-lg relative"
           style={{
@@ -238,7 +239,7 @@ export function AddonGovernanceSection() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal

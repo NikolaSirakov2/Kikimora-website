@@ -1,8 +1,10 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function SecurityROISection() {
   return (
-    <section className="py-16 max-w-7xl mx-auto">
-      <div className="bg-[#31c9b7]/10 rounded-lg p-8">
-        <h2 className="text-3xl font-bold text-center mb-8">
+    <AnimatedBackground className="py-16 w-[99.1vw] flex flex-col items-center">
+      <div className="bg-[#31c9b7]/10 rounded-lg p-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8 text-white">
           Recent Security Statistics
         </h2>
 
@@ -38,6 +40,6 @@ export function SecurityROISection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

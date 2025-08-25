@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function PricingSection() {
   return (
-    <section className="w-full bg-white py-16 flex flex-col items-center">
-      <h2 className="text-[32px] font-bold text-[#001324] text-center mb-4 mt-20">
+    <AnimatedBackground className="w-[99.1vw] py-16 flex flex-col items-center">
+      <h2 className="text-[32px] font-bold text-white text-center mb-4 mt-20">
         Flexible Security Plans
       </h2>
-      <p className="text-center text-[#4A5567] max-w-3xl mb-4 px-4">
+      <p className="text-center text-white/80 max-w-3xl mb-4 px-4">
         Kikimora Managed Security offers flexible packages of security,
         compliance and governance tools depending on the size, assets, and
         current needs of your organization.
@@ -321,6 +322,6 @@ export function PricingSection() {
           </Button>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

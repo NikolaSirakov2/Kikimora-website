@@ -1,16 +1,18 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function ROISection() {
   return (
-    <section
-      className="w-full bg-white py-20 flex flex-col items-center"
+    <AnimatedBackground
+      className="w-[99.1vw] py-20 flex flex-col items-center"
       aria-labelledby="roi-title"
     >
       <h2
         id="roi-title"
-        className="text-4xl md:text-5xl font-bold text-center text-[#0a1626] mb-6"
+        className="text-4xl md:text-5xl font-bold text-center text-white mb-6"
       >
         Why Choose Kikimora Managed Security?
       </h2>
-      <p className="text-lg md:text-xl text-center text-[#0a1626] opacity-80 max-w-3xl mb-16">
+      <p className="text-lg md:text-xl text-center text-white/80 max-w-3xl mb-16">
         Building and managing an in-house security team can be challenging when
         you are growing. Our proven approach ensures your business is protected.
       </p>
@@ -19,7 +21,7 @@ export function ROISection() {
           <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
             250%
           </span>
-          <span className="mt-4 text-base md:text-lg text-[#0a1626] text-center opacity-80">
+          <span className="mt-4 text-base md:text-lg text-white/80 text-center">
             Rise in SME Cyberattacks
           </span>
         </div>
@@ -31,7 +33,7 @@ export function ROISection() {
           <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
             61%
           </span>
-          <span className="mt-4 text-base md:text-md text-[#0a1626] text-center opacity-80">
+          <span className="mt-4 text-base md:text-md text-white/80 text-center">
             SMEs Have Experienced Attack
           </span>
         </div>
@@ -43,7 +45,7 @@ export function ROISection() {
           <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
             $120,000
           </span>
-          <span className="mt-4 text-base md:text-lg text-[#0a1626] text-center opacity-80">
+          <span className="mt-4 text-base md:text-lg text-white/80 text-center">
             Average Cost of Cyberattack
           </span>
         </div>
@@ -55,11 +57,11 @@ export function ROISection() {
           <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
             24/7
           </span>
-          <span className="mt-4 text-base md:text-lg text-[#0a1626] text-center opacity-80">
+          <span className="mt-4 text-base md:text-lg text-white/80 text-center">
             Security Monitoring
           </span>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

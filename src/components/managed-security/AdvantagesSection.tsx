@@ -1,6 +1,8 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function AdvantagesSection() {
   return (
-    <section className="w-full max-w-7xl mx-auto flex flex-col items-center py-16 bg-white dark:bg-[#0a1626]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-16">
       <div className="w-full max-w-7xl bg-gray-50 dark:bg-[#1a2736] rounded-2xl px-6 py-12">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-12">
@@ -11,10 +13,10 @@ export function AdvantagesSection() {
               className="w-full h-full object-contain"
             />
           </div>
-          <h1 className="text-4xl font-semibold text-[#0a1626] dark:text-white mb-4">
+          <h1 className="text-4xl font-semibold text-white mb-4">
             Not just a tool in your arsenal!
           </h1>
-          <p className="text-lg text-[#0a1626] dark:text-white/80 max-w-4xl">
+          <p className="text-lg text-white/80 max-w-4xl">
             The Kikimora team will act as a trusted advisor, foster a culture of
             security awareness within your organization and integrate security
             seamlessly into your business operations.
@@ -148,6 +150,6 @@ export function AdvantagesSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

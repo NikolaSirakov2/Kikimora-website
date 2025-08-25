@@ -1,4 +1,5 @@
 import { Shield, Link, ShieldCheck, Lock, Users, Clock } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface ServiceCardProps {
   title: string;
@@ -67,18 +68,18 @@ export function ComprehensiveServicesSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-28 px-4">
+    <AnimatedBackground className="w-[99.1vw] py-28 px-4">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-[#31c9b7] uppercase tracking-wider mb-4">
             OUR SOLUTIONS
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#111827] text-center mb-6 leading-tight max-w-5xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-6 leading-tight max-w-5xl">
             Our Comprehensive Managed Security Services: Protecting What Matters
             Most.
           </h2>
-          <p className="text-lg text-[#374151] text-center max-w-4xl leading-relaxed">
+          <p className="text-lg text-white/80 text-center max-w-4xl leading-relaxed">
             Kikimora provides a complete suite of cybersecurity solutions
             designed to deliver continuous protection and ensure compliance,
             allowing you to operate with confidence.
@@ -97,6 +98,6 @@ export function ComprehensiveServicesSection() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
