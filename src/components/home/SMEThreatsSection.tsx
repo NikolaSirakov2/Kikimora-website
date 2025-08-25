@@ -1,14 +1,16 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 function SMEThreatsSection() {
   return (
-    <section className="w-full bg-white flex flex-col items-center py-16 px-4">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-16 px-4">
       <div className="w-full max-w-6xl text-center">
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#111827] mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Your Business is a Bigger Target Than You Think
         </h2>
 
         {/* Introductory Paragraph */}
-        <p className="text-lg text-[#374151] mb-12 max-w-3xl mx-auto font-montserrat">
+        <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto font-montserrat">
           A single ransomware click can halt your operations. A data breach can
           mean thousands in GDPR fines. The threats are enterprise-level, but
           your resources aren't. We understand.
@@ -47,7 +49,7 @@ function SMEThreatsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

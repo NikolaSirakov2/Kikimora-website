@@ -6,6 +6,7 @@ import {
   CheckBadgeIcon,
   CpuChipIcon,
 } from "@heroicons/react/24/outline";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const FEATURES = [
   {
@@ -56,11 +57,11 @@ const INTEGRATIONS = [
 
 function PlatformFeaturesSection() {
   return (
-    <section className="w-full flex flex-col items-center py-24 px-4 bg-white">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-[#111827]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-24 px-4">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
         Platform Features Overview
       </h2>
-      <p className="text-lg text-[#374151] font-montserrat text-center max-w-2xl mb-12">
+      <p className="text-lg text-white/80 font-montserrat text-center max-w-2xl mb-12">
         Kikimora offers an essential blend of interconnected features and
         integrations to help with your vulnerability management and regulatory
         compliance efforts.
@@ -85,7 +86,7 @@ function PlatformFeaturesSection() {
         ))}
       </div>
       <div className="w-full max-w-6xl bg-green-50 rounded-2xl py-10 px-4 flex flex-col items-center">
-        <h3 className="text-2xl font-bold text-[#111827] mb-6">Integrations</h3>
+        <h3 className="text-2xl font-bold text-white mb-6">Integrations</h3>
         <div className="flex flex-wrap justify-center gap-6 w-full">
           {INTEGRATIONS.map((name) => (
             <div
@@ -97,7 +98,7 @@ function PlatformFeaturesSection() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

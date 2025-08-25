@@ -6,6 +6,7 @@ import {
   PolarRadiusAxis,
   Tooltip,
 } from "recharts";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const data = [
   { subject: "Technology", Kikimora: 9, Enterprise: 8, MSSPs: 7, Tools: 9 },
@@ -29,14 +30,14 @@ const data = [
 
 export function ComparisonChartSection() {
   return (
-    <section className="w-full bg-white py-16 px-4">
+    <AnimatedBackground className="w-[99.1vw] py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             How Kikimora Compares
           </h2>
-          <p className="max-w-4xl mx-auto text-lg text-gray-600 leading-relaxed">
+          <p className="max-w-4xl mx-auto text-lg text-white/80 leading-relaxed">
             The European SME cybersecurity market is crowded. Many solutions are
             too complex, too expensive, or lack a true service partnership. We
             built Kikimora to fill those gaps, providing a balanced, powerful,
@@ -137,31 +138,31 @@ export function ComparisonChartSection() {
           <div className="flex flex-wrap gap-6 justify-center">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-orange-500 rounded"></div>
-              <span className="text-sm font-medium text-gray-700">
+              <span className="text-sm font-medium text-white">
                 Kikimora
               </span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-gray-600 rounded"></div>
-              <span className="text-sm font-medium text-gray-700">
+              <span className="text-sm font-medium text-white">
                 Enterprise Vendors
               </span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-gray-400 rounded"></div>
-              <span className="text-sm font-medium text-gray-700">
+              <span className="text-sm font-medium text-white">
                 Typical MSSPs
               </span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-gray-300 rounded"></div>
-              <span className="text-sm font-medium text-gray-700">
+              <span className="text-sm font-medium text-white">
                 Niche Technical Tools
               </span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

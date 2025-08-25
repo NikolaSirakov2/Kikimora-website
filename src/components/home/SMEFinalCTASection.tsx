@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function SMEFinalCTASection() {
   const [isScheduleDemoModalOpen, setIsScheduleDemoModalOpen] = useState(false);
 
   return (
     <>
-      <section
-        className="w-full flex flex-col items-center py-20 px-4 bg-gradient-to-b from-[#31c9b7] to-[#2bb3a3]"
+      <AnimatedBackground
+        className="w-[99.1vw] flex flex-col items-center py-20 px-4"
         aria-label="Ready to Secure Your Business CTA"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6   text-white">
@@ -42,7 +43,7 @@ function SMEFinalCTASection() {
             Book Demo
           </Button>
         </div>
-      </section>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal

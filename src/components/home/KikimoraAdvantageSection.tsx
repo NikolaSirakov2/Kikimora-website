@@ -1,12 +1,14 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function KikimoraAdvantageSection() {
   return (
-    <section className="w-full flex flex-col items-center py-24 px-4 bg-[#fefbf0]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-24 px-4">
       {/* Header */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#111827] mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           The Kikimora Advantage
         </h2>
-        <p className="text-lg text-[#374151] font-montserrat max-w-4xl mx-auto">
+        <p className="text-lg text-white/80 font-montserrat max-w-4xl mx-auto">
           We're more than just another security vendor. We're your partner in
           resilience.
         </p>
@@ -50,6 +52,6 @@ export function KikimoraAdvantageSection() {
           </p>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

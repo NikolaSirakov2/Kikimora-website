@@ -1,9 +1,10 @@
 import colorAndBlackLogo from "/public/logos/colorAndBlack.png";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function TrustedByEuropeSection() {
   return (
-    <section className="w-full flex flex-col items-center py-20 px-4 bg-white">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10   text-[#111827]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
         Trusted by Growing Businesses Across Europe
       </h2>
       <div className="w-full max-w-6xl bg-[#f0fdfa] rounded-xl border border-[#31c9b7] p-8 md:p-12 flex flex-col relative">
@@ -48,7 +49,7 @@ function TrustedByEuropeSection() {
         </blockquote>
       </div>
       <div className="mt-12 flex flex-col items-center">
-        <p className="text-lg font-montserrat text-[#111827] mb-4 text-center">
+        <p className="text-lg font-montserrat text-white mb-4 text-center">
           Trusted by innovative companies across Europe
         </p>
         <div className="flex flex-row flex-wrap gap-12 items-center justify-center text-2xl font-bold text-gray-500">
@@ -57,7 +58,7 @@ function TrustedByEuropeSection() {
           <span className="tracking-wide">tbi bank</span>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

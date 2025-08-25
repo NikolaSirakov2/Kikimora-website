@@ -3,6 +3,7 @@ import {
   Cog6ToothIcon,
   LockClosedIcon,
 } from "@heroicons/react/24/outline";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface CardData {
   icon: React.ElementType;
@@ -37,8 +38,8 @@ const CARDS: CardData[] = [
 
 function SMEWhyTraditionalSection() {
   return (
-    <section className="w-full flex flex-col items-center py-24 px-4 bg-[#f8fafc]">
-      <h2 className="text-4xl md:text-4xl font-bold text-center mb-16 text-[#111827]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-24 px-4">
+      <h2 className="text-4xl md:text-4xl font-bold text-center mb-16 text-white">
         Why Traditional Security Solutions Fail Growing Businesses
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
@@ -68,7 +69,7 @@ function SMEWhyTraditionalSection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

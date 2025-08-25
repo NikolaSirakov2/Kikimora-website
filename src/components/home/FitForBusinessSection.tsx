@@ -1,3 +1,5 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 const FIT_OPTIONS = [
   {
     title: "For the Tech-Savvy Team",
@@ -21,8 +23,8 @@ const FIT_OPTIONS = [
 
 function FitForBusinessSection() {
   return (
-    <section className="w-full flex flex-col items-center py-20 px-4 bg-[#fafbfc]">
-      <h2 className="text-xl md:text-2xl font-bold text-center mb-10 text-[#111827]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-4">
+      <h2 className="text-xl md:text-2xl font-bold text-center mb-10 text-white">
         What&apos;s the Right Fit for Your Business?
       </h2>
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
@@ -44,7 +46,7 @@ function FitForBusinessSection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

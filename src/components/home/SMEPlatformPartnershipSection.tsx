@@ -8,6 +8,7 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/outline";
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface Feature {
   icon: React.ElementType;
@@ -65,11 +66,11 @@ const EXPERT_FEATURES: Feature[] = [
 
 function SMEPlatformPartnershipSection() {
   return (
-    <section className="w-full flex flex-col items-center py-20 px-4 bg-white">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#111827]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-4">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
         The Smarter Way to Secure Your SME: Platform + Partnership
       </h2>
-      <p className="text-lg md:text-xl text-center mb-10 font-montserrat text-[#374151] max-w-4xl">
+      <p className="text-lg md:text-xl text-center mb-10 font-montserrat text-white/80 max-w-4xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -93,7 +94,7 @@ function SMEPlatformPartnershipSection() {
           </div>
         ))}
       </div>
-      <h3 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#111827]">
+      <h3 className="text-2xl md:text-3xl font-bold text-center mb-10 text-white">
         The Experts - Your On-Demand Security Team
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl mb-12">
@@ -122,7 +123,7 @@ function SMEPlatformPartnershipSection() {
       >
         Explore Our Platform & Services
       </Button>
-    </section>
+    </AnimatedBackground>
   );
 }
 

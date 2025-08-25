@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 type TabType = "it-team" | "business-leaders";
 
@@ -63,14 +64,14 @@ export function TwoPathsSection() {
 
   return (
     <>
-      <section className="w-full bg-white py-16 px-4">
+      <AnimatedBackground className="w-[99.1vw] py-16 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Two Paths to Complete Cybersecurity Confidence
             </h1>
-            <p className="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+            <p className="max-w-3xl mx-auto text-lg text-white/80 leading-relaxed">
               Like the legendary guardian spirit, Kikimora protects your digital
               home. We believe powerful security shouldn't be complicated.
               That's why we offer two clear solutions, tailored to how you work.
@@ -82,13 +83,21 @@ export function TwoPathsSection() {
             <div className="flex space-x-8">
               <button
                 onClick={() => setActiveTab("it-team")}
-                className="text-lg font-medium bg-white"
+                className={`text-lg font-medium px-6 py-3 rounded-lg transition-colors duration-200 border ${
+                  activeTab === "it-team"
+                    ? "bg-[#31c9b7] text-white border-[#31c9b7]"
+                    : "bg-white/10 text-white border-white/30 hover:bg-white/20 hover:border-white/50"
+                }`}
               >
                 For Your IT Team
               </button>
               <button
                 onClick={() => setActiveTab("business-leaders")}
-                className="text-lg font-medium bg-white"
+                className={`text-lg font-medium px-6 py-3 rounded-lg transition-colors duration-200 border ${
+                  activeTab === "business-leaders"
+                    ? "bg-[#31c9b7] text-white border-[#31c9b7]"
+                    : "bg-white/10 text-white border-white/30 hover:bg-white/20 hover:border-white/50"
+                }`}
               >
                 For Your Business Leaders
               </button>
@@ -100,10 +109,10 @@ export function TwoPathsSection() {
             {/* Left Content */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                <h2 className="text-3xl font-bold text-white mb-4">
                   {currentContent.title}
                 </h2>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-white/80 leading-relaxed">
                   {currentContent.description}
                 </p>
               </div>
@@ -115,10 +124,10 @@ export function TwoPathsSection() {
                       <Check className="w-5 h-5 text-green-500" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">
+                      <h3 className="font-semibold text-white mb-1">
                         {feature.title}:
                       </h3>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-white/80 leading-relaxed">
                         {feature.description}
                       </p>
                     </div>
@@ -129,7 +138,7 @@ export function TwoPathsSection() {
               <div className="">
                 <button
                   onClick={() => setIsScheduleDemoModalOpen(true)}
-                  className="text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 border-none outline-none"
+                  className="bg-[#31c9b7] hover:bg-[#2bb3a3] text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 border-none outline-none"
                 >
                   Get Your Custom Quote
                 </button>
@@ -152,7 +161,7 @@ export function TwoPathsSection() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal

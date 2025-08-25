@@ -13,7 +13,7 @@ import { ComparisonChartSection } from "@/components/home/ComparisonChartSection
 
 function SME() {
   return (
-    <main className="w-[99.1vw]">
+    <main>
       <SMEHero />
       <SMEFrontsSection />
       <PlatformFeaturesSection />

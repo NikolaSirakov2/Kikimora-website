@@ -2,11 +2,12 @@ import {
   ExclamationTriangleIcon,
   ShieldExclamationIcon,
 } from "@heroicons/react/24/outline";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function SMEFrontsSection() {
   return (
-    <section className="w-full flex flex-col items-center py-16 px-2">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#111827]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-16 px-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
         The Two Fronts of the European SME's Digital Battle
       </h2>
       <div className="w-full max-w-5xl flex flex-col md:flex-row gap-8 md:gap-12 justify-center">
@@ -81,7 +82,7 @@ function SMEFrontsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 
