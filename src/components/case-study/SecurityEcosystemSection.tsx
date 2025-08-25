@@ -94,6 +94,6 @@ export function SecurityEcosystemSection() {
           />
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
