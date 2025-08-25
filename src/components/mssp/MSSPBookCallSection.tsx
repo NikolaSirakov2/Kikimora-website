@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function MSSPBookCallSection() {
   return (
-    <section className="min-h-[40vh] bg-[#0f172a] flex items-center justify-center py-16">
+    <AnimatedBackground className="min-h-[40vh] w-[99.1vw] flex items-center justify-center py-16">
       <div className="max-w-[1300px] mx-auto w-full">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6">
@@ -25,6 +26,6 @@ export function MSSPBookCallSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

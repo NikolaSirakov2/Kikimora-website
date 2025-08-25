@@ -1,3 +1,4 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 import { RiQuestionLine } from "react-icons/ri";
 
 export function MSSPQandASection() {
@@ -41,15 +42,15 @@ export function MSSPQandASection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <AnimatedBackground className="py-16 w-[99.1vw]">
       <div className="max-w-[1300px] mx-auto w-full">
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
               Q&A for MSSPs
             </h2>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-white/80 max-w-4xl mx-auto leading-relaxed">
               Here are some common questions that Managed Security Service
               Providers have about implementing Kikimora for their operations:
             </p>
@@ -73,6 +74,6 @@ export function MSSPQandASection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function MSSPHero() {
   const [isScheduleDemoModalOpen, setIsScheduleDemoModalOpen] = useState(false);
 
   return (
     <>
-      <section className="min-h-[50vh] bg-[#0f172a] flex items-center justify-center py-16">
+      <AnimatedBackground className="min-h-[50vh] w-[99.1vw] flex items-center justify-center py-16">
         <div className="max-w-[1300px] mx-auto w-full">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center ml-20">
@@ -147,7 +148,7 @@ export function MSSPHero() {
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal

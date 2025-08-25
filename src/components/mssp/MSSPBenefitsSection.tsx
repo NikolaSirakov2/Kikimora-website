@@ -7,6 +7,7 @@ import {
   RiMoneyDollarCircleLine,
   RiCustomerService2Line,
 } from "react-icons/ri";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function MSSPBenefitsSection() {
   const benefits = [
@@ -55,15 +56,15 @@ export function MSSPBenefitsSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <AnimatedBackground className="py-16 w-[99.1vw]">
       <div className="max-w-[1300px] mx-auto w-full">
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
               Benefits for MSSP Providers
             </h2>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-white/80 max-w-4xl mx-auto leading-relaxed">
               Kikimora is a versatile platform designed to help you manage and
               run security services for your clients efficiently. By
               consolidating security testing tools and manual activities into a
@@ -94,6 +95,6 @@ export function MSSPBenefitsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

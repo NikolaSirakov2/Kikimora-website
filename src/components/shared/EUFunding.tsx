@@ -1,7 +1,8 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function EUFunding() {
   return (
-    <div className="w-full bg-[#122e46] py-8">
+    <AnimatedBackground className="w-[99.1vw] py-8">
       <div className="max-w-[1400px] mx-auto px-4 flex items-center justify-between">
         {/* Shield Logo */}
         <div className="flex-shrink-0">
@@ -68,6 +69,6 @@ export function EUFunding() {
           </p>
         </div>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }
