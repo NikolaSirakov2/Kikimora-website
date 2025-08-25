@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const features = [
   {
@@ -130,17 +131,14 @@ const features = [
 
 function OTSecurityFeatureSection() {
   return (
-    <section
-      className="w-full flex flex-col gap-12 py-16 px-4 bg-transparent"
-      aria-labelledby="ot-features-heading"
-    >
+    <AnimatedBackground className="w-[99.1vw] flex flex-col gap-20 py-16 px-4">
       <h2 id="ot-features-heading" className="sr-only">
         OT Security Features
       </h2>
       {features.map((feature) => (
         <div
           key={feature.heading}
-          className={`flex flex-col md:flex-row ${feature.reverse ? "md:flex-row-reverse" : ""} items-center gap-8 md:gap-16 bg-white rounded-2xl shadow-md p-8 md:p-12 w-full max-w-6xl mx-auto`}
+          className={`flex flex-col md:flex-row ${feature.reverse ? "md:flex-row-reverse" : ""} items-center gap-8 md:gap-20 bg-white rounded-2xl shadow-md p-8 md:p-12 lg:mb-10 w-full max-w-6xl mx-auto`}
           role="region"
           aria-label={feature.heading}
         >
@@ -196,7 +194,7 @@ function OTSecurityFeatureSection() {
           </div>
         </div>
       ))}
-    </section>
+    </AnimatedBackground>
   );
 }
 

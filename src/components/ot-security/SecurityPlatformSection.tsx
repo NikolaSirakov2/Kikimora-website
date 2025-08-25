@@ -1,3 +1,5 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 const CARDS = [
   {
     icon: (
@@ -105,23 +107,20 @@ const CARDS = [
 
 function SecurityPlatformSection() {
   return (
-    <section
-      className="w-[99vw] flex flex-col items-center py-24 px-4 bg-[#f8f9fa]"
-      aria-labelledby="platform-heading"
-    >
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-24 px-4">
       <h2
         id="platform-heading"
-        className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#111827]"
+        className="text-3xl md:text-4xl font-bold text-center mb-4 text-white"
       >
         Introducing the Kikimora Security Platform
       </h2>
-      <p className="text-lg text-[#374151] font-montserrat text-center max-w-2xl mb-16">
+      <p className="text-lg text-white/80 font-montserrat text-center max-w-2xl mx-auto mb-16">
         The single source of truth that bridges the visibility gap across your
         entire technology landscape. We provide the unified intelligence,
         contextual data, and expert services you need to move from a reactive to
         a resilient security posture.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-6xl">
         {CARDS.map(({ icon, title, description }) => (
           <div
             key={title}
@@ -137,7 +136,7 @@ function SecurityPlatformSection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

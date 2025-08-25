@@ -9,7 +9,7 @@ import { EUFunding } from "@/components/shared/EUFunding";
 
 function OTSecurityPage() {
   return (
-    <main className="w-[99vw]">
+    <main>
       <OTSecurityHero />
       <RiskCardsSection />
       <SecurityPlatformSection />

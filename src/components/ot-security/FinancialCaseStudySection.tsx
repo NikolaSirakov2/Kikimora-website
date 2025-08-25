@@ -1,14 +1,12 @@
 import { FiChevronRight } from "react-icons/fi";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function FinancialCaseStudySection() {
   return (
-    <section
-      className="w-full flex flex-col items-center py-20 px-4 bg-transparent"
-      aria-labelledby="financial-case-heading"
-    >
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-4">
       <h1
         id="financial-case-heading"
-        className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#111827]"
+        className="text-3xl md:text-4xl font-bold text-center mb-10 text-white"
       >
         Proven in High-Stakes Financial Environments
       </h1>
@@ -89,7 +87,7 @@ function FinancialCaseStudySection() {
           </cite>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

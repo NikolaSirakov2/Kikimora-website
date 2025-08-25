@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface RiskCardProps {
   icon: React.ReactNode;
@@ -26,13 +27,10 @@ function RiskCard({ icon, title, description }: RiskCardProps) {
 
 function RiskCardsSection() {
   return (
-    <section
-      className="w-full flex flex-col items-center py-16 px-4 bg-transparent"
-      aria-labelledby="risks-heading"
-    >
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-16 px-4">
       <h1
         id="risks-heading"
-        className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#111827]"
+        className="text-3xl md:text-4xl font-bold text-center mb-12 text-white"
       >
         Your World, Your Risks. We Get It.
       </h1>
@@ -156,7 +154,7 @@ liability on management for cybersecurity failures. Proving com-
 pliance is now as critical as maintaining production.`}
         />
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

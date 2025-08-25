@@ -1,20 +1,14 @@
 import { useState } from "react";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function OTSecurityHero() {
   const [isScheduleDemoModalOpen, setIsScheduleDemoModalOpen] = useState(false);
 
   return (
     <>
-      <section
-        className="relative w-[99.1vw] min-h-[480px] flex items-center justify-center bg-[#001E38] overflow-hidden"
-        style={{ minHeight: 480 }}
-      >
-        {/* Blurred blue overlay */}
-        <div className="absolute inset-0 bg-[#001E38] bg-opacity-90 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#001E38]/80 to-[#1a2a4d]/80 z-0" />
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-4xl px-4 py-24 text-center">
+      <AnimatedBackground className="w-[99.1vw] min-h-[480px] flex items-center justify-center" style={{ minHeight: 480 }}>
+        <div className="flex flex-col items-center justify-center w-full max-w-4xl px-4 py-24 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
             Secure the Core of Your <br className="hidden md:block" />{" "}
             Operation.
@@ -44,7 +38,7 @@ export function OTSecurityHero() {
             </button>
           </div>
         </div>
-      </section>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal

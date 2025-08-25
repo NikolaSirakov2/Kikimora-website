@@ -1,19 +1,17 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function PartnershipSection() {
   return (
-    <section
-      className="w-[99.1vw] flex flex-col items-center py-16 px-4 bg-gray-50"
-      aria-labelledby="partnership-heading"
-    >
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-16 px-4">
       <h2
         id="partnership-heading"
-        className="text-3xl md:text-4xl font-bold text-center mb-2 font-montserrat"
+        className="text-3xl md:text-4xl font-bold text-center mb-2 font-montserrat text-white"
       >
         More Than a Platform.{" "}
         <span className="text-[#31c9b7]">A Partnership.</span>
       </h2>
-      <p className="text-lg md:text-xl text-center text-[#374151] mb-12 max-w-2xl">
+      <p className="text-lg md:text-xl text-center text-white/80 mb-12 max-w-2xl mx-auto">
         Bridge the OT security skills gap with our expert team.
       </p>
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl mb-10">
@@ -104,7 +102,7 @@ function PartnershipSection() {
           Explore Our Services
         </a>
       </Button>
-    </section>
+    </AnimatedBackground>
   );
 }
 

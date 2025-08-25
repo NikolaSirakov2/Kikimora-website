@@ -1,11 +1,9 @@
 import { DemoButton } from "@/components/ui/DemoButton";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function ScheduleDemoSection() {
   return (
-    <section
-      className="w-full flex flex-col items-center py-20 px-4 bg-[#181f2c]"
-      aria-labelledby="schedule-demo-heading"
-    >
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-4">
       <h2
         id="schedule-demo-heading"
         className="text-3xl md:text-4xl font-bold text-center mb-4 text-white font-montserrat"
@@ -92,7 +90,7 @@ function ScheduleDemoSection() {
           Schedule Your Demo
         </DemoButton>
       </form>
-    </section>
+    </AnimatedBackground>
   );
 }
 
