@@ -1,12 +1,13 @@
 import { Cloud, Users, Lock } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function DilemmaSection() {
   return (
-    <section className="w-full bg-[#f8f9fa] py-16 flex flex-col items-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
+    <AnimatedBackground className="w-[99.1vw] py-16 flex flex-col items-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
         The Startup's Dilemma
       </h2>
-      <p className="text-center text-base md:text-lg font-medium text-red-600 mb-12 max-w-2xl">
+      <p className="text-center text-base md:text-lg font-medium text-red-600 mb-12 max-w-2xl mx-auto px-4">
         Startups are 250% more likely to be targeted by cyberattacks. Your
         agility is your strength, but it's also your biggest vulnerability.
       </p>
@@ -51,7 +52,7 @@ function DilemmaSection() {
           </p>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

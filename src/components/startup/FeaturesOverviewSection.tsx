@@ -6,6 +6,7 @@ import {
   LayoutDashboard,
   Brain,
 } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const FEATURES = [
   {
@@ -64,11 +65,11 @@ const INTEGRATIONS = [
 
 function FeaturesOverviewSection() {
   return (
-    <section className="w-full flex flex-col items-center py-20 px-2 bg-white">
-      <h2 className="text-4xl md:text-5xl   text-center mb-2">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-2">
+      <h2 className="text-4xl md:text-5xl text-center mb-2 text-white">
         Platform Features Overview
       </h2>
-      <p className="text-lg md:text-xl text-center text-gray-700 mb-12 max-w-2xl font-montserrat">
+      <p className="text-lg md:text-xl text-center text-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
         Kikimora offers an essential blend of interconnected features and
         integrations to help with your vulnerability management and regulatory
         compliance efforts.
@@ -97,7 +98,7 @@ function FeaturesOverviewSection() {
         ))}
       </div>
       <div className="w-full max-w-7xl bg-green-50 rounded-2xl py-10 px-4 flex flex-col items-center">
-        <h3 className="text-2xl font-bold text-center mb-8 text-gray-900 font-montserrat">
+        <h3 className="text-2xl font-bold text-center mb-8 text-white font-montserrat">
           Integrations
         </h3>
         <div className="flex flex-wrap justify-center gap-4 w-full">
@@ -113,7 +114,7 @@ function FeaturesOverviewSection() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

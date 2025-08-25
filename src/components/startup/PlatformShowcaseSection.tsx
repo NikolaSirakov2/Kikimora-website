@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function PlatformShowcaseSection() {
   return (
-    <section className="w-full flex flex-col items-center bg-[#fafbfc] py-20 px-2">
-      <h2 className="text-4xl md:text-5xl   text-center mb-2">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-2">
+      <h2 className="text-4xl md:text-5xl text-center mb-2 text-white">
         The Kikimora Platform
       </h2>
-      <p className="text-lg md:text-xl text-center text-[#2d3748] mb-8 font-montserrat">
+      <p className="text-lg md:text-xl text-center text-white/90 mb-8 font-montserrat">
         Your In-House Security Command Center
       </p>
-      <p className="text-base md:text-lg text-center text-[#4a5568] mb-12 max-w-2xl font-montserrat">
+      <p className="text-base md:text-lg text-center text-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
         The unified platform to discover, manage, and remediate vulnerabilities
         with ease.
       </p>
@@ -17,10 +18,10 @@ function PlatformShowcaseSection() {
         {/* Row 1: Text left, Card right */}
         <div className="flex flex-col md:flex-row items-center md:items-stretch gap-20">
           <div className="flex-1 min-w-0 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-            <h3 className="text-2xl font-bold mb-2 font-montserrat">
+            <h3 className="text-2xl font-bold mb-2 font-montserrat text-white">
               Unified Dashboard
             </h3>
-            <p className="text-[#4a5568] mb-4 font-montserrat">
+            <p className="text-white/80 mb-4 font-montserrat">
               See your entire security posture in one place. Consolidate data
               from all your tools for a single source of truth.
             </p>
@@ -39,10 +40,10 @@ function PlatformShowcaseSection() {
             </div>
           </div>
           <div className="flex-1 min-w-0 flex flex-col justify-center items-center md:items-start text-center md:text-left order-2 md:order-none">
-            <h3 className="text-2xl font-bold mb-2 font-montserrat">
+            <h3 className="text-2xl font-bold mb-2 font-montserrat text-white">
               Integrate Everything
             </h3>
-            <p className="text-[#4a5568] mb-4 font-montserrat">
+            <p className="text-white/80 mb-4 font-montserrat">
               Connect the tools you already love. Pull in vulnerability data
               from Nessus, Qualys, and Burp Suite, and push remediation tasks
               directly to Jira.
@@ -61,7 +62,7 @@ function PlatformShowcaseSection() {
           Explore Platform Features
         </Button>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

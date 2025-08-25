@@ -1,19 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function StartupHeroSection() {
   const [isScheduleDemoModalOpen, setIsScheduleDemoModalOpen] = useState(false);
 
   return (
     <>
-      <section
-        className="relative w-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/illustrations/background 1.png')",
-        }}
-      >
-        <div className="absolute inset-0 bg-[#31c9b7]/80" />
+      <AnimatedBackground className="relative w-[99.1vw]">
         <div className="relative mx-auto max-w-7xl px-4 py-32 text-center text-white sm:px-6 sm:py-48 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Move Fast. Don't Break Your Business.
@@ -34,7 +29,7 @@ function StartupHeroSection() {
             </Button>
           </div>
         </div>
-      </section>
+      </AnimatedBackground>
 
       {/* Schedule Demo Modal */}
       <ScheduleDemoModal

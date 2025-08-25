@@ -4,17 +4,18 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function ManagedSecuritySection() {
   return (
-    <section className="w-full flex flex-col items-center py-20 px-2 bg-white">
-      <h2 className="text-4xl md:text-5xl   text-center mb-2 text-gray-900">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-2">
+      <h2 className="text-4xl md:text-5xl   text-center mb-2 text-white">
         Kikimora Managed Security
       </h2>
-      <p className="text-sm md:text-base text-center text-gray-700 mb-2 font-montserrat">
+      <p className="text-sm md:text-base text-center text-white/90 mb-2 font-montserrat">
         Your On-Demand Cybersecurity Team
       </p>
-      <p className="text-xs md:text-sm text-center text-gray-600 mb-12 max-w-2xl font-montserrat">
+      <p className="text-xs md:text-sm text-center text-white/80 mb-12 max-w-2xl mx-auto font-montserrat">
         Focus on your product and your customers. We'll handle the security
         complexities.
       </p>
@@ -27,7 +28,7 @@ function ManagedSecuritySection() {
               aria-hidden="true"
             />
           </span>
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
+          <h3 className="text-lg font-bold text-white mb-2">
             24/7 Monitoring
           </h3>
           <p className="text-xs text-gray-600 max-w-s">
@@ -40,7 +41,7 @@ function ManagedSecuritySection() {
           <span className="flex items-center justify-center w-16 h-16 rounded-full bg-red-100 mb-4">
             <TagIcon className="w-10 h-10 text-red-400" aria-hidden="true" />
           </span>
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
+          <h3 className="text-lg font-bold text-white mb-2">
             Expert-Led Penetration Testing
           </h3>
           <p className="text-xs text-gray-600 max-w-s">
@@ -56,7 +57,7 @@ function ManagedSecuritySection() {
               aria-hidden="true"
             />
           </span>
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
+          <h3 className="text-lg font-bold text-white mb-2">
             Team-Wide Security Training
           </h3>
           <p className="text-xs text-gray-600 max-w-s">
@@ -76,7 +77,7 @@ function ManagedSecuritySection() {
           View Managed Security Plans
         </Button>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

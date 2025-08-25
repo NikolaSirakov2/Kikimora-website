@@ -1,9 +1,10 @@
 import { DemoButton } from "../ui/DemoButton";
 import { Button } from "../ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function SecureGrowthSection() {
   return (
-    <section className="w-full flex flex-col items-center py-20 px-2 bg-[#101728]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-2">
       <h2 className="text-3xl md:text-4xl font-extrabold text-center text-white mb-10">
         Ready to Secure Your Growth?
       </h2>
@@ -68,7 +69,7 @@ function SecureGrowthSection() {
           </DemoButton>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 

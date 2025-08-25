@@ -1,10 +1,12 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 function ComplianceEdgeSection() {
   return (
-    <section className="w-full flex flex-col items-center py-20 px-2 bg-gradient-to-b from-[#1a357a] to-[#19284a]">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-20 px-2">
       <h2 className="text-3xl md:text-5xl font-extrabold text-center text-white mb-2">
         Turn Challenges into opportunities
       </h2>
-      <p className="text-base md:text-xl text-center text-[#31c9b7] mt-6 mb-12 max-w-2xl font-montserrat">
+      <p className="text-base md:text-xl text-center text-[#31c9b7] mt-6 mb-12 max-w-2xl mx-auto font-montserrat">
         Meet regulatory standards with ease
       </p>
       {/* Flow steps */}
@@ -105,7 +107,7 @@ function ComplianceEdgeSection() {
         </div>
       </div>
       {/* Testimonial */}
-      <div className="w-full max-w-3xl bg-white/10 rounded-xl shadow-lg p-8 flex flex-col items-center mt-4">
+      <div className="w-full max-w-3xl mx-auto bg-white/10 rounded-xl shadow-lg p-8 flex flex-col items-center mt-4">
         <p className="italic text-[#31c9b7] text-center text-base md:text-lg mb-4">
           "Kikimora was instrumental in our ISO 27001 certification process,
           which was a key requirement for closing our largest enterprise
@@ -115,7 +117,7 @@ function ComplianceEdgeSection() {
           — Enterprise Customer
         </span>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
 
