@@ -1,16 +1,18 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function StatsSection() {
   return (
-    <section
-      className="w-full bg-white py-20 flex flex-col items-center"
+    <AnimatedBackground
+      className="w-[99.1vw] py-20 flex flex-col items-center"
       aria-labelledby="stats-title"
     >
       <h1
         id="stats-title"
-        className="text-4xl md:text-4xl font-bold text-center text-[#0a1626] mb-6"
+        className="text-4xl md:text-4xl font-bold text-center text-white mb-6"
       >
         Why Choose Kikimora Managed Security?
       </h1>
-      <p className="text-lg md:text-xl text-center text-[#0a1626] opacity-80 max-w-3xl mb-16">
+      <p className="text-lg md:text-xl text-center text-white/80 max-w-3xl mb-16">
         Building and managing an in-house security team can be challenging when
         you are growing. Our proven approach ensures your business is protected.
       </p>
@@ -60,6 +62,6 @@ export function StatsSection() {
           </span>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

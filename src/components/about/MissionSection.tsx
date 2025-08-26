@@ -1,17 +1,19 @@
 
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function MissionSection() {
   return (
-    <section className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between py-16 gap-12">
+    <AnimatedBackground className="w-[99.1vw] flex flex-col items-center justify-center py-16">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
       {/* Left: Mission Text */}
       <div className="flex-1 max-w-xl text-left">
-        <h2 className="text-4xl font-bold text-[#101C3C] mb-6">Our Mission</h2>
-        <p className="text-lg text-[#3A4664] mb-4">
+        <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
+        <p className="text-lg text-white/80 mb-4">
           At Kikimora, we believe that cybersecurity shouldn't be a burden. Our
           mission is to provide world-class managed security services that give
           you peace of mind and let you focus on growing your business.
         </p>
-        <p className="text-lg text-[#3A4664]">
+        <p className="text-lg text-white/80">
           With over a decade of experience in cybersecurity, our team of experts
           works around the clock to protect your digital assets and ensure your
           business stays secure.
@@ -97,6 +99,7 @@ export function MissionSection() {
           </span>
         </div>
       </div>
-    </section>
+      </div>
+    </AnimatedBackground>
   );
 }

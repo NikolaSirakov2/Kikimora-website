@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaUsers, FaDesktop, FaShieldAlt } from "react-icons/fa";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface SectionData {
   id: string;
@@ -56,7 +57,7 @@ export function InteractiveApproachSection() {
   );
 
   return (
-    <section className="bg-gray-900 py-16 px-4">
+    <AnimatedBackground className="w-[99.1vw] py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -128,6 +129,6 @@ export function InteractiveApproachSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

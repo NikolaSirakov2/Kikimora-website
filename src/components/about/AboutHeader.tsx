@@ -1,6 +1,8 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function AboutHeader() {
   return (
-    <header className="w-full bg-gradient-to-b from-[#101C3C] to-[#1B2B5A] py-20 flex flex-col items-center justify-center text-center">
+    <AnimatedBackground className="w-[99.1vw] py-20 flex flex-col items-center justify-center text-center">
       <h1
         className="text-white text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg mt-20"
         aria-label="Security That Scales With You"
@@ -13,6 +15,6 @@ export function AboutHeader() {
         security journey from community support to enterprise-grade protection
         so you can focus on what matters most: your growth.
       </p>
-    </header>
+    </AnimatedBackground>
   );
 }

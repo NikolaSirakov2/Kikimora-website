@@ -1,6 +1,8 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function WhyWeExistSection() {
   return (
-    <section className="w-full bg-[#001E38] py-20 px-4">
+    <AnimatedBackground className="w-[99.1vw] py-20 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
           Why We Exist: To Eliminate the Security Burden
@@ -15,6 +17,6 @@ export function WhyWeExistSection() {
           alongside your ambition.
         </p>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

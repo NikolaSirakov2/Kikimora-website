@@ -1,13 +1,15 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function RecentSecurityStatisticsSection() {
   return (
-    <section
-      className="w-full flex justify-center items-center py-12 bg-[#f2f7fe]"
+    <AnimatedBackground
+      className="w-[99.1vw] flex justify-center items-center py-12"
       aria-labelledby="recent-security-stats-title"
     >
       <div className="w-full max-w-6xl flex flex-col items-center">
         <h2
           id="recent-security-stats-title"
-          className="text-3xl md:text-4xl font-bold text-center text-[#0a1626] mb-8"
+          className="text-3xl md:text-4xl font-bold text-center text-white mb-8"
         >
           Recent Security Statistics
         </h2>
@@ -41,6 +43,6 @@ export function RecentSecurityStatisticsSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

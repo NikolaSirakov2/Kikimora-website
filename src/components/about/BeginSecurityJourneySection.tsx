@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function BeginSecurityJourneySection() {
   return (
-    <section className="w-full bg-[#001E38] py-20 px-4">
+    <AnimatedBackground className="w-[99.1vw] py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
           Begin Your Security Journey
@@ -49,6 +50,6 @@ export function BeginSecurityJourneySection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
