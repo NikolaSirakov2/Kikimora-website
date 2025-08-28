@@ -2,11 +2,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function CompanyOverview() {
   return (
-    <AnimatedBackground
-      className="w-full flex flex-col items-center justify-center py-16 px-2 md:px-0"
-      role="region"
-      aria-label="Company Overview"
-    >
+    <AnimatedBackground className="w-full flex flex-col items-center justify-center py-16 px-2 md:px-0">
       <h2
         className="text-3xl md:text-4xl font-bold text-center mb-6"
         style={{ fontFamily: "Montserrat, sans-serif" }}
