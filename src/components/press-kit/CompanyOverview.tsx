@@ -1,6 +1,8 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function CompanyOverview() {
   return (
-    <section
+    <AnimatedBackground
       className="w-full flex flex-col items-center justify-center py-16 px-2 md:px-0"
       role="region"
       aria-label="Company Overview"
@@ -76,6 +78,6 @@ export function CompanyOverview() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

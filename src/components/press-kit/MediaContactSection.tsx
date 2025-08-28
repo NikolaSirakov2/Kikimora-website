@@ -1,7 +1,9 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function MediaContactSection() {
   return (
-    <section className="flex flex-col items-center justify-center py-12 w-full">
-      <h2 className="text-3xl font-bold mb-8 text-center">Media Contact</h2>
+    <AnimatedBackground className="flex flex-col items-center justify-center py-12 w-full">
+      <h2 className="text-3xl font-bold mb-8 text-center text-white">Media Contact</h2>
       <div
         className="rounded-xl shadow-sm px-8 py-10 max-w-5xl w-full flex flex-col items-center"
         style={{ backgroundColor: "#f0f9f8" }}
@@ -46,6 +48,6 @@ export function MediaContactSection() {
           Contact Press Team
         </button>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

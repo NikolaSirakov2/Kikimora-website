@@ -1,9 +1,10 @@
 
 
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 function ContactPage() {
   return (
-    <div className="w-[99.1vw] min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#1a2980] to-[#263859] px-4">
+    <AnimatedBackground className="w-[99.1vw] min-h-screen flex flex-col items-center justify-center px-4">
       <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-4 mt-40">
         Ready to Secure Your Business?
       </h1>
@@ -74,7 +75,7 @@ function ContactPage() {
           </button>
         </form>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }
 

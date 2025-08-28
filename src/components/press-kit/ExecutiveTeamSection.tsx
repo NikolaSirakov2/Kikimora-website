@@ -1,5 +1,6 @@
 
 import { Button } from "../ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface Executive {
   name: string;
@@ -54,9 +55,9 @@ function ExecutiveAvatar() {
 
 export function ExecutiveTeamSection() {
   return (
-    <section className="w-full flex flex-col items-center justify-center py-16 px-2 md:px-0 bg-white">
+    <AnimatedBackground className="w-full flex flex-col items-center justify-center py-16 px-2 md:px-0">
       <h2
-        className="text-3xl md:text-4xl font-bold text-center mb-10"
+        className="text-3xl md:text-4xl font-bold text-center mb-10 text-white"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
         Executive Team
@@ -98,6 +99,6 @@ export function ExecutiveTeamSection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

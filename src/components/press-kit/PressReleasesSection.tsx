@@ -1,4 +1,5 @@
 import { Button } from "../ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface PressRelease {
   date: string;
@@ -36,9 +37,9 @@ const pressReleases: PressRelease[] = [
 
 export function PressReleasesSection() {
   return (
-    <section className="w-full flex flex-col items-center justify-center py-16 px-2 md:px-0 bg-[#f5f6f8]">
+    <AnimatedBackground className="w-full flex flex-col items-center justify-center py-16 px-2 md:px-0">
       <h2
-        className="text-3xl md:text-4xl font-bold text-center mb-10"
+        className="text-3xl md:text-4xl font-bold text-center mb-10 text-white"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
         Recent Press Releases
@@ -123,6 +124,6 @@ export function PressReleasesSection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

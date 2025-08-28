@@ -1,5 +1,6 @@
 import { Button } from "../ui/button";
 import { Download } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface Asset {
   name: string;
@@ -42,8 +43,8 @@ const assetGroups: AssetGroup[] = [
 
 export function MediaAssetsSection() {
   return (
-    <section className="w-full bg-[#fafbfc] py-16 flex flex-col items-center">
-      <h2 className="text-3xl font-bold text-center mb-12">Media Assets</h2>
+    <AnimatedBackground className="w-full py-16 flex flex-col items-center">
+      <h2 className="text-3xl font-bold text-center mb-12 text-white">Media Assets</h2>
       <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl justify-center">
         {assetGroups.map((group) => (
           <div
@@ -88,6 +89,6 @@ export function MediaAssetsSection() {
           </div>
         ))}
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

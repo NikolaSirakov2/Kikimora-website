@@ -1,7 +1,9 @@
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
+
 export function PressKitHero() {
   return (
-    <section
-      className="w-[99.12vw] min-h-[300px] flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#10182b] to-[#1a3270] px-4 py-20"
+    <AnimatedBackground
+      className="w-[99.12vw] min-h-[300px] flex flex-col items-center justify-center text-center px-4 py-20"
       role="region"
       aria-label="Press Kit Hero"
     >
@@ -15,6 +17,6 @@ export function PressKitHero() {
         Media resources, company information, and press materials for
         journalists and media professionals.
       </p>
-    </section>
+    </AnimatedBackground>
   );
 }
