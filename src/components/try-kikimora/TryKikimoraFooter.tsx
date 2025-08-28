@@ -8,7 +8,7 @@ export default function TryKikimoraFooter() {
   return (
     <AnimatedBackground className="w-[99.1vw] font-montserrat">
       <div className="py-16 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0">
           {/* Left: Logo and Description */}
           <div className="flex-1 min-w-[150px] flex flex-col items-start">
             <div className="flex items-center mb-6">

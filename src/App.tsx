@@ -12,7 +12,6 @@ import { Hero } from "@/components/home/Hero";
 import { Benefits } from "@/components/home/Benefits";
 import { Developers } from "@/pages/Developers";
 import { ScrollingClients } from "@/components/home/ScrollingClients";
-import { Newsletter } from "@/components/home/Newsletter";
 import { Testimonials } from "@/components/home/Testimonials";
 import { Blog } from "@/pages/Blog";
 import { BlogPost } from "@/pages/BlogPost";
@@ -91,7 +90,6 @@ function App() {
                   <CybersecurityChallengesSection />
                   <AnimatedTerminalSection />
                   <GetInTouch />
-                  <Newsletter />
                 </>
               }
             />
