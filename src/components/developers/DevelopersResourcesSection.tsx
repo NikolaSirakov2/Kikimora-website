@@ -1,5 +1,6 @@
 import { FiCode } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface ResourceCardProps {
   title: string;
@@ -32,7 +33,7 @@ function ResourceCard({ title, description, onClick }: ResourceCardProps) {
 
 export function DevelopersResourcesSection() {
   return (
-    <section className="w-full bg-gradient-to-br from-[#172347] to-[#1a2a4e] py-16 flex justify-center items-center">
+    <AnimatedBackground className="w-[99.1vw] py-16 flex justify-center items-center">
       <div className="w-full max-w-6xl bg-[#22325a] rounded-2xl px-6 py-10 md:px-12 md:py-14 shadow-xl">
         <div className="flex items-center gap-3 mb-2">
           <FiCode size={28} color="#00E5BE" aria-hidden="true" />
@@ -71,6 +72,6 @@ export function DevelopersResourcesSection() {
           />
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

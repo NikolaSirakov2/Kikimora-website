@@ -6,6 +6,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export const roles = [
   {
@@ -112,7 +113,7 @@ export const roles = [
 
 export function Careers() {
   return (
-    <main className="w-[99.1vw] min-h-screen bg-[#00345B] flex flex-col items-center">
+    <AnimatedBackground className="w-[99.1vw] min-h-screen flex flex-col items-center">
       {/* Header */}
       <header className="w-full py-14 flex flex-col items-center my-10">
         <h1 className="text-5xl md:text-6xl font-bold text-white text-center tracking-tight drop-shadow-lg">
@@ -162,7 +163,7 @@ export function Careers() {
         ))}
       </section>
       {/* More open position cards will be added here */}
-    </main>
+    </AnimatedBackground>
   );
 }
 

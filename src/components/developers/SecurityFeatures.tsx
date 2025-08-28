@@ -6,6 +6,7 @@ import {
   FiUsers,
   FiCheckCircle,
 } from "react-icons/fi";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const features = [
   {
@@ -42,7 +43,7 @@ const features = [
 
 export function SecurityFeatures() {
   return (
-    <section className="w-full bg-gradient-to-b from-[#001E38] to-[#1B0B42] pb-20">
+    <AnimatedBackground className="w-[99.1vw] pb-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl text-white   font-bold mb-4">
@@ -74,6 +75,6 @@ export function SecurityFeatures() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

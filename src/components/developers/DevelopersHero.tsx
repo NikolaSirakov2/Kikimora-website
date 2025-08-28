@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function DevelopersHero() {
   return (
-    <section className="relative bg-[#001E38]">
+    <AnimatedBackground className="relative">
       <div className="px-4 sm:px-6 lg:px-8 pt-20 pb-32 relative z-10">
         {/* Main heading */}
         <h1 className="text-5xl text-white   text-center max-w-5xl mx-auto leading-tight mb-6 mt-20">
@@ -45,6 +46,6 @@ export function DevelopersHero() {
           </Button>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

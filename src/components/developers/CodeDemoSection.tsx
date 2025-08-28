@@ -1,5 +1,6 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { DemoButton } from "@/components/ui/DemoButton";
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const codeString = `// Initialize Kikimora Security SDK
 import KikimoraSecurity from '@kikimora/security-sdk';
@@ -49,7 +50,7 @@ const greenTheme: Record<string, React.CSSProperties> = {
 
 export function CodeDemoSection() {
   return (
-    <section className="w-full min-h-[400px] flex flex-col items-center justify-center bg-gradient-to-br from-[#0a1747] to-[#1a2a4d] py-20 px-4">
+    <AnimatedBackground className="w-[99.1vw] min-h-[400px] flex flex-col items-center justify-center py-20 px-4">
       <h2 className="text-3xl md:text-3xl font-bold text-white text-center mb-10  ">
         Secure your code now, thank yourself later
       </h2>
@@ -80,6 +81,6 @@ export function CodeDemoSection() {
           Get Started
         </DemoButton>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }

@@ -1,9 +1,10 @@
 
+import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function ProductStatsSection() {
   return (
-    <section
-      className="w-full bg-gradient-to-br from-[#172347] to-[#1a2a4e] py-20 flex flex-col items-center"
+    <AnimatedBackground
+      className="w-[99.1vw] py-20 flex flex-col items-center"
       aria-labelledby="product-stats-title"
     >
       <h2
@@ -35,6 +36,6 @@ export function ProductStatsSection() {
           <span className="text-lg text-white/90">Support</span>
         </div>
       </div>
-    </section>
+    </AnimatedBackground>
   );
 }
