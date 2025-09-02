@@ -5,7 +5,7 @@ function HeroCaseStudy() {
   return (
     <AnimatedBackground className="w-[99.1vw] min-h-[70vh] flex items-center justify-center overflow-hidden px-4 py-12">
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-7xl mx-auto text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-7xl mx-auto text-center pt-24">
         <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-5xl leading-tight mb-4">
           From Regulatory Complexity to
           <br />

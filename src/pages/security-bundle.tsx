@@ -14,7 +14,7 @@ const SecurityBundle: React.FC = () => {
   return (
     <AnimatedBackground className="min-h-screen w-[99.1vw]">
       {/* Hero Section */}
-      <section className="mt-10">
+      <section className="mt-10 pt-24">
         <div className="max-w-[1300px] mx-auto py-20 flex flex-col md:flex-row gap-8 items-start relative">
           {/* Security Center Image and Cards */}
           <div className="flex-1 flex justify-center items-center relative">

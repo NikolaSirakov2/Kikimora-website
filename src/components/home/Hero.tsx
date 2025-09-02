@@ -47,7 +47,7 @@ export function Hero() {
 
   return (
     <AnimatedBackground className="w-[99.1vw]">
-      <div className="max-w-[1500px] mx-auto py-20">
+      <div className="max-w-[1500px] mx-auto py-20 pt-24">
         <section className="h-3/5 relative z-10">
           <div className="h-3/4 flex items-center">
             {/* Left side - Content */}

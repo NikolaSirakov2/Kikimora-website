@@ -8,7 +8,7 @@ export function OTSecurityHero() {
   return (
     <>
       <AnimatedBackground className="w-[99.1vw] min-h-[480px] flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center w-full max-w-4xl px-4 py-24 text-center">
+        <div className="flex flex-col items-center justify-center w-full max-w-4xl px-4 py-24 pt-24 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
             Secure the Core of Your <br className="hidden md:block" />{" "}
             Operation.
