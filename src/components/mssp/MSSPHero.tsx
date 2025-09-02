@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { ScheduleDemoModal } from "@/components/ui/ScheduleDemoModal";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
@@ -58,92 +57,38 @@ export function MSSPHero() {
               </div>
 
               {/* Right Column - Contact Form */}
-              <div className="bg-white rounded-lg p-4 shadow-xl my-20 max-w-[500px]">
-                <form className="space-y-3">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-gray-700 mb-1"
-                    >
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      placeholder="Name"
-                      className="w-full px-3 py-1.5 border border-gray-300 rounded-md bg-white text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-gray-700 mb-1"
-                    >
-                      Work Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="Email"
-                      className="w-full px-3 py-1.5 border border-gray-300 rounded-md bg-white text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="company"
-                      className="block text-sm font-medium text-gray-700 mb-1"
-                    >
-                      Company Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="company"
-                      placeholder="Company"
-                      className="w-full px-3 py-1.5 border border-gray-300 rounded-md bg-white text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="size"
-                      className="block text-sm font-medium text-gray-700 mb-1"
-                    >
-                      Company Size
-                    </label>
-                    <input
-                      type="text"
-                      id="size"
-                      className="w-full px-3 py-1.5 border border-gray-300 rounded-md bg-white text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="assets"
-                      className="block text-sm font-medium text-gray-700 mb-1"
-                    >
-                      Number of Assets
-                    </label>
-                    <input
-                      type="text"
-                      id="assets"
-                      className="w-full px-3 py-1.5 border border-gray-300 rounded-md bg-white text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
-                    />
-                  </div>
-
-                  <Button
-                    type="button"
-                    className="w-full font-semibold px-6 rounded-md transition-colors duration-200"
-                    onClick={() => setIsScheduleDemoModalOpen(true)}
-                  >
-                    Book Demo
-                  </Button>
-                </form>
+              <div className="flex flex-col gap-4 my-20 max-w-[500px]">
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                />
+                <input
+                  type="email"
+                  placeholder="Enter your work email"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                />
+                <input
+                  type="text"
+                  placeholder="Enter your company name"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                />
+                <input
+                  type="text"
+                  placeholder="Company size (optional)"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                />
+                <input
+                  type="text"
+                  placeholder="Number of assets (optional)"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                />
+                <button 
+                  className="font-montserrat font-semibold text-black bg-white rounded-xl w-fit shadow-lg hover:shadow-xl transition-all duration-300 hover:transparant"
+                  onClick={() => setIsScheduleDemoModalOpen(true)}
+                >
+                  Book Demo
+                </button>
               </div>
             </div>
           </div>
