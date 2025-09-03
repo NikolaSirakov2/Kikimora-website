@@ -6,7 +6,6 @@ import { FeaturesOverviewSection } from "../components/startup/FeaturesOverviewS
 import { ManagedSecuritySection } from "../components/startup/ManagedSecuritySection";
 import { ComplianceEdgeSection } from "../components/startup/ComplianceEdgeSection";
 import { SecureGrowthSection } from "../components/startup/SecureGrowthSection";
-import { EUFunding } from "@/components/shared/EUFunding";
 
 function Startup() {
   return (
@@ -19,7 +18,6 @@ function Startup() {
       <ManagedSecuritySection />
       <ComplianceEdgeSection />
       <SecureGrowthSection />
-      <EUFunding />
     </main>
   );
 }

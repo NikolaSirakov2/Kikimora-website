@@ -34,9 +34,9 @@ export function Footer() {
             </div>
 
             {/* Navigation - Center */}
-            <div className="flex items-center justify-center gap-12">
+            <div className="flex items-start justify-center gap-12">
               <div className="flex gap-12">
-                {/* First column */}
+                {/* First column - Main Navigation */}
                 <nav className="flex flex-col gap-3">
                   <a
                     href="/"
@@ -56,9 +56,6 @@ export function Footer() {
                   >
                     Developers
                   </a>
-                </nav>
-                {/* Second column */}
-                <nav className="flex flex-col gap-3">
                   <a
                     href="/blog"
                     className="text-white/60 hover:text-white font-montserrat text-sm"
@@ -72,11 +69,73 @@ export function Footer() {
                     Documentation
                   </a>
                 </nav>
+                
+                {/* Second column - Product */}
+                <nav className="flex flex-col gap-3">
+                  <a
+                    href="/trykikimora"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    Try Kikimora
+                  </a>
+                  <a
+                    href="/managed-security"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    Managed Security
+                  </a>
+                  <a
+                    href="/mssp"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    MSSP
+                  </a>
+                  <a
+                    href="/security-bundle"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    Security Bundle
+                  </a>
+                </nav>
+                
+                {/* Third column - Use Cases */}
+                <nav className="flex flex-col gap-3">
+                  <a
+                    href="/startup"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    Startup
+                  </a>
+                  <a
+                    href="/healthcare"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    Healthcare
+                  </a>
+                  <a
+                    href="/fintech"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    Fintech
+                  </a>
+                  <a
+                    href="/sme"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    SME
+                  </a>
+                  <a
+                    href="/ot-security"
+                    className="text-white/60 hover:text-white font-montserrat text-sm"
+                  >
+                    OT Security
+                  </a>
+                </nav>
               </div>
             </div>
 
             {/* Demo section - Right side */}
-            <div className="flex flex-row items-center justify-center gap-6">
+            <div className="flex flex-col items-center justify-center gap-4">
               <span className="text-white/60 font-montserrat text-sm text-center max-w-[180px] whitespace-pre-line">
                 {"Request a demo to see\nthe full power of Kikimora"}
               </span>

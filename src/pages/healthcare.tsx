@@ -5,7 +5,6 @@ import { KikimoraDifferenceSection } from "../components/case-study/KikimoraDiff
 import { CyberResilienceJourneySection } from "../components/case-study/CyberResilienceJourneySection";
 import { ComplianceSection } from "@/components/case-study/ComplianceSection";
 import { UnifiedDefenseSection } from "@/components/case-study/UnifiedDefenseSection";
-import { EUFunding } from "@/components/shared/EUFunding";
 import { FreeAssessmentSection } from "@/components/case-study/FreeAssessmentSection";
 
 function Healthcare() {
@@ -19,7 +18,6 @@ function Healthcare() {
       <KikimoraDifferenceSection />
       <CyberResilienceJourneySection />
       <FreeAssessmentSection />
-      <EUFunding />
     </main>
   );
 }

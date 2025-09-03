@@ -2,7 +2,6 @@ import { MSSPHero } from "@/components/mssp/MSSPHero";
 import { MSSPBenefitsSection } from "@/components/mssp/MSSPBenefitsSection";
 import { MSSPQandASection } from "@/components/mssp/MSSPQandASection";
 import { MSSPBookCallSection } from "@/components/mssp/MSSPBookCallSection";
-import { EUFunding } from "@/components/shared/EUFunding";
 
 export function MSSP() {
   return (
@@ -11,7 +10,6 @@ export function MSSP() {
       <MSSPBenefitsSection />
       <MSSPQandASection />
       <MSSPBookCallSection />
-      <EUFunding />
     </div>
   );
 }
