@@ -26,11 +26,30 @@ export function Footer() {
                   className="h-16 w-auto"
                 />
               </a>
-              <p className="text-white/60 font-montserrat text-sm leading-relaxed">
+              <p className="text-white/60 font-montserrat text-sm leading-relaxed mb-6">
                 The essential toolset to meet your security and compliance
                 objectives. Let us handle the security complexities while you
                 focus on your business objectives.
               </p>
+              
+              {/* EU Funding Images */}
+              <div className="flex items-center gap-4">
+                <img
+                  src="/euro_flag.webp"
+                  alt="European Union Flag"
+                  className="h-12 object-contain"
+                />
+                <img
+                  src="/operational_programme.webp"
+                  alt="Innovation and Competitiveness Logo"
+                  className="h-12 object-contain"
+                />
+                <img
+                  src="/fund_of_funds.webp"
+                  alt="Fund of Funds Logo"
+                  className="h-12 object-contain"
+                />
+              </div>
             </div>
 
             {/* Navigation - Center */}
