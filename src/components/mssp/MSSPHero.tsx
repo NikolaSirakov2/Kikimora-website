@@ -61,27 +61,27 @@ export function MSSPHero() {
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="email"
                   placeholder="Enter your work email"
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="text"
                   placeholder="Enter your company name"
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="text"
                   placeholder="Company size (optional)"
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="text"
                   placeholder="Number of assets (optional)"
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
                 />
                 <button 
                   className="font-montserrat font-semibold text-black bg-white rounded-xl w-fit shadow-lg hover:shadow-xl transition-all duration-300 hover:transparant"

@@ -48,17 +48,17 @@ export function GetInTouch() {
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE]"
                 />
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE]"
                 />
                 <textarea
                   placeholder="Enter your message"
                   rows={6}
-                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE] resize-none"
+                  className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] resize-none"
                 />
                 <button className="font-montserrat font-semibold text-white bg-gradient-to-b from-blue-500 to-blue-600 rounded-xl px-8 py-4 w-fit shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-400 hover:to-blue-500">
                   Get Started
