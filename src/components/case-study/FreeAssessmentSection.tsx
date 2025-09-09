@@ -19,22 +19,22 @@ export const FreeAssessmentSection: FC = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#31c9b7]"
+                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="text"
                 placeholder="Organization"
-                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#31c9b7]"
+                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="text"
                 placeholder="Your Role"
-                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#31c9b7]"
+                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               <input
                 type="email"
                 placeholder="Business Email"
-                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#31c9b7]"
+                className="bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
             </div>
             <textarea

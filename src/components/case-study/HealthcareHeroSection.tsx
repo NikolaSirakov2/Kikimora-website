@@ -8,7 +8,7 @@ function HealthcareHeroSection() {
         <h1 className="text-white font-bold text-4xl md:text-5xl lg:text-5xl leading-tight mb-4">
           Protect Your Mission-Critical Operations
           <br />
-          <span className="text-[#31c9b7] font-bold text-5xl md:text-6xl lg:text-6xl block mt-2">
+          <span className="text-blue-600 font-bold text-5xl md:text-6xl lg:text-6xl block mt-2">
             While Ensuring Patient Safety
           </span>
         </h1>
@@ -26,13 +26,13 @@ function HealthcareHeroSection() {
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center w-full">
           <button
-            className="px-8 py-3 text-lg font-normal shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-[#31c9b7] focus:ring-offset-2"
+            className="px-8 py-3 text-lg font-normal shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
             type="button"
           >
             Schedule Executive Briefing
           </button>
           <button
-            className="bg-transparent hover:bg-white/10 text-white font-normal py-3 px-8 rounded-md border border-[#31c9b7]/50 shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-[#31c9b7] focus:ring-offset-2"
+            className="bg-transparent hover:bg-white/10 text-white font-normal py-3 px-8 rounded-md border border-blue-600/50 shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
             type="button"
           >
             View ROI Calculator

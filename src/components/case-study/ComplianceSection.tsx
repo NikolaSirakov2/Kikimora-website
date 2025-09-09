@@ -3,7 +3,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const CheckIcon = () => (
   <svg
-    className="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+    className="w-5 h-5 text-blue-600 mr-2 mt-1 flex-shrink-0"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor"
@@ -112,7 +112,7 @@ function ComplianceSection() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`w-1/2 py-4 text-center font-medium transition-colors duration-200 focus:outline-none ${
                   activeTab === tab.id
-                    ? "bg-[#31c9b7] text-white"
+                    ? "bg-blue-600 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -130,7 +130,7 @@ function ComplianceSection() {
                 <p className="mt-4 text-base text-gray-600">
                   {activeTabData.description}
                 </p>
-                <div className="p-6 mt-6 bg-[#31c9b7]/10">
+                <div className="p-6 mt-6 bg-blue-600/10">
                   <h4 className="text-lg font-semibold text-gray-800">
                     {activeTabData.requirementsTitle}
                   </h4>

@@ -42,25 +42,25 @@ const securityFeatures = [
     icon: <Search className="w-6 h-6 text-white" />,
     title: "In-Depth Discovery & Threat Modeling",
     description: "Understand your unique risk profile from day one",
-    bgColor: "bg-green-500",
+    bgColor: "bg-blue-600",
   },
   {
     icon: <Lock className="w-6 h-6 text-white" />,
     title: "Penetration Testing (Web, Network, API)",
     description: "Proactively test your defenses against real-world attacks",
-    bgColor: "bg-green-500",
+    bgColor: "bg-blue-600",
   },
   {
     icon: <Activity className="w-6 h-6 text-white" />,
     title: "24/7 Monitoring & System Hardening",
     description: "Benefit from continuous vigilance and proactive protection",
-    bgColor: "bg-green-500",
+    bgColor: "bg-blue-600",
   },
   {
     icon: <Users className="w-6 h-6 text-white" />,
     title: "Security & Secure Code Training",
     description: "Transform your staff from weakness into human firewall",
-    bgColor: "bg-green-500",
+    bgColor: "bg-blue-600",
   },
 ];
 

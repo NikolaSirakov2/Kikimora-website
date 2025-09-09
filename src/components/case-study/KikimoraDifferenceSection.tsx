@@ -54,7 +54,7 @@ const KikimoraDifferenceSection = () => {
               className="p-6 transition-all duration-200 bg-white rounded-lg shadow-md hover:shadow-xl hover:bg-gray-50"
             >
               <div className="flex items-start">
-                <div className="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-5 bg-[#31c9b7] rounded-full">
+                <div className="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-5 bg-blue-600 rounded-full">
                   <span className="text-white"></span>
                 </div>
                 <div className="flex-1">
