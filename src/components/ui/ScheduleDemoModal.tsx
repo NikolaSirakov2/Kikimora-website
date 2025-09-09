@@ -35,7 +35,9 @@ export function ScheduleDemoModal({ isOpen, onClose }: ScheduleDemoModalProps) {
             </p>
           </div>
 
-          <ScheduleDemoForm className="max-w-none" />
+          <div className="bg-gray-100 p-6 rounded-lg">
+            <ScheduleDemoForm className="max-w-none" />
+          </div>
         </div>
       </div>
     </div>

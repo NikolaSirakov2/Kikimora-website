@@ -15,37 +15,37 @@ export function MSSPHero() {
               <div className="space-y-6">
                 <h1 className="text-3xl lg:text-4xl leading-tight">
                   <span className="text-white">Your go-to solution for </span>
-                  <span className="text-teal-400">
+                  <span className="text-blue-600">
                     managed security services!
                   </span>
                 </h1>
 
                 <div className="space-y-4 text-white text-md">
                   <p>
-                    <span className="text-teal-400">Kikimora</span> manages
+                    <span className="text-blue-600">Kikimora</span> manages
                     vulnerabilities and provides a consolidated overview of
                     security testing.
                   </p>
                   <p>
-                    <span className="text-teal-400">Kikimora</span> is a
+                    <span className="text-blue-600">Kikimora</span> is a
                     versatile platform that adapts to your security needs.
                   </p>
 
                   <ul className="space-y-2 mt-6">
                     <li className="flex items-start">
-                      <span className="text-teal-400 mr-2">•</span>
+                      <span className="text-blue-600 mr-2">•</span>
                       Consolidated vulnerability data across multiple clients
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-400 mr-2">•</span>
+                      <span className="text-blue-600 mr-2">•</span>
                       Enhanced reporting and compliance capabilities
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-400 mr-2">•</span>
+                      <span className="text-blue-600 mr-2">•</span>
                       Gain access to numerous scanning and intel providers
                     </li>
                     <li className="flex items-start">
-                      <span className="text-teal-400 mr-2">•</span>
+                      <span className="text-blue-600 mr-2">•</span>
                       Flexible pricing bundles for optimized budgeting
                     </li>
                   </ul>
@@ -57,31 +57,32 @@ export function MSSPHero() {
               </div>
 
               {/* Right Column - Contact Form */}
-              <div className="flex flex-col gap-4 my-20 max-w-[500px]">
+              <div className="bg-gray-100/20 backdrop-blur-sm p-4 rounded-lg flex justify-center items-center">
+                <div className="flex flex-col gap-4 my-8 w-full">
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="email"
                   placeholder="Enter your work email"
-                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="text"
                   placeholder="Enter your company name"
-                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="text"
                   placeholder="Company size (optional)"
-                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="text"
                   placeholder="Number of assets (optional)"
-                  className="bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-[#00E5BE] hover:border-white/80 transition-colors duration-200"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
                 />
                 <button 
                   className="font-montserrat font-semibold text-black bg-white rounded-xl w-fit shadow-lg hover:shadow-xl transition-all duration-300 hover:transparant"
@@ -89,6 +90,7 @@ export function MSSPHero() {
                 >
                   Book Demo
                 </button>
+                </div>
               </div>
             </div>
           </div>

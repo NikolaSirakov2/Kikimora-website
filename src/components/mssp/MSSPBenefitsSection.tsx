@@ -12,43 +12,43 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 export function MSSPBenefitsSection() {
   const benefits = [
     {
-      icon: <RiDatabase2Line className="w-8 h-8 text-teal-400" />,
+      icon: <RiDatabase2Line className="w-8 h-8 text-blue-600" />,
       title: "Centralized Multi-Client Management",
       description:
         "Manage vulnerabilities, weaknesses, and security misconfigurations for all your clients from a single, unified dashboard. Kikimora consolidates vulnerability data across multiple clients, providing a clear overview of each client's security posture without switching between tools.",
     },
     {
-      icon: <RiSettings3Line className="w-8 h-8 text-teal-400" />,
+      icon: <RiSettings3Line className="w-8 h-8 text-blue-600" />,
       title: "Enhanced Efficiency and Automation",
       description:
         "Save time and reduce manual errors by automating key processes. The platform's advanced data analysis eliminates the need for time-consuming manual review of findings. With Jira integration, you can track, manage, and report on cross-team collaboration, automatically creating and closing remediation tasks.",
     },
     {
-      icon: <RiFileTextLine className="w-8 h-8 text-teal-400" />,
+      icon: <RiFileTextLine className="w-8 h-8 text-blue-600" />,
       title: "Superior Reporting and Compliance",
       description:
         "Deliver exceptional value to your clients with enhanced reporting and compliance capabilities. The platform generates everything from detailed technical data to executive summaries, making risks and security posture understandable for business leaders. Use built-in compliance agents and frameworks for regulations like NIS2, DORA, GDPR, and ISO27k.",
     },
     {
-      icon: <RiAddLine className="w-8 h-8 text-teal-400" />,
+      icon: <RiAddLine className="w-8 h-8 text-blue-600" />,
       title: "Flexible Tool Integration",
       description:
         "Gain access to numerous scanning and intel providers. Kikimora integrates with top-notch vulnerability discovery tools like Qualys, Nessus, Rapid7, and Burp Suite. This allows you to parse data from various sources into one platform, maintaining historical data even if your client's or your own toolset changes.",
     },
     {
-      icon: <RiBarChartLine className="w-8 h-8 text-teal-400" />,
+      icon: <RiBarChartLine className="w-8 h-8 text-blue-600" />,
       title: "Intelligent, Context-Aware Prioritization",
       description:
         "Move beyond standard vulnerability management with the Kikimora Smart Score. This feature allows you to prioritize vulnerabilities based on unique risk factors specific to each client's industry, size, critical assets, and operational context. The AI Assistant can also help prioritize by correlating various sources of information.",
     },
     {
-      icon: <RiMoneyDollarCircleLine className="w-8 h-8 text-teal-400" />,
+      icon: <RiMoneyDollarCircleLine className="w-8 h-8 text-blue-600" />,
       title: "Scalable and Optimized Budgeting",
       description:
         "Kikimora offers flexible pricing bundles for optimized budgeting. The pricing model is scalable and based on the number of assets, making it adaptable for any organizational context, from small businesses to large enterprises. Starting with Kikimora is easy, and you can test the platform for free using Kikimora Community.",
     },
     {
-      icon: <RiCustomerService2Line className="w-8 h-8 text-teal-400" />,
+      icon: <RiCustomerService2Line className="w-8 h-8 text-blue-600" />,
       title: "Expert Support on Demand",
       description:
         "Even the most experienced MSSPs can face complex challenges. Kikimora has built-in consulting services with an expert in-house cybersecurity team ready to assist you. Subscription packages include free consulting hours, providing you with expert backup when you need it most.",

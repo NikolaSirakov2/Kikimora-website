@@ -10,7 +10,7 @@ export function SecurityOverview() {
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 transform -rotate-6">
                 <div className="bg-[#1a1a2e] rounded-lg p-4">
                   <div className="h-4 w-32 bg-purple-500/30 rounded mb-2"></div>
-                  <div className="h-3 w-48 bg-teal-500/30 rounded mb-2"></div>
+                  <div className="h-3 w-48 bg-blue-600/30 rounded mb-2"></div>
                   <div className="h-3 w-40 bg-blue-500/30 rounded"></div>
                 </div>
               </div>
@@ -27,7 +27,7 @@ export function SecurityOverview() {
 
             {/* Decorative elements */}
             <div className="absolute -top-4 left-8 w-8 h-8 bg-purple-500/30 rounded-full blur-sm"></div>
-            <div className="absolute top-1/2 left-0 w-6 h-6 bg-teal-500/30 rounded-full blur-sm"></div>
+            <div className="absolute top-1/2 left-0 w-6 h-6 bg-blue-600/30 rounded-full blur-sm"></div>
             <div className="absolute bottom-8 right-1/4 w-10 h-10 bg-blue-500/30 rounded-full blur-sm"></div>
           </div>
         </div>

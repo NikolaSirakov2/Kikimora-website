@@ -15,7 +15,7 @@ export function ScheduleDemoForm({
   if (state.succeeded) {
     return (
       <div className="text-center py-8">
-        <div className="text-green-600 text-lg font-semibold mb-2">
+        <div className="text-blue-600 text-lg font-semibold mb-2">
           Demo Request Submitted!
         </div>
         <p className="text-gray-600">
