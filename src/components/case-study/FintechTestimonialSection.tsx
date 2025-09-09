@@ -11,7 +11,7 @@ function FintechTestimonialSection() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
         {/* Left: Bank Logo and Subtitle */}
         <div className="flex flex-col items-center md:items-start flex-shrink-0 min-w-[220px]">
-          <span className="text-4xl md:text-5xl font-extrabold text-[#31c9b7] mb-2 text-center md:text-left">
+          <span className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-2 text-center md:text-left">
             D Commerce Bank
           </span>
           <span className="text-white/60 text-base md:text-lg mt-2 text-center md:text-left">
@@ -20,7 +20,7 @@ function FintechTestimonialSection() {
         </div>
         {/* Right: Testimonial Card */}
         <div className="bg-[#fafbfc] rounded-2xl shadow-lg p-8 md:p-10 max-w-xl w-full flex flex-col gap-4">
-          <span className="text-[#31c9b7] text-6xl mb-2" aria-hidden="true">
+          <span className="text-blue-600 text-6xl mb-2" aria-hidden="true">
             &#x275E;
           </span>
           <p className="text-[#071C2C] italic text-lg md:text-xl mb-2">

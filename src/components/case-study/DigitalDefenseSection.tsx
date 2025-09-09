@@ -48,7 +48,7 @@ export function DigitalDefenseSection() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Demystifying Digital Defense
           </h1>
-          <p className="text-cyan-400 text-lg">See Kikimora in Action</p>
+          <p className="text-blue-600 text-lg">See Kikimora in Action</p>
         </div>
 
         {/* Navigation Tabs */}
@@ -57,10 +57,10 @@ export function DigitalDefenseSection() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-3 text-sm font-medium transition-all duration-200 ${
+              className={`px-6 py-3 text-sm font-medium transition-all duration-200 rounded-lg border ${
                 activeTab === tab.id
-                  ? "text-cyan-400 border-b-2 border-cyan-400"
-                  : "text-white hover:text-cyan-300"
+                  ? "text-blue-600 bg-white border-blue-600"
+                  : "text-white bg-gray-700/50 border-gray-600 hover:bg-gray-600/50 hover:text-blue-300"
               }`}
             >
               {tab.label}
@@ -79,7 +79,7 @@ export function DigitalDefenseSection() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gray-800 rounded-lg p-8 min-h-[400px] flex items-center justify-center border border-gray-700">
             <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-bold text-green-400 mb-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">
                 {activeTabData.placeholderText}
               </h3>
               <p className="text-gray-400 text-sm">

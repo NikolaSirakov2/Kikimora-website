@@ -79,7 +79,7 @@ export function FintechPressureSection() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               The Pressure on European Fintechs
             </h2>
-            <p className="text-cyan-400 text-lg">
+            <p className="text-blue-600 text-lg">
               Regulatory Deadlines, Escalating Threats & Unseen Vulnerabilities
             </p>
           </div>

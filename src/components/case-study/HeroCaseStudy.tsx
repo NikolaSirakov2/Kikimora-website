@@ -9,7 +9,7 @@ function HeroCaseStudy() {
         <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-5xl leading-tight mb-4">
           From Regulatory Complexity to
           <br />
-          <span className="text-[#31c9b7] text-4xl md:text-6xl lg:text-6xl block mt-2">
+          <span className="text-blue-600 text-4xl md:text-6xl lg:text-6xl block mt-2">
             Cyber Resilience
           </span>
         </h1>
@@ -23,14 +23,14 @@ function HeroCaseStudy() {
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center w-full">
           <Button
-            className="px-8 py-3 text-lg font-bold shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-[#31c9b7] focus:ring-offset-2"
+            className="px-8 py-3 text-lg font-bold shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
             type="button"
           >
             Request a Consultation
           </Button>
           <Button
             variant="outline"
-            className="font-semibold py-3 px-8 rounded-lg shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-[#31c9b7] focus:ring-offset-2"
+            className="font-semibold py-3 px-8 rounded-lg shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
             type="button"
           >
             View Platform Capabilities

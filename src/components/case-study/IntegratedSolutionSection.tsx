@@ -25,7 +25,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <div className="bg-gray-900 rounded-lg p-6">
       <div className="flex flex-col space-y-4">
-        <div className="text-teal-400 text-2xl">{icon}</div>
+        <div className="text-blue-600 text-2xl">{icon}</div>
         <h3 className="text-lg font-bold text-white">{title}</h3>
         <p className="text-gray-300 text-sm leading-relaxed">{description}</p>
       </div>
@@ -98,7 +98,7 @@ export function IntegratedSolutionSection() {
           <h2 className="text-4xl font-bold text-white mb-4">
             Beyond Compliance: Kikimora's Integrated Solution
           </h2>
-          <h3 className="text-xl text-teal-400 mb-6">
+          <h3 className="text-xl text-blue-600 mb-6">
             Your Pathway to Unmatched Fintech Resilience
           </h3>
           <p className="text-gray-300 max-w-4xl mx-auto leading-relaxed">

@@ -57,25 +57,19 @@ export function SecurityEcosystemSection() {
         </h1>
 
         <div className="flex justify-center mb-8">
-          <div className="flex flex-nowrap items-center justify-center max-w-5xl w-full">
+          <div className="flex flex-wrap items-center justify-center max-w-5xl w-full gap-4">
             {tabs.map((tab, index) => (
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
                 className={`px-6 py-2 text-sm transition-colors duration-200 outline-none focus:outline-none focus:ring-0
-                  border-solid
+                  border-solid rounded-xl
                   ${
                     activeTab === index
-                      ? "text-[#31c9b7] bg-white border-2 border-[#31c9b7] z-10"
+                      ? "text-blue-600 bg-white border-2 border-blue-600"
                       : "text-white bg-white/10 border border-white/20 hover:bg-white/20"
                   }
-                  ${index === 0 ? "rounded-l-xl" : ""}
-                  ${index === tabs.length - 1 ? "rounded-r-xl" : ""}
-                  ${index !== tabs.length - 1 ? "-mr-px" : ""}
-                  w-1/4 min-w-[180px] h-16`}
-                style={{
-                  marginRight: index !== tabs.length - 1 ? "-1px" : undefined,
-                }}
+                  flex-1 min-w-[180px] h-16`}
               >
                 <span className="block w-full line-clamp-2 leading-snug text-center">
                   {tab.title}
