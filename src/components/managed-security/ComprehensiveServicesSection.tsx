@@ -12,7 +12,7 @@ function ServiceCard({ title, description, icon }: ServiceCardProps) {
     <div className="bg-white rounded-xl p-8 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[280px] text-center transition hover:shadow-md">
       <div className="flex flex-col items-center h-full justify-between">
         <div className="flex flex-col items-center">
-          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-[#31c9b7] mb-6">
+          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-600 mb-6">
             {icon}
           </span>
           <h3 className="text-xl font-bold mb-4 text-[#111827] font-montserrat">
@@ -72,7 +72,7 @@ export function ComprehensiveServicesSection() {
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-[#31c9b7] uppercase tracking-wider mb-4">
+          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4">
             OUR SOLUTIONS
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-6 leading-tight max-w-5xl">

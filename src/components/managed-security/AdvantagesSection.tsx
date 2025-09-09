@@ -29,7 +29,7 @@ export function AdvantagesSection() {
           <div className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md">
             <div className="flex items-center mb-4">
               <svg
-                className="w-6 h-6 text-[#31c9b7] mr-2"
+                className="w-6 h-6 text-blue-600 mr-2"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -50,7 +50,7 @@ export function AdvantagesSection() {
           <div className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md">
             <div className="flex items-center mb-4">
               <svg
-                className="w-6 h-6 text-[#31c9b7] mr-2"
+                className="w-6 h-6 text-blue-600 mr-2"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -71,7 +71,7 @@ export function AdvantagesSection() {
           <div className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md">
             <div className="flex items-center mb-4">
               <svg
-                className="w-6 h-6 text-[#31c9b7] mr-2"
+                className="w-6 h-6 text-blue-600 mr-2"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -92,7 +92,7 @@ export function AdvantagesSection() {
           <div className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md">
             <div className="flex items-center mb-4">
               <svg
-                className="w-6 h-6 text-[#31c9b7] mr-2"
+                className="w-6 h-6 text-blue-600 mr-2"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -112,7 +112,7 @@ export function AdvantagesSection() {
           <div className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md">
             <div className="flex items-center mb-4">
               <svg
-                className="w-6 h-6 text-[#31c9b7] mr-2"
+                className="w-6 h-6 text-blue-600 mr-2"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -132,7 +132,7 @@ export function AdvantagesSection() {
           <div className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md">
             <div className="flex items-center mb-4">
               <svg
-                className="w-6 h-6 text-[#31c9b7] mr-2"
+                className="w-6 h-6 text-blue-600 mr-2"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >

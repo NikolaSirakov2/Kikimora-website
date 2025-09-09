@@ -18,7 +18,7 @@ export function ROISection() {
       </p>
       <div className="w-full max-w-7xl flex flex-col md:flex-row justify-center items-center gap-12 md:gap-0 ml-10">
         <div className="flex-1 flex flex-col items-center mb-12 md:mb-0">
-          <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
+          <span className="text-5xl md:text-6xl font-semibold text-blue-600 leading-none">
             250%
           </span>
           <span className="mt-4 text-base md:text-lg text-white/80 text-center">
@@ -30,7 +30,7 @@ export function ROISection() {
           aria-hidden="true"
         />
         <div className="flex-1 flex flex-col items-center mb-12 md:mb-0">
-          <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
+          <span className="text-5xl md:text-6xl font-semibold text-blue-600 leading-none">
             61%
           </span>
           <span className="mt-4 text-base md:text-md text-white/80 text-center">
@@ -42,7 +42,7 @@ export function ROISection() {
           aria-hidden="true"
         />
         <div className="flex-1 flex flex-col items-center mb-12 md:mb-0">
-          <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
+          <span className="text-5xl md:text-6xl font-semibold text-blue-600 leading-none">
             $120,000
           </span>
           <span className="mt-4 text-base md:text-lg text-white/80 text-center">
@@ -54,7 +54,7 @@ export function ROISection() {
           aria-hidden="true"
         />
         <div className="flex-1 flex flex-col items-center">
-          <span className="text-5xl md:text-6xl font-semibold text-[#31c9b7] leading-none">
+          <span className="text-5xl md:text-6xl font-semibold text-blue-600 leading-none">
             24/7
           </span>
           <span className="mt-4 text-base md:text-lg text-white/80 text-center">
