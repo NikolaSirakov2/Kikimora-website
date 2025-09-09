@@ -57,7 +57,7 @@ function PlatformShowcaseSection() {
         </Button>
         <Button
           variant="outline"
-          className="px-6 py-3 font-montserrat rounded-lg border border-[#31c9b7] text-[#31c9b7] hover:bg-[#31c9b7]/10"
+          className="px-6 py-3 font-montserrat rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-100"
         >
           Explore Platform Features
         </Button>

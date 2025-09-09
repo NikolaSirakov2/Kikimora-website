@@ -31,7 +31,7 @@ function SecureGrowthSection() {
           <Button
             variant="secondary"
             size="lg"
-            className="bg-white text-[#31c9b7] hover:bg-[#31c9b7]/10 font-bold"
+            className="bg-white text-blue-600 hover:bg-blue-100 font-bold"
             onClick={() =>
               window.open("https://app.kikimora.io/register", "_blank")
             }
@@ -53,7 +53,7 @@ function SecureGrowthSection() {
             >
               Get a Custom Security Strategy
             </h3>
-            <p className="text-base md:text-lg text-green-50 mb-8 font-montserrat">
+            <p className="text-base md:text-lg text-blue-50 mb-8 font-montserrat">
               Talk to an expert who understands the unique challenges of
               startups. We'll assess your needs and show you exactly how
               Kikimora can help you meet your security and compliance goals.
@@ -62,7 +62,7 @@ function SecureGrowthSection() {
           <DemoButton
             variant="default"
             size="lg"
-            className="bg-white text-[#16b157] hover:bg-green-100 font-bold"
+            className="bg-white text-blue-600 hover:bg-blue-100 font-bold"
             showIcon={false}
           >
             Book Your Free Demo

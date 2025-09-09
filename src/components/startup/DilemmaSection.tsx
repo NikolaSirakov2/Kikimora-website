@@ -40,8 +40,8 @@ function DilemmaSection() {
         </div>
         {/* Card 3 */}
         <div className="flex-1 bg-white rounded-2xl shadow-md flex flex-col items-start px-8 py-10 min-w-[294px] max-w-[360px] mx-auto">
-          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-[#31c9b7]/20 mb-4">
-            <Lock className="text-[#31c9b7]" size={36} strokeWidth={2.2} />
+          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+            <Lock className="text-blue-600" size={36} strokeWidth={2.2} />
           </span>
           <h3 className="text-lg font-bold text-gray-900 mb-2 text-left">
             The Enterprise Compliance Wall

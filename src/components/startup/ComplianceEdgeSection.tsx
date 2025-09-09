@@ -6,7 +6,7 @@ function ComplianceEdgeSection() {
       <h2 className="text-3xl md:text-5xl font-extrabold text-center text-white mb-2">
         Turn Challenges into opportunities
       </h2>
-      <p className="text-base md:text-xl text-center text-[#31c9b7] mt-6 mb-12 max-w-2xl mx-auto font-montserrat">
+      <p className="text-base md:text-xl text-center text-blue-600 mt-6 mb-12 max-w-2xl mx-auto font-montserrat">
         Meet regulatory standards with ease
       </p>
       {/* Flow steps */}
@@ -14,7 +14,7 @@ function ComplianceEdgeSection() {
         {/* Step 1 */}
         <div className="flex flex-col items-center">
           <svg
-            className="w-12 h-12 mb-2 text-[#31c9b7]"
+            className="w-12 h-12 mb-2 text-blue-600"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -34,12 +34,12 @@ function ComplianceEdgeSection() {
               strokeWidth="2"
             />
           </svg>
-          <span className="text-[#31c9b7] text-sm font-semibold mt-1">
+          <span className="text-blue-600 text-sm font-semibold mt-1">
             Meet security standards
           </span>
         </div>
         <svg
-          className="w-6 h-6 text-[#31c9b7] mx-2 hidden md:block"
+          className="w-6 h-6 text-blue-600 mx-2 hidden md:block"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -50,7 +50,7 @@ function ComplianceEdgeSection() {
         {/* Step 2 */}
         <div className="flex flex-col items-center">
           <svg
-            className="w-12 h-12 mb-2 text-green-400"
+            className="w-12 h-12 mb-2 text-blue-600"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -72,12 +72,12 @@ function ComplianceEdgeSection() {
               strokeWidth="2"
             />
           </svg>
-          <span className="text-green-200 text-sm font-semibold mt-1">
+          <span className="text-blue-200 text-sm font-semibold mt-1">
             Achieve compliance
           </span>
         </div>
         <svg
-          className="w-6 h-6 text-[#31c9b7] mx-2 hidden md:block"
+          className="w-6 h-6 text-blue-600 mx-2 hidden md:block"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -108,12 +108,12 @@ function ComplianceEdgeSection() {
       </div>
       {/* Testimonial */}
       <div className="w-full max-w-3xl mx-auto bg-white/10 rounded-xl shadow-lg p-8 flex flex-col items-center mt-4">
-        <p className="italic text-[#31c9b7] text-center text-base md:text-lg mb-4">
+        <p className="italic text-blue-600 text-center text-base md:text-lg mb-4">
           "Kikimora was instrumental in our ISO 27001 certification process,
           which was a key requirement for closing our largest enterprise
           client."
         </p>
-        <span className="text-[#31c9b7] text-sm text-center">
+        <span className="text-blue-600 text-sm text-center">
           — Enterprise Customer
         </span>
       </div>

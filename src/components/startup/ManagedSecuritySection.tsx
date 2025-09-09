@@ -22,9 +22,9 @@ function ManagedSecuritySection() {
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         {/* Feature 1 */}
         <div className="flex flex-col items-center text-center">
-          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-[#31c9b7]/20 mb-4">
+          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
             <GlobeAltIcon
-              className="w-10 h-10 text-[#31c9b7]"
+              className="w-10 h-10 text-blue-600"
               aria-hidden="true"
             />
           </span>
@@ -51,9 +51,9 @@ function ManagedSecuritySection() {
         </div>
         {/* Feature 3 */}
         <div className="flex flex-col items-center text-center">
-          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4">
+          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
             <UserGroupIcon
-              className="w-10 h-10 text-green-400"
+              className="w-10 h-10 text-blue-600"
               aria-hidden="true"
             />
           </span>

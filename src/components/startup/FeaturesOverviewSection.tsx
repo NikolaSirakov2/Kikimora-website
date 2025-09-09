@@ -12,7 +12,7 @@ const FEATURES = [
   {
     icon: (
       <LayoutDashboard
-        className="text-[#31c9b7]"
+        className="text-blue-600"
         size={32}
         aria-hidden="true"
       />
@@ -23,31 +23,31 @@ const FEATURES = [
   },
   {
     icon: (
-      <ShieldCheck className="text-[#31c9b7]" size={32} aria-hidden="true" />
+      <ShieldCheck className="text-blue-600" size={32} aria-hidden="true" />
     ),
     title: "Integrated Scanning",
     description:
       "Integrated access to the most popular scanning and monitoring tools.",
   },
   {
-    icon: <FileText className="text-[#31c9b7]" size={32} aria-hidden="true" />,
+    icon: <FileText className="text-blue-600" size={32} aria-hidden="true" />,
     title: "Vulnerabilities Overview",
     description:
       "A comprehensive summary of all recorded vulnerabilities and remediation timelines.",
   },
   {
-    icon: <Users className="text-[#31c9b7]" size={32} aria-hidden="true" />,
+    icon: <Users className="text-blue-600" size={32} aria-hidden="true" />,
     title: "Project Management",
     description: "Track, manage and report cross-team collaboration with Jira.",
   },
   {
-    icon: <Radar className="text-[#31c9b7]" size={32} aria-hidden="true" />,
+    icon: <Radar className="text-blue-600" size={32} aria-hidden="true" />,
     title: "Compliance Checklists",
     description:
       "Use a variety of frameworks for security compliance checks and monitoring.",
   },
   {
-    icon: <Brain className="text-[#31c9b7]" size={32} aria-hidden="true" />,
+    icon: <Brain className="text-blue-600" size={32} aria-hidden="true" />,
     title: "AI Tools",
     description:
       "Designed to analyze local vulnerability data, providing advanced classification and actionable recommendations.",
@@ -97,7 +97,7 @@ function FeaturesOverviewSection() {
           </div>
         ))}
       </div>
-      <div className="w-full max-w-7xl bg-green-50 rounded-2xl py-10 px-4 flex flex-col items-center">
+      <div className="w-full max-w-7xl bg-blue-50 rounded-2xl py-10 px-4 flex flex-col items-center">
         <h3 className="text-2xl font-bold text-center mb-8 text-white font-montserrat">
           Integrations
         </h3>

@@ -22,7 +22,7 @@ function StartupHeroSection() {
             <Button className="px-8 py-3 text-lg font-bold">Get Started</Button>
             <Button
               variant="outline"
-              className="border-white px-8 py-3 text-lg font-bold text-[#31c9b7] hover:bg-white hover:text-[#31c9b7]"
+              className="border-white px-8 py-3 text-lg font-bold text-blue-600 hover:bg-white hover:text-blue-600"
               onClick={() => setIsScheduleDemoModalOpen(true)}
             >
               Book a Demo

@@ -29,7 +29,7 @@ const Card_get_access: React.FC<CardGetAccessProps> = ({ className = "" }) => {
 
       {/* Call to Action Button */}
       <div className="flex justify-center">
-        <button className="bg-white text-teal-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+        <button className="bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200">
           Get Free Community Access
         </button>
       </div>

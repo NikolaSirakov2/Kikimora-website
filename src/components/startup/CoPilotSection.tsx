@@ -18,12 +18,12 @@ function CoPilotSection() {
       <div className="flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-center w-full max-w-6xl px-4">
         {/* Card 1 */}
         <div
-          className="flex-1 bg-[#31c9b7]/10 border border-[#31c9b7]/20 rounded-2xl shadow-sm flex flex-col items-center justify-center text-center px-10 py-12 min-w-[300px] md:min-w-[400px] transition hover:shadow-lg focus-within:ring-2 focus-within:ring-[#31c9b7]"
+          className="flex-1 bg-blue-50 border border-blue-200 rounded-2xl shadow-sm flex flex-col items-center justify-center text-center px-10 py-12 min-w-[300px] md:min-w-[400px] transition hover:shadow-lg focus-within:ring-2 focus-within:ring-blue-600"
           tabIndex={0}
           aria-label="I want to manage security myself"
         >
-          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-[#31c9b7]/20 mb-4">
-            <Target className="text-[#31c9b7]" size={36} strokeWidth={2.2} />
+          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+            <Target className="text-blue-600" size={36} strokeWidth={2.2} />
           </span>
           <h4 className="text-lg font-bold text-gray-900 mb-2 text-center w-full">
             I want to manage security myself
@@ -41,13 +41,13 @@ function CoPilotSection() {
         </div>
         {/* Card 2 */}
         <div
-          className="flex-1 bg-green-50 border border-green-100 rounded-2xl shadow-sm flex flex-col items-center justify-center text-center px-10 py-12 min-w-[300px] md:min-w-[400px] transition hover:shadow-lg focus-within:ring-2 focus-within:ring-green-400"
+          className="flex-1 bg-blue-50 border border-blue-100 rounded-2xl shadow-sm flex flex-col items-center justify-center text-center px-10 py-12 min-w-[300px] md:min-w-[400px] transition hover:shadow-lg focus-within:ring-2 focus-within:ring-blue-600"
           tabIndex={0}
           aria-label="I need an expert team to handle security"
         >
-          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-4">
+          <span className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
             <ShieldCheck
-              className="text-green-600"
+              className="text-blue-600"
               size={36}
               strokeWidth={2.2}
             />
