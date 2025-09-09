@@ -12,7 +12,7 @@ function FeatureCard({
   description: string;
 }) {
   return (
-    <div className="bg-[#16213A] rounded-xl p-8 flex flex-col items-center text-center shadow-md min-w-[260px] max-w-[300px] flex-1 border border-[#23b098]/20">
+    <div className="bg-[#16213A] rounded-xl p-8 flex flex-col items-center text-center shadow-md min-w-[260px] max-w-[300px] flex-1 border border-blue-600/20">
       <div className="mb-4">{icon}</div>
       <h3 className="text-white font-semibold text-lg mb-2">{title}</h3>
       <p className="text-[#B0B8D1] text-sm">{description}</p>
@@ -45,7 +45,7 @@ export default function TryKikimoraHero() {
               <rect width="36" height="36" rx="8" fill="#1B2A4B" />
               <path
                 d="M18 10l6 4v8l-6 4-6-4v-8l6-4z"
-                stroke="#3EDDCA"
+                stroke="#2563eb"
                 strokeWidth="2"
               />
             </svg>
@@ -57,8 +57,8 @@ export default function TryKikimoraHero() {
           icon={
             <svg width="36" height="36" fill="none" viewBox="0 0 36 36">
               <rect width="36" height="36" rx="8" fill="#1B2A4B" />
-              <circle cx="18" cy="18" r="8" stroke="#3EDDCA" strokeWidth="2" />
-              <circle cx="18" cy="18" r="3" fill="#3EDDCA" />
+              <circle cx="18" cy="18" r="8" stroke="#2563eb" strokeWidth="2" />
+              <circle cx="18" cy="18" r="3" fill="#2563eb" />
             </svg>
           }
           title="Enhancing Cybersecurity Posture"
@@ -70,10 +70,10 @@ export default function TryKikimoraHero() {
               <rect width="36" height="36" rx="8" fill="#1B2A4B" />
               <path
                 d="M12 24v-2a4 4 0 014-4h4a4 4 0 014 4v2"
-                stroke="#3EDDCA"
+                stroke="#2563eb"
                 strokeWidth="2"
               />
-              <circle cx="18" cy="14" r="3" stroke="#3EDDCA" strokeWidth="2" />
+              <circle cx="18" cy="14" r="3" stroke="#2563eb" strokeWidth="2" />
             </svg>
           }
           title="Comprehensive View of Assets"
@@ -83,8 +83,8 @@ export default function TryKikimoraHero() {
           icon={
             <svg width="36" height="36" fill="none" viewBox="0 0 36 36">
               <rect width="36" height="36" rx="8" fill="#1B2A4B" />
-              <path d="M18 10v16M10 18h16" stroke="#3EDDCA" strokeWidth="2" />
-              <path d="M14 14l8 8" stroke="#3EDDCA" strokeWidth="2" />
+              <path d="M18 10v16M10 18h16" stroke="#2563eb" strokeWidth="2" />
+              <path d="M14 14l8 8" stroke="#2563eb" strokeWidth="2" />
             </svg>
           }
           title="Resource Optimization"

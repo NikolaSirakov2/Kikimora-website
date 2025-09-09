@@ -3,16 +3,16 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const checkIcon = (
   <svg
-    className="text-[#3EDDCA]"
+    className="text-blue-600"
     width="24"
     height="24"
     fill="none"
     viewBox="0 0 24 24"
   >
-    <circle cx="12" cy="12" r="12" fill="#E6F9F6" />
+    <circle cx="12" cy="12" r="12" fill="#dbeafe" />
     <path
       d="M7 12.5l3 3 7-7"
-      stroke="#3EDDCA"
+      stroke="#2563eb"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -83,10 +83,10 @@ export default function CommunityFeatureSection() {
                   fill="none"
                   viewBox="0 0 20 20"
                 >
-                  <circle cx="10" cy="10" r="10" fill="#E6F9F6" />
+                  <circle cx="10" cy="10" r="10" fill="#dbeafe" />
                   <path
                     d="M6 10.5l2 2 5-5"
-                    stroke="#3EDDCA"
+                    stroke="#2563eb"
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"

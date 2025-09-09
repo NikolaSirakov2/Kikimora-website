@@ -10,19 +10,19 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const BENEFITS = [
   {
-    icon: <ShieldCheckIcon className="w-8 h-8 text-[#23b098]" />,
+    icon: <ShieldCheckIcon className="w-8 h-8 text-blue-600" />,
     title: "Protection Against Cyber Threats",
     description:
       "Don't make the mistake of thinking your business is too small to be a target. In fact, over 43% of cyberattacks are aimed at small businesses. A vulnerability management tool helps you proactively identify and fix security weaknesses in your systems before they can be exploited by cybercriminals.",
   },
   {
-    icon: <ClipboardDocumentCheckIcon className="w-8 h-8 text-[#23b098]" />,
+    icon: <ClipboardDocumentCheckIcon className="w-8 h-8 text-blue-600" />,
     title: "Ensure Regulatory Compliance",
     description:
       "Many industries have strict data protection regulations (like GDPR, HIPAA, or PCI-DSS). A vulnerability management tool helps you stay compliant with these standards by identifying and addressing vulnerabilities that could lead to non-compliance and hefty fines.",
   },
   {
-    icon: <ArrowPathIcon className="w-8 h-8 text-[#23b098]" />,
+    icon: <ArrowPathIcon className="w-8 h-8 text-blue-600" />,
     title: "Maintain Business Continuity",
     description:
       "A single cyberattack can bring your business to a halt, leading to significant financial losses and damage to your reputation. By proactively managing vulnerabilities, you can prevent disruptions and ensure your business operations continue to run smoothly.",
