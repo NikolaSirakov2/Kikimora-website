@@ -73,7 +73,7 @@ function PlatformFeaturesSection() {
             className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md"
           >
             <Icon
-              className="w-14 h-14 text-[#31c9b7] mb-6"
+              className="w-14 h-14 text-blue-600 mb-6"
               aria-hidden="true"
             />
             <h3 className="text-xl font-bold mb-2 text-[#111827] font-montserrat">
@@ -85,7 +85,7 @@ function PlatformFeaturesSection() {
           </div>
         ))}
       </div>
-      <div className="w-full max-w-6xl bg-green-50 rounded-2xl py-10 px-4 flex flex-col items-center">
+      <div className="w-full max-w-6xl bg-blue-50 rounded-2xl py-10 px-4 flex flex-col items-center">
         <h3 className="text-2xl font-bold text-white mb-6">Integrations</h3>
         <div className="flex flex-wrap justify-center gap-6 w-full">
           {INTEGRATIONS.map((name) => (

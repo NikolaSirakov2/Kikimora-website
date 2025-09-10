@@ -83,7 +83,7 @@ function SMEPlatformPartnershipSection() {
             className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md"
           >
             <div className="bg-[#f5f8ff] rounded-full p-4 mb-4 flex items-center justify-center">
-              <Icon className="w-12 h-12 text-[#31c9b7]" aria-hidden="true" />
+              <Icon className="w-12 h-12 text-blue-600" aria-hidden="true" />
             </div>
             <h4 className="text-xl font-bold mb-2 text-[#111827] font-montserrat">
               {title}
@@ -104,7 +104,7 @@ function SMEPlatformPartnershipSection() {
             className="bg-white rounded-xl p-10 flex flex-col items-center shadow-sm border border-[#e5e7eb] min-h-[320px] text-center transition hover:shadow-md"
           >
             <Icon
-              className="w-14 h-14 text-[#31c9b7] mb-6"
+              className="w-14 h-14 text-blue-600 mb-6"
               aria-hidden="true"
             />
             <h4 className="text-xl font-bold mb-2 text-[#111827] font-montserrat">
@@ -117,7 +117,7 @@ function SMEPlatformPartnershipSection() {
         ))}
       </div>
       <Button
-        className="bg-[#31c9b7] text-white hover:bg-[#2bb3a3] px-8 py-4 rounded-lg font-montserrat text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-[#31c9b7] mt-4"
+        className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg font-montserrat text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-600 mt-4"
         onClick={() => window.open("#platform-services", "_self")}
         aria-label="Explore Our Platform & Services"
       >

@@ -7,7 +7,7 @@ function TrustedByEuropeSection() {
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
         Trusted by Growing Businesses Across Europe
       </h2>
-      <div className="w-full max-w-6xl bg-[#f0fdfa] rounded-xl border border-[#31c9b7] p-8 md:p-12 flex flex-col relative">
+      <div className="w-full max-w-6xl bg-blue-50 rounded-xl border border-blue-600 p-8 md:p-12 flex flex-col relative">
         <img
           src={colorAndBlackLogo}
           alt="Kikimora color logo"
@@ -37,7 +37,7 @@ function TrustedByEuropeSection() {
             </ul>
           </div>
         </div>
-        <blockquote className="border-l-4 border-[#31c9b7] bg-white p-4 rounded-md mb-2">
+        <blockquote className="border-l-4 border-blue-600 bg-white p-4 rounded-md mb-2">
           <p className="font-semibold text-[#111827] mb-2">
             "Kikimora has transformed how we approach cybersecurity. The
             platform gives us the clarity and control we need to protect our

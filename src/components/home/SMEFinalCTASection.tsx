@@ -25,7 +25,7 @@ function SMEFinalCTASection() {
           <Button
             variant="outline"
             size="lg"
-            className="border-white text-[#31c9b7] hover:bg-white/10 hover:text-white font-bold w-full md:w-auto"
+            className="border-white text-blue-600 hover:bg-white/10 hover:text-white font-bold w-full md:w-auto"
             onClick={() =>
               window.open("https://app.kikimora.io/register", "_blank")
             }
@@ -36,7 +36,7 @@ function SMEFinalCTASection() {
           <Button
             variant="outline"
             size="lg"
-            className="border-white text-[#31c9b7] hover:bg-white/10 hover:text-white font-bold w-full md:w-auto"
+            className="border-white text-blue-600 hover:bg-white/10 hover:text-white font-bold w-full md:w-auto"
             onClick={() => setIsScheduleDemoModalOpen(true)}
             aria-label="Book Demo"
           >

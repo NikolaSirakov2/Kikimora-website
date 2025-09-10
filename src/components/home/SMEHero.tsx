@@ -14,7 +14,7 @@ function SMEHero() {
           <br />
           Regulations.
         </h1>
-        <h2 className="text-4xl md:text-5xl font-bold text-[#31c9b7] mt-2 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mt-2 mb-4">
           Start Growing Your Business.
         </h2>
         <p className="max-w-2xl text-lg text-white/80 mb-8 font-montserrat">

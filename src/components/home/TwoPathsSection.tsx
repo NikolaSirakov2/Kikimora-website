@@ -85,7 +85,7 @@ export function TwoPathsSection() {
                 onClick={() => setActiveTab("it-team")}
                 className={`text-lg font-medium px-6 py-3 rounded-lg transition-colors duration-200 border ${
                   activeTab === "it-team"
-                    ? "bg-[#31c9b7] text-white border-[#31c9b7]"
+                    ? "bg-blue-600 text-white border-blue-600"
                     : "bg-white/10 text-white border-white/30 hover:bg-white/20 hover:border-white/50"
                 }`}
               >
@@ -95,7 +95,7 @@ export function TwoPathsSection() {
                 onClick={() => setActiveTab("business-leaders")}
                 className={`text-lg font-medium px-6 py-3 rounded-lg transition-colors duration-200 border ${
                   activeTab === "business-leaders"
-                    ? "bg-[#31c9b7] text-white border-[#31c9b7]"
+                    ? "bg-blue-600 text-white border-blue-600"
                     : "bg-white/10 text-white border-white/30 hover:bg-white/20 hover:border-white/50"
                 }`}
               >
@@ -121,7 +121,7 @@ export function TwoPathsSection() {
                 {currentContent.features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-4">
                     <div className="flex-shrink-0 mt-1">
-                      <Check className="w-5 h-5 text-green-500" />
+                      <Check className="w-5 h-5 text-blue-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">
@@ -138,7 +138,7 @@ export function TwoPathsSection() {
               <div className="">
                 <button
                   onClick={() => setIsScheduleDemoModalOpen(true)}
-                  className="bg-[#31c9b7] hover:bg-[#2bb3a3] text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 border-none outline-none"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 border-none outline-none"
                 >
                   Get Your Custom Quote
                 </button>
