@@ -3,7 +3,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 const CARDS = [
   {
     icon: (
-      <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#e6f7f5]">
+      <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100">
         {/* Monitor SVG */}
         <svg
           width="32"
@@ -18,11 +18,11 @@ const CARDS = [
             width="20"
             height="14"
             rx="3"
-            fill="#e6f7f5"
-            stroke="#31c9b7"
+            fill="#dbeafe"
+            stroke="#3b82f6"
             strokeWidth="2"
           />
-          <rect x="12" y="24" width="8" height="2" rx="1" fill="#31c9b7" />
+          <rect x="12" y="24" width="8" height="2" rx="1" fill="#3b82f6" />
         </svg>
       </span>
     ),
@@ -32,7 +32,7 @@ const CARDS = [
   },
   {
     icon: (
-      <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100">
+      <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100">
         {/* Target/Context SVG */}
         <svg
           width="32"
@@ -45,19 +45,19 @@ const CARDS = [
             cx="16"
             cy="16"
             r="14"
-            stroke="#34D399"
+            stroke="#3b82f6"
             strokeWidth="2"
-            fill="#D1FAE5"
+            fill="#dbeafe"
           />
           <circle
             cx="16"
             cy="16"
             r="7"
-            stroke="#34D399"
+            stroke="#3b82f6"
             strokeWidth="2"
             fill="#fff"
           />
-          <circle cx="16" cy="16" r="2" fill="#34D399" />
+          <circle cx="16" cy="16" r="2" fill="#3b82f6" />
         </svg>
       </span>
     ),

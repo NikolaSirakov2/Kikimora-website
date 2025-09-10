@@ -119,7 +119,7 @@ ations without disrupting them?`}
         />
         <RiskCard
           icon={
-            <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#e6f7f5]">
+            <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100">
               {/* Compliance/Check SVG */}
               <svg
                 width="32"
@@ -134,13 +134,13 @@ ations without disrupting them?`}
                   width="24"
                   height="24"
                   rx="12"
-                  stroke="#31c9b7"
+                  stroke="#3b82f6"
                   strokeWidth="2"
-                  fill="#e6f7f5"
+                  fill="#dbeafe"
                 />
                 <path
                   d="M11 17l4 4 6-8"
-                  stroke="#31c9b7"
+                  stroke="#3b82f6"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"

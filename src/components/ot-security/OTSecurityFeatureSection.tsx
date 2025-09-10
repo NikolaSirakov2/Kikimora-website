@@ -7,7 +7,7 @@ const features = [
     subheading: (
       <a
         href="#on-premise"
-        className="text-[#31c9b7] underline font-semibold"
+        className="text-blue-500 underline font-semibold"
         aria-label="Achieve Maximum Security with On-Premise Deployment."
       >
         Achieve Maximum Security with On-Premise Deployment.
@@ -18,10 +18,10 @@ const features = [
     button: {
       label: "Learn About On-Premise Deployment",
       href: "#on-premise",
-      color: "bg-[#31c9b7] hover:bg-[#2bb3a3] text-white",
+      color: "bg-blue-500 hover:bg-blue-600 text-white",
     },
     card: {
-      bg: "bg-[#e6f7f5] border-[#b8e8e0]",
+      bg: "bg-blue-100 border-blue-300",
       icon: (
         <svg
           width="48"
@@ -30,10 +30,10 @@ const features = [
           viewBox="0 0 48 48"
           aria-hidden="true"
         >
-          <rect width="48" height="48" rx="12" fill="#E6F7F5" />
+          <rect width="48" height="48" rx="12" fill="#dbeafe" />
           <path
             d="M24 16a4 4 0 0 1 4 4v2h-8v-2a4 4 0 0 1 4-4Zm-8 6a8 8 0 1 1 16 0v2h1a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H15a3 3 0 0 1-3-3v-7a3 3 0 0 1 3-3h1v-2Zm2 2v2h12v-2a6 6 0 1 0-12 0Zm-3 5v7a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1H15a1 1 0 0 0-1 1Z"
-            fill="#31c9b7"
+            fill="#3b82f6"
           />
         </svg>
       ),
@@ -44,7 +44,7 @@ const features = [
   {
     heading: "Go Beyond Compliance. Achieve Demonstrable Governance.",
     subheading: (
-      <span className="text-[#22c55e] font-semibold">
+      <span className="text-blue-500 font-semibold">
         Master NIS2, ISO 27001, and DORA with Automated Tooling.
       </span>
     ),
@@ -53,10 +53,10 @@ const features = [
     button: {
       label: "View Compliance Features",
       href: "#compliance",
-      color: "bg-[#22c55e] hover:bg-[#16a34a] text-white",
+      color: "bg-blue-500 hover:bg-blue-600 text-white",
     },
     card: {
-      bg: "bg-[#e7f9ef] border-[#b6e7d0]",
+      bg: "bg-blue-100 border-blue-300",
       icon: (
         <svg
           width="48"
@@ -65,10 +65,10 @@ const features = [
           viewBox="0 0 48 48"
           aria-hidden="true"
         >
-          <rect width="48" height="48" rx="12" fill="#E7F9EF" />
+          <rect width="48" height="48" rx="12" fill="#dbeafe" />
           <path
             d="M34 18.5l-12 12-6-6"
-            stroke="#22c55e"
+            stroke="#3b82f6"
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -162,9 +162,9 @@ function OTSecurityFeatureSection() {
               className="text-base md:text-lg mb-2 font-semibold"
               style={{
                 color: feature.reverse
-                  ? "#22c55e"
-                  : feature.button.color?.includes("#31c9b7")
-                    ? "#31c9b7"
+                  ? "#3b82f6"
+                  : feature.button.color?.includes("blue-500")
+                    ? "#3b82f6"
                     : feature.button.color?.includes("#a21caf")
                       ? "#a21caf"
                       : undefined,

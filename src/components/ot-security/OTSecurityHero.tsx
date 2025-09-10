@@ -21,7 +21,7 @@ export function OTSecurityHero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
-              className="bg-[#31c9b7] hover:bg-[#2bb3a3] text-white font-semibold px-8 py-4 rounded-lg text-base shadow transition-colors focus:outline-none focus:ring-2 focus:ring-[#31c9b7] focus:ring-offset-2"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg text-base shadow transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               aria-label="Schedule Your Demo"
               type="button"
               onClick={() => setIsScheduleDemoModalOpen(true)}
@@ -30,7 +30,7 @@ export function OTSecurityHero() {
               <span className="ml-2">→</span>
             </button>
             <button
-              className="bg-white/80 text-[#31c9b7] font-semibold px-8 py-4 rounded-lg text-base shadow border border-white focus:outline-none focus:ring-2 focus:ring-[#31c9b7] focus:ring-offset-2 transition-colors"
+              className="bg-white/80 text-blue-500 font-semibold px-8 py-4 rounded-lg text-base shadow border border-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
               aria-label="Explore On-Premise Options"
               type="button"
             >

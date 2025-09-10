@@ -14,7 +14,7 @@ function FinancialCaseStudySection() {
         {/* Cards Row */}
         <div className="flex flex-col md:flex-row items-center w-full gap-4 md:gap-6 mb-4">
           {/* Challenge Card */}
-          <div className="flex-1 bg-[#e6f7f5] rounded-2xl p-6 min-h-[200px] shadow-md min-w-[280px] flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex-1 bg-blue-100 rounded-2xl p-6 min-h-[200px] shadow-md min-w-[280px] flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-lg font-bold mb-2 text-[#111827]">Challenge</h3>
             <p className="text-base text-[#374151]">
               Needed to centralize security assessments, prioritize
@@ -25,12 +25,12 @@ function FinancialCaseStudySection() {
           <div className="hidden md:flex items-center justify-center mx-2">
             <FiChevronRight
               size={32}
-              className="text-[#31c9b7]"
+              className="text-blue-500"
               aria-label="Next"
             />
           </div>
           {/* Solution Card */}
-          <div className="flex-1 bg-[#e6f7f5] rounded-2xl p-6 shadow-md min-h-[200px] min-w-[280px] flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex-1 bg-blue-100 rounded-2xl p-6 shadow-md min-h-[200px] min-w-[280px] flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-lg font-bold mb-2 text-[#111827]">Solution</h3>
             <p className="text-base text-[#374151]">
               Optimized vulnerability management, reduced time-to-remediate, and
@@ -41,12 +41,12 @@ function FinancialCaseStudySection() {
           <div className="hidden md:flex items-center justify-center mx-2">
             <FiChevronRight
               size={32}
-              className="text-[#31c9b7]"
+              className="text-blue-500"
               aria-label="Next"
             />
           </div>
           {/* Result Card */}
-          <div className="flex-1 bg-[#e6f7f5] rounded-2xl p-6 shadow-md min-h-[200px] min-w-[280px] flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex-1 bg-blue-100 rounded-2xl p-6 shadow-md min-h-[200px] min-w-[280px] flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-lg font-bold mb-2 text-[#111827]">Result</h3>
             <p className="text-base text-[#374151]">
               Streamlined security operations with comprehensive vulnerability
@@ -58,18 +58,18 @@ function FinancialCaseStudySection() {
         <div className="flex md:hidden flex-col w-full items-center gap-2 mb-2">
           <FiChevronRight
             size={28}
-            className="text-[#31c9b7] rotate-90"
+            className="text-blue-500 rotate-90"
             aria-label="Next"
           />
           <FiChevronRight
             size={28}
-            className="text-[#31c9b7] rotate-90"
+            className="text-blue-500 rotate-90"
             aria-label="Next"
           />
         </div>
         {/* Testimonial Card */}
         <div
-          className="w-full bg-[#e6f7f5] rounded-2xl p-8 shadow-md flex flex-col items-center"
+          className="w-full bg-blue-100 rounded-2xl p-8 shadow-md flex flex-col items-center"
           role="region"
           aria-label="testimonial"
         >
@@ -82,7 +82,7 @@ function FinancialCaseStudySection() {
             "Should you need a 5-tier, flexible, all-in-one platform for
             vulnerability management, we strongly recommend Kikimora."
           </blockquote>
-          <cite className="not-italic text-[#31c9b7] text-base font-medium text-center block">
+          <cite className="not-italic text-blue-500 text-base font-medium text-center block">
             — Stefan Tsonev, Head of IT Security Department, D Commerce Bank AD
           </cite>
         </div>
