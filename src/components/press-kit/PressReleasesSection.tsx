@@ -58,8 +58,7 @@ export function PressReleasesSection() {
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
-                stroke="#23b098"
-                className="w-6 h-6 mt-1 flex-shrink-0"
+                className="w-6 h-6 mt-1 flex-shrink-0 stroke-blue-500"
                 aria-hidden="true"
               >
                 <rect
@@ -71,7 +70,6 @@ export function PressReleasesSection() {
                   fill="#e0e7ef"
                 />
                 <path
-                  stroke="#23b098"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"

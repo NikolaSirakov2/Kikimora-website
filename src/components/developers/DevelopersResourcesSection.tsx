@@ -36,7 +36,7 @@ export function DevelopersResourcesSection() {
     <AnimatedBackground className="w-[99.1vw] py-16 flex justify-center items-center">
       <div className="w-full max-w-6xl bg-[#22325a] rounded-2xl px-6 py-10 md:px-12 md:py-14 shadow-xl">
         <div className="flex items-center gap-3 mb-2">
-          <FiCode size={28} color="#00E5BE" aria-hidden="true" />
+          <FiCode size={28} color="#3b82f6" aria-hidden="true" />
           <h2 className="text-3xl md:text-4xl font-bold text-white  ">
             Developers
           </h2>

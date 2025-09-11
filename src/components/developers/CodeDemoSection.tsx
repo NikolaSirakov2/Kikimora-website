@@ -17,7 +17,7 @@ const threats = await security.scan.vulnerabilities();`;
 // Custom style for green code theme
 const greenTheme: Record<string, React.CSSProperties> = {
   'code[class*="language-"]': {
-    color: "#3EDDCA",
+    color: "#3b82f6",
     background: "transparent",
     fontFamily: "Fira Mono, Menlo, Monaco, Consolas, monospace",
     fontSize: "1.1rem",
@@ -28,7 +28,7 @@ const greenTheme: Record<string, React.CSSProperties> = {
     lineHeight: 1.6,
   },
   'pre[class*="language-"]': {
-    color: "#3EDDCA",
+    color: "#3b82f6",
     background: "transparent",
     fontFamily: "Fira Mono, Menlo, Monaco, Consolas, monospace",
     fontSize: "1.1rem",
@@ -38,7 +38,7 @@ const greenTheme: Record<string, React.CSSProperties> = {
     minHeight: "260px",
     lineHeight: 1.6,
   },
-  comment: { color: "#6ee7b7" },
+  comment: { color: "#3b82f6" },
   keyword: { color: "#3EDDCA", fontWeight: "bold" },
   string: { color: "#3EDDCA" },
   function: { color: "#3EDDCA" },

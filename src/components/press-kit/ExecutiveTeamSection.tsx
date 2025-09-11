@@ -80,8 +80,7 @@ export function ExecutiveTeamSection() {
             <Button
               asChild
               variant="link"
-              className="text-base font-medium mb-4 p-0 h-auto min-h-0"
-              style={{ color: "#23b098" }}
+              className="text-base font-medium mb-4 p-0 h-auto min-h-0 text-blue-500"
               aria-label={exec.title}
             >
               <a

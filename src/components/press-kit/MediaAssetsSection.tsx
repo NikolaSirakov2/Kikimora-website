@@ -52,7 +52,7 @@ export function MediaAssetsSection() {
             className="flex flex-col bg-white rounded-2xl shadow-md p-8 w-full md:w-1/3 min-w-[300px] max-w-[400px] h-[420px]"
           >
             <div className="flex items-center gap-2 mb-6">
-              <Download className="" style={{ color: "#23b098" }} />
+              <Download className="text-blue-500" />
               <span className="text-xl font-semibold">{group.title}</span>
             </div>
             <div className="flex-1 flex flex-col gap-4">
@@ -79,8 +79,7 @@ export function MediaAssetsSection() {
             </div>
             <div className="mt-auto pt-6">
               <Button
-                className="w-full h-12 text-base font-semibold"
-                style={{ backgroundColor: "#23b098" }}
+                className="w-full h-12 text-base font-semibold bg-blue-500 hover:bg-blue-600"
                 size="lg"
               >
                 Download All

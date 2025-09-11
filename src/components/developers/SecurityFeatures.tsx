@@ -10,32 +10,32 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 const features = [
   {
-    icon: <FiShield size={32} color="#00E5BE" aria-hidden="true" />,
+    icon: <FiShield size={32} color="#3b82f6" aria-hidden="true" />,
     title: "Powerful threat detection",
     description: "Advanced algorithms to detect and prevent security threats",
   },
   {
-    icon: <FiDatabase size={32} color="#00E5BE" aria-hidden="true" />,
+    icon: <FiDatabase size={32} color="#3b82f6" aria-hidden="true" />,
     title: "Secure data handling",
     description: "Enterprise-grade security for your sensitive data",
   },
   {
-    icon: <FiCloud size={32} color="#00E5BE" aria-hidden="true" />,
+    icon: <FiCloud size={32} color="#3b82f6" aria-hidden="true" />,
     title: "Comprehensive threat reports",
     description: "Detailed insights and analytics on security events",
   },
   {
-    icon: <FiZap size={32} color="#00E5BE" aria-hidden="true" />,
+    icon: <FiZap size={32} color="#3b82f6" aria-hidden="true" />,
     title: "Real-time monitoring",
     description: "24/7 continuous monitoring and instant alerts",
   },
   {
-    icon: <FiUsers size={32} color="#00E5BE" aria-hidden="true" />,
+    icon: <FiUsers size={32} color="#3b82f6" aria-hidden="true" />,
     title: "Multi-user support",
     description: "Team collaboration and role-based access control",
   },
   {
-    icon: <FiCheckCircle size={32} color="#00E5BE" aria-hidden="true" />,
+    icon: <FiCheckCircle size={32} color="#3b82f6" aria-hidden="true" />,
     title: "Compliance automation",
     description: "Automated compliance reporting and documentation",
   },

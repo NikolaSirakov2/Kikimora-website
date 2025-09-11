@@ -20,8 +20,7 @@ export function CompanyOverview() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full">
           <div className="flex flex-col items-center min-w-[120px]">
             <span
-              className="text-2xl md:text-3xl font-bold"
-              style={{ color: "#23b098" }}
+              className="text-2xl md:text-3xl font-bold text-blue-500"
             >
               2018
             </span>
@@ -29,8 +28,7 @@ export function CompanyOverview() {
           </div>
           <div className="flex flex-col items-center min-w-[120px]">
             <span
-              className="text-2xl md:text-3xl font-bold text-center"
-              style={{ color: "#23b098" }}
+              className="text-2xl md:text-3xl font-bold text-center text-blue-500"
             >
               San Francisco
             </span>
@@ -38,8 +36,7 @@ export function CompanyOverview() {
           </div>
           <div className="flex flex-col items-center min-w-[120px]">
             <span
-              className="text-2xl md:text-3xl font-bold"
-              style={{ color: "#23b098" }}
+              className="text-2xl md:text-3xl font-bold text-blue-500"
             >
               250+
             </span>
@@ -47,8 +44,7 @@ export function CompanyOverview() {
           </div>
           <div className="flex flex-col items-center min-w-[120px]">
             <span
-              className="text-2xl md:text-3xl font-bold"
-              style={{ color: "#23b098" }}
+              className="text-2xl md:text-3xl font-bold text-blue-500"
             >
               10,000+
             </span>
@@ -56,8 +52,7 @@ export function CompanyOverview() {
           </div>
           <div className="flex flex-col items-center min-w-[120px]">
             <span
-              className="text-2xl md:text-3xl font-bold"
-              style={{ color: "#23b098" }}
+              className="text-2xl md:text-3xl font-bold text-blue-500"
             >
               45+
             </span>
@@ -65,8 +60,7 @@ export function CompanyOverview() {
           </div>
           <div className="flex flex-col items-center min-w-[120px]">
             <span
-              className="text-2xl md:text-3xl font-bold"
-              style={{ color: "#23b098" }}
+              className="text-2xl md:text-3xl font-bold text-blue-500"
             >
               $85M
             </span>
