@@ -106,7 +106,7 @@ export function InteractiveApproachSection() {
                     <h3 className="text-2xl md:text-3xl font-bold text-white">
                       {activeSectionData.heading}
                     </h3>
-                    <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center text-white">
+                    <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white">
                       {activeSectionData.icon}
                     </div>
                   </div>
@@ -119,7 +119,7 @@ export function InteractiveApproachSection() {
 
                   <button
                     onClick={activeSectionData.buttonAction}
-                    className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 mt-auto"
+                    className="bg-blue-500 hover:blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 mt-auto"
                   >
                     {activeSectionData.buttonText}
                   </button>
