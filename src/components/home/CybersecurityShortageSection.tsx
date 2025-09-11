@@ -38,25 +38,25 @@ export function CybersecurityShortageSection() {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">
                     24/7 monitoring & detection
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">
                     Certified security analysts
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">
                     Advanced threat intelligence
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">Rapid incident response</span>
                 </div>
               </div>
@@ -76,7 +76,7 @@ export function CybersecurityShortageSection() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Our MSS:</span>
-                  <span className="text-green-600 font-semibold">
+                  <span className="text-blue-600 font-semibold">
                     Fraction of the cost
                   </span>
                 </div>

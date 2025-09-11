@@ -15,7 +15,7 @@ export function ContactForm({
   if (state.succeeded) {
     return (
       <div className="text-center py-8">
-        <div className="text-green-600 text-lg font-semibold mb-2">
+        <div className="text-blue-600 text-lg font-semibold mb-2">
           Thank you for your message!
         </div>
         <p className="text-gray-600">

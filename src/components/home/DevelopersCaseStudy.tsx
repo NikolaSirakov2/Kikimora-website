@@ -37,7 +37,7 @@ export function DevelopersCaseStudy() {
               </p>
               <a
                 href="#"
-                className="text-[#3EDDCA] font-montserrat hover:underline"
+                className="text-[#3b82f6] font-montserrat hover:underline"
               >
                 View case study
               </a>

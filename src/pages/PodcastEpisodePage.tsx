@@ -399,7 +399,7 @@ export function PodcastEpisodePage() {
                     {/* Header */}
                     <div className="flex items-center justify-between pb-4 border-b border-gray-700">
                       <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
                         <h4 className="text-lg font-semibold text-white">
                           Episode Transcript
                         </h4>

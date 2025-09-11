@@ -41,7 +41,7 @@ const SecurityAnalysisInterface = ({
   const getStatusIcon = (status: TerminalStep["status"]) => {
     switch (status) {
       case "completed":
-        return <span className="text-green-400 text-sm">✓</span>;
+        return <span className="text-blue-500 text-sm">✓</span>;
       case "in-progress":
         return <span className="text-blue-400 text-sm animate-pulse">*</span>;
       case "pending":
@@ -89,7 +89,7 @@ const SecurityAnalysisInterface = ({
               <div className="flex space-x-2 mr-4">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
               </div>
               <span className="text-gray-400 text-sm">Terminal</span>
             </div>
@@ -97,7 +97,7 @@ const SecurityAnalysisInterface = ({
             {/* Terminal Content */}
             <div className="p-4 font-mono text-sm">
               {/* Command Line */}
-              <div className="text-green-400 mb-4">{terminalCommand}</div>
+              <div className="text-blue-500 mb-4">{terminalCommand}</div>
 
               {/* Process Steps */}
               <div className="space-y-2">

@@ -290,9 +290,9 @@ const TestPage = () => {
                       This is an example info card component.
                     </p>
                   </div>
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                    <h4 className="font-medium text-green-900">Success Card</h4>
-                    <p className="text-green-700 text-sm mt-1">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h4 className="font-medium text-blue-900">Success Card</h4>
+                    <p className="text-blue-700 text-sm mt-1">
                       This is an example success card component.
                     </p>
                   </div>
@@ -404,9 +404,9 @@ const TestPage = () => {
                       <span className="text-sm text-gray-600">bg-red-500</span>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <div className="w-4 h-4 bg-green-500 rounded"></div>
+                      <div className="w-4 h-4 bg-blue-500 rounded"></div>
                       <span className="text-sm text-gray-600">
-                        bg-green-500
+                        bg-blue-500
                       </span>
                     </div>
                     <div className="flex items-center space-x-3">

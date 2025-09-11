@@ -96,7 +96,7 @@ const TerminalLine = ({ text, status, isLast }: { text: string; status: string; 
       return <Loader size={16} className="animate-spin text-gray-400" />;
     switch (status) {
       case "success":
-        return <CheckCircle2 size={16} className="text-green-400" />;
+        return <CheckCircle2 size={16} className="text-blue-500" />;
       case "info":
         return <Info size={16} className="text-blue-400" />;
       default:
@@ -108,7 +108,7 @@ const TerminalLine = ({ text, status, isLast }: { text: string; status: string; 
     if (isLast) return "text-gray-300";
     switch (status) {
       case "success":
-        return "text-green-400";
+        return "text-blue-500";
       case "info":
         return "text-blue-400";
       default:
@@ -172,7 +172,7 @@ const AnimatedTerminal = ({ actionId, onAnimationComplete }: { actionId: string;
       <div className="flex items-center space-x-2 mb-4 flex-shrink-0">
         <div className="w-3 h-3 bg-red-500 rounded-full"></div>
         <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-        <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+        <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
       </div>
       <div className="space-y-2 overflow-y-auto flex-grow pr-2">
         <AnimatePresence>

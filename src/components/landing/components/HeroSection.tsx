@@ -227,7 +227,7 @@ export const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
                   <p className="text-xs text-gray-500">AI Analysis</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-green-400"></div>
+                  <div className="h-1.5 w-1.5 rounded-full bg-blue-500"></div>
                   <p className="text-xs text-gray-500">Real-time Protection</p>
                 </div>
               </div>

@@ -62,7 +62,7 @@ export function EUComplianceSection() {
               <div className="bg-white/90 backdrop-blur-md rounded-lg p-6 shadow-lg border border-gray-200/50">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <FaBuilding className="text-green-600 text-2xl" />
+                    <FaBuilding className="text-blue-600 text-2xl" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -83,27 +83,27 @@ export function EUComplianceSection() {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">
                     Proactive threat mitigation
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">Reduced attack surface</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">
                     Improved compliance posture
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">Operational resilience</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FaCheck className="text-green-500 text-lg flex-shrink-0" />
+                  <FaCheck className="text-blue-500 text-lg flex-shrink-0" />
                   <span className="text-gray-700">
                     Customer trust protection
                   </span>

@@ -64,7 +64,7 @@ export default function TryKikimoraFooter() {
                 Schedule a Demo
               </h4>
               {state.succeeded ? (
-                <div className="text-green-400 text-sm">
+                <div className="text-blue-500 text-sm">
                   Demo request submitted! We'll contact you shortly.
                 </div>
               ) : (

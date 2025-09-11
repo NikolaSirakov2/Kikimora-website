@@ -37,7 +37,7 @@ export function FeatureComparison({
               <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 w-1/4">
                 Managed Team Only
               </th>
-              <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 w-1/4 bg-green-50 border-l-2 border-green-200">
+              <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 w-1/4 bg-blue-50 border-l-2 border-blue-200">
                 Our Combined Approach
               </th>
             </tr>
@@ -54,7 +54,7 @@ export function FeatureComparison({
                 <td className="px-6 py-4 text-sm text-gray-600 text-center">
                   {feature.managedTeamOnly}
                 </td>
-                <td className="px-6 py-4 text-sm text-gray-900 text-center bg-green-50 font-medium">
+                <td className="px-6 py-4 text-sm text-gray-900 text-center bg-blue-50 font-medium">
                   {feature.combinedApproach}
                 </td>
               </tr>

@@ -124,7 +124,7 @@ const TerminalLine: React.FC<TerminalLineProps> = ({
       return <Loader size={16} className="animate-spin text-gray-400" />;
     switch (status) {
       case "success":
-        return <CheckCircle2 size={16} className="text-green-400" />;
+        return <CheckCircle2 size={16} className="text-blue-500" />;
       case "info":
         return <Info size={16} className="text-blue-400" />;
       default:
@@ -136,7 +136,7 @@ const TerminalLine: React.FC<TerminalLineProps> = ({
     if (isLast) return "text-gray-300";
     switch (status) {
       case "success":
-        return "text-green-400";
+        return "text-blue-500";
       case "info":
         return "text-blue-400";
       default:
@@ -204,7 +204,7 @@ const AnimatedTerminal: React.FC<AnimatedTerminalProps> = ({
       <div className="mb-4 flex flex-shrink-0 items-center space-x-2">
         <div className="h-3 w-3 rounded-full bg-red-500"></div>
         <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
-        <div className="h-3 w-3 rounded-full bg-green-500"></div>
+        <div className="h-3 w-3 rounded-full bg-blue-500"></div>
       </div>
       <div className="flex-grow space-y-2 overflow-y-auto pr-2">
         <AnimatePresence>

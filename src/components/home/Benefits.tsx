@@ -32,7 +32,7 @@ export function Benefits() {
                   and ensure consistent security policies across the board
                 </p>
               </div>
-              <CheckCircleIcon className="w-10 h-10 text-[#3EDDCA] flex-shrink-0" />
+              <CheckCircleIcon className="w-10 h-10 text-[#3b82f6] flex-shrink-0" />
             </div>
           </div>
 
@@ -49,7 +49,7 @@ export function Benefits() {
                   enhancing productivity
                 </p>
               </div>
-              <ClipboardDocumentListIcon className="w-10 h-10 text-[#3EDDCA] flex-shrink-0" />
+              <ClipboardDocumentListIcon className="w-10 h-10 text-[#3b82f6] flex-shrink-0" />
             </div>
           </div>
 
@@ -66,7 +66,7 @@ export function Benefits() {
                   vulnerabilities
                 </p>
               </div>
-              <ClockIcon className="w-10 h-10 text-[#3EDDCA] flex-shrink-0" />
+              <ClockIcon className="w-10 h-10 text-[#3b82f6] flex-shrink-0" />
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export function Benefits() {
                   and vulnerabilities
                 </p>
               </div>
-              <ExclamationTriangleIcon className="w-10 h-10 text-[#3EDDCA] flex-shrink-0" />
+              <ExclamationTriangleIcon className="w-10 h-10 text-[#3b82f6] flex-shrink-0" />
             </div>
           </div>
 
@@ -100,7 +100,7 @@ export function Benefits() {
                   recommendations
                 </p>
               </div>
-              <DocumentCheckIcon className="w-10 h-10 text-[#3EDDCA] flex-shrink-0" />
+              <DocumentCheckIcon className="w-10 h-10 text-[#3b82f6] flex-shrink-0" />
             </div>
           </div>
 
@@ -117,7 +117,7 @@ export function Benefits() {
                   vulnerability management is a fact
                 </p>
               </div>
-              <Cog6ToothIcon className="w-10 h-10 text-[#3EDDCA] flex-shrink-0" />
+              <Cog6ToothIcon className="w-10 h-10 text-[#3b82f6] flex-shrink-0" />
             </div>
           </div>
         </div>

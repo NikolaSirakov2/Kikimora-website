@@ -56,7 +56,7 @@ export function AutoEmail() {
           {status === "loading" ? "Sending..." : "Send Request"}
         </button>
         {status === "success" && (
-          <p className="text-green-500">Email sent successfully!</p>
+          <p className="text-blue-500">Email sent successfully!</p>
         )}
         {status === "error" && <p className="text-red-500">{error}</p>}
       </form>

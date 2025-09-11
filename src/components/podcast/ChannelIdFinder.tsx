@@ -77,7 +77,7 @@ export function ChannelIdFinder() {
             <button
               onClick={handleCustomSearch}
               disabled={loading || !channelId.trim()}
-              className="bg-green-600 hover:bg-green-700 disabled:bg-gray-600 px-4 py-2 rounded"
+              className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 px-4 py-2 rounded"
             >
               Search
             </button>

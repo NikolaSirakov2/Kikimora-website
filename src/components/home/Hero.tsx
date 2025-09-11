@@ -65,12 +65,12 @@ export function Hero() {
                   Learn More
                 </Button>
               </div>
-              <div className="flex items-center gap-2 mt-6 border border-[#3EDDCA] rounded-full py-2 px-4 w-fit">
-                <span className="text-[#3EDDCA]">⚡</span>
+              <div className="flex items-center gap-2 mt-6 border border-[#3b82f6] rounded-full py-2 px-4 w-fit">
+                <span className="text-[#3b82f6]">⚡</span>
                 <span className="text-white/60 text-sm font-montserrat">
                   Discover Kikimora for software developers
                 </span>
-                <span className="text-[#3EDDCA] ml-2 cursor-pointer hover:underline font-montserrat">
+                <span className="text-[#3b82f6] ml-2 cursor-pointer hover:underline font-montserrat">
                   Explore →
                 </span>
               </div>

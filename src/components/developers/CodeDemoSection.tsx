@@ -39,13 +39,13 @@ const greenTheme: Record<string, React.CSSProperties> = {
     lineHeight: 1.6,
   },
   comment: { color: "#3b82f6" },
-  keyword: { color: "#3EDDCA", fontWeight: "bold" },
-  string: { color: "#3EDDCA" },
-  function: { color: "#3EDDCA" },
-  variable: { color: "#3EDDCA" },
-  number: { color: "#3EDDCA" },
-  operator: { color: "#3EDDCA" },
-  punctuation: { color: "#3EDDCA" },
+  keyword: { color: "#3b82f6", fontWeight: "bold" },
+  string: { color: "#3b82f6" },
+  function: { color: "#3b82f6" },
+  variable: { color: "#3b82f6" },
+  number: { color: "#3b82f6" },
+  operator: { color: "#3b82f6" },
+  punctuation: { color: "#3b82f6" },
 };
 
 export function CodeDemoSection() {

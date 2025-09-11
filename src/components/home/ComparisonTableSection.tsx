@@ -25,7 +25,7 @@ export function ComparisonTableSection() {
                     <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 border-b">
                       Managed Team Only
                     </th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 border-b bg-green-50">
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 border-b bg-blue-50">
                       Our Combined Approach
                     </th>
                   </tr>
@@ -41,7 +41,7 @@ export function ComparisonTableSection() {
                     <td className="px-6 py-4 text-center text-sm text-gray-700">
                       ✓ Human oversight
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-green-50">
+                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-blue-50">
                       ✓ Both automated + human
                     </td>
                   </tr>
@@ -55,7 +55,7 @@ export function ComparisonTableSection() {
                     <td className="px-6 py-4 text-center text-sm text-gray-700">
                       ✓ Expert analysis
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-green-50">
+                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-blue-50">
                       ✓ AI + expert interpretation
                     </td>
                   </tr>
@@ -69,7 +69,7 @@ export function ComparisonTableSection() {
                     <td className="px-6 py-4 text-center text-sm text-gray-700">
                       Limited by team size
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-green-50">
+                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-blue-50">
                       ✓ Best of both
                     </td>
                   </tr>
@@ -83,7 +83,7 @@ export function ComparisonTableSection() {
                     <td className="px-6 py-4 text-center text-sm text-gray-700">
                       ✓ Available
                     </td>
-                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-green-50">
+                    <td className="px-6 py-4 text-center text-sm text-gray-700 bg-blue-50">
                       ✓ Built-in
                     </td>
                   </tr>

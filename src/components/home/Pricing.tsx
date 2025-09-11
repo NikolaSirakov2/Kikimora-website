@@ -159,7 +159,7 @@ export function Pricing() {
                   <span className="text-white font-montserrat text-sm w-32">
                     Consulting Hours
                   </span>
-                  <span className="text-[#3EDDCA] font-montserrat text-lg font-bold w-24 text-right whitespace-nowrap">
+                  <span className="text-[#3b82f6] font-montserrat text-lg font-bold w-24 text-right whitespace-nowrap">
                     80€/HOUR
                   </span>
                 </div>
@@ -168,25 +168,25 @@ export function Pricing() {
 
             {/* Right side - Total price and illustration */}
             <div className="flex-1 flex flex-col items-end">
-              <div className="flex items-center gap-4 mb-4 border border-[#3EDDCA] rounded-full">
+              <div className="flex items-center gap-4 mb-4 border border-[#3b82f6] rounded-full">
                 {/* Payment period buttons */}
                 <div className="flex">
                   <button
                     className={`px-4 py-1.5 font-montserrat text-sm transition-colors border-none bg-transparent outline-none focus:outline-none focus:ring-0 ${
                       paymentPeriod === "yearly"
                         ? "text-[#58f9e6]"
-                        : "text-[#3EDDCA]/50 hover:text-[#3EDDCA]"
+                        : "text-[#3b82f6]/50 hover:text-[#3b82f6]"
                     }`}
                     onClick={() => setPaymentPeriod("yearly")}
                   >
                     Year
                   </button>
-                  <div className="w-[1px] h-6 bg-[#3EDDCA] mx-2 self-center" />
+                  <div className="w-[1px] h-6 bg-[#3b82f6] mx-2 self-center" />
                   <button
                     className={`px-4 py-1.5 font-montserrat text-sm transition-colors border-none bg-transparent outline-none focus:outline-none focus:ring-0 ${
                       paymentPeriod === "monthly"
                         ? "text-[#58f9e6]"
-                        : "text-[#3EDDCA]/50 hover:text-[#3EDDCA]"
+                        : "text-[#3b82f6]/50 hover:text-[#3b82f6]"
                     }`}
                     onClick={() => setPaymentPeriod("monthly")}
                   >
@@ -203,7 +203,7 @@ export function Pricing() {
                         ? "Annual Price:"
                         : "Monthly Price:"}
                     </span>
-                    <span className="text-[#3EDDCA] font-montserrat text-xl">
+                    <span className="text-[#3b82f6] font-montserrat text-xl">
                       €{" "}
                       {paymentPeriod === "yearly"
                         ? yearlyPrice.toFixed(2)

@@ -17,7 +17,7 @@ function IntroCaseStudy() {
               fill="none"
               viewBox="0 0 24 24"
               aria-hidden="true"
-              className="inline-block text-green-400"
+              className="inline-block text-blue-500"
             >
               <circle
                 cx="12"
@@ -44,7 +44,7 @@ function IntroCaseStudy() {
               fill="none"
               viewBox="0 0 24 24"
               aria-hidden="true"
-              className="inline-block text-green-400"
+              className="inline-block text-blue-500"
             >
               <circle
                 cx="12"
@@ -71,7 +71,7 @@ function IntroCaseStudy() {
               fill="none"
               viewBox="0 0 24 24"
               aria-hidden="true"
-              className="inline-block text-green-400"
+              className="inline-block text-blue-500"
             >
               <circle
                 cx="12"

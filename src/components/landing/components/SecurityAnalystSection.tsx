@@ -143,7 +143,7 @@ const FeatureList = ({ featureList }: { featureList: FeatureListData }) => {
       <ul className="space-y-3">
         {featureList.features.map((feature: string, index: number) => (
           <li key={index} className="flex items-start">
-            <CircleCheckBig className="mr-3 mt-1 h-4 w-4 flex-shrink-0 text-green-400" />
+            <CircleCheckBig className="mr-3 mt-1 h-4 w-4 flex-shrink-0 text-blue-500" />
             <span className="text-lg text-gray-300">{feature}</span>
           </li>
         ))}
