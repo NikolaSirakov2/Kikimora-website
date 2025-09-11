@@ -31,7 +31,7 @@ export function ContactSection() {
           <h2 className="text-3xl md:text-4xl text-black text-center mb-6">
             Add-on: Governance
           </h2>
-          <h3 className="text-2xl md:text-3xl text-[#31c9b7] text-center mb-3">
+          <h3 className="text-2xl md:text-3xl text-blue-500 text-center mb-3">
             TAILORED PRICING
           </h3>
           <p className="text-center text-black max-w-3xl mb-6 px-4 mx-auto">

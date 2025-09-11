@@ -13,10 +13,10 @@ export function AdvantagesSection() {
               className="w-full h-full object-contain"
             />
           </div>
-          <h1 className="text-4xl font-semibold text-white mb-4">
+          <h1 className="text-4xl font-semibold text-black mb-4">
             Not just a tool in your arsenal!
           </h1>
-          <p className="text-lg text-white/80 max-w-4xl">
+          <p className="text-lg text-black/80 max-w-4xl">
             The Kikimora team will act as a trusted advisor, foster a culture of
             security awareness within your organization and integrate security
             seamlessly into your business operations.
