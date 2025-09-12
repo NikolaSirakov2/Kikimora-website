@@ -57,7 +57,7 @@ export default function CommunityFeatureSection() {
       <h1 className="text-3xl md:text-4xl font-bold text-white text-center mb-2">
         Explore Kikimora Community
       </h1>
-      <p className="text-white/80 text-lg text-center mb-10 max-w-2xl">
+      <p className="text-white/80 text-lg text-center mb-10 max-w-2xl mx-auto">
         Kikimora Community is a lightweight client allowing you to improve your
         security posture at no starting cost.
       </p>

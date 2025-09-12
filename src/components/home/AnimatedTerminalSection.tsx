@@ -226,7 +226,7 @@ export const AnimatedTerminalSection: React.FC = () => {
     <AnimatedBackground className="w-[99.1vw]">
       <section className=" text-white py-16 px-4 sm:px-8">
         <div className="max-w-6xl mx-auto">
-          <header className="text-left mb-12">
+          <header className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
               Perform complex actions
             </h2>

@@ -53,7 +53,7 @@ export default function TryKikimoraBenefits() {
       <h1 className="text-3xl md:text-3xl   text-center mb-3 text-white">
         Benefits of a Vulnerability Management Tool for SMEs
       </h1>
-      <p className="text-white/80 text-center max-w-2xl mb-12 font-montserrat">
+      <p className="text-white/80 text-center max-w-2xl mb-12 font-montserrat mx-auto">
         For a small or medium-sized enterprise, the prospect of managing
         cybersecurity can be daunting. However, with the right tools, you can
         significantly enhance your security posture. A vulnerability management
