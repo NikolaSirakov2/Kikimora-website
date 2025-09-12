@@ -15,13 +15,13 @@ function SMEFinalCTASection() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6   text-white">
           Ready to Secure Your Business and Your Future?
         </h2>
-        <p className="max-w-2xl text-center text-white/90 text-lg font-montserrat mb-8">
+        <p className="max-w-2xl mx-auto text-center text-white/90 text-lg font-montserrat mb-8">
           Don't wait for a data breach or a failed compliance audit. Take
           control of your cybersecurity and compliance today. Get started for
           free with our Community Edition or schedule a personalized demo with
           an SME security expert.
         </p>
-        <div className="flex flex-col md:flex-row gap-4 justify-center w-full max-w-md">
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center w-full max-w-lg mx-auto">
           <Button
             variant="outline"
             size="lg"

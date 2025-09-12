@@ -59,9 +59,9 @@ function PlatformFeaturesSection() {
   return (
     <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-24 px-4">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
-        Platform Features Overview
+        Platform Features Overview?
       </h2>
-      <p className="text-lg text-white/80 font-montserrat text-center max-w-2xl mb-12">
+      <p className="text-lg text-white/80 font-montserrat text-center max-w-2xl mx-auto mb-12">
         Kikimora offers an essential blend of interconnected features and
         integrations to help with your vulnerability management and regulatory
         compliance efforts.

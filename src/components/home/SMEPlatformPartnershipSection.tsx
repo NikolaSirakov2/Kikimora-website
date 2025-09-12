@@ -70,13 +70,13 @@ function SMEPlatformPartnershipSection() {
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
         The Smarter Way to Secure Your SME: Platform + Partnership
       </h2>
-      <p className="text-lg md:text-xl text-center mb-10 font-montserrat text-white/80 max-w-4xl">
+      <p className="text-lg md:text-xl text-center mb-10 font-montserrat text-white/80 max-w-4xl mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-6xl mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-6xl mx-auto mb-16">
         {PLATFORM_FEATURES.map(({ icon: Icon, title, description }) => (
           <div
             key={title}
@@ -97,7 +97,7 @@ function SMEPlatformPartnershipSection() {
       <h3 className="text-2xl md:text-3xl font-bold text-center mb-10 text-white">
         The Experts - Your On-Demand Security Team
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl mx-auto mb-12">
         {EXPERT_FEATURES.map(({ icon: Icon, title, description }) => (
           <div
             key={title}
@@ -116,13 +116,15 @@ function SMEPlatformPartnershipSection() {
           </div>
         ))}
       </div>
-      <Button
-        className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg font-montserrat text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-600 mt-4"
-        onClick={() => window.open("#platform-services", "_self")}
-        aria-label="Explore Our Platform & Services"
-      >
-        Explore Our Platform & Services
-      </Button>
+      <div className="flex justify-center">
+        <Button
+          className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg font-montserrat text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-600 mt-4"
+          onClick={() => window.open("#platform-services", "_self")}
+          aria-label="Explore Our Platform & Services"
+        >
+          Explore Our Platform & Services
+        </Button>
+      </div>
     </AnimatedBackground>
   );
 }

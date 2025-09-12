@@ -138,7 +138,7 @@ export function TwoPathsSection() {
               <div className="">
                 <button
                   onClick={() => setIsScheduleDemoModalOpen(true)}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 border-none outline-none"
+                  className="bg-blue-600 hover:bg-blue-700 ml-10 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 border-none outline-none"
                 >
                   Get Your Custom Quote
                 </button>
