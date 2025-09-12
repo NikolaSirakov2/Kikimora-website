@@ -7,7 +7,7 @@ export function PricingSection() {
       <h2 className="text-[32px] font-bold text-white text-center mb-4 mt-20">
         Flexible Security Plans
       </h2>
-      <p className="text-center text-white/80 max-w-3xl mb-4 px-4">
+      <p className="text-center text-white/80 max-w-3xl mx-auto mb-4 px-4">
         Kikimora Managed Security offers flexible packages of security,
         compliance and governance tools depending on the size, assets, and
         current needs of your organization.

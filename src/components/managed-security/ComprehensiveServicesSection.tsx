@@ -79,7 +79,7 @@ export function ComprehensiveServicesSection() {
             Our Comprehensive Managed Security Services: Protecting What Matters
             Most.
           </h2>
-          <p className="text-lg text-white/80 text-center max-w-4xl leading-relaxed">
+          <p className="text-lg text-white/80 text-center max-w-4xl leading-relaxed mx-auto">
             Kikimora provides a complete suite of cybersecurity solutions
             designed to deliver continuous protection and ensure compliance,
             allowing you to operate with confidence.

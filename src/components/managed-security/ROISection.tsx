@@ -12,11 +12,14 @@ export function ROISection() {
       >
         Why Choose Kikimora Managed Security?
       </h2>
-      <p className="text-lg md:text-xl text-center text-white/80 max-w-3xl mb-16">
-        Building and managing an in-house security team can be challenging when
-        you are growing. Our proven approach ensures your business is protected.
-      </p>
-      <div className="w-full max-w-7xl flex flex-col md:flex-row justify-center items-center gap-12 md:gap-0 ml-10">
+      <div className="w-full flex justify-center mb-16">
+        <p className="text-lg md:text-xl text-center text-white/80 max-w-3xl px-4">
+          Building and managing an in-house security team can be challenging when
+          you are growing. Our proven approach ensures your business is protected.
+        </p>
+      </div>
+      <div className="w-full flex justify-center">
+        <div className="max-w-6xl flex flex-col md:flex-row justify-between items-center gap-12 md:gap-8 px-4">
         <div className="flex-1 flex flex-col items-center mb-12 md:mb-0">
           <span className="text-5xl md:text-6xl font-semibold text-blue-600 leading-none">
             250%
@@ -61,6 +64,7 @@ export function ROISection() {
             Security Monitoring
           </span>
         </div>
+      </div>
       </div>
     </AnimatedBackground>
   );
