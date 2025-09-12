@@ -11,9 +11,9 @@ export function ProductStatsSection() {
         id="product-stats-title"
         className="text-3xl md:text-4xl font-bold text-center text-white mb-4"
       >
-        Check out the product
+        Check out the product?
       </h2>
-      <p className="text-base md:text-lg text-center text-white/80 mb-12 max-w-xl">
+      <p className="text-base md:text-lg text-center text-white/80 mb-12 max-w-xl mx-auto">
         Trusted by developers worldwide for reliable security solutions
       </p>
       <div className="w-full max-w-6xl flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8">

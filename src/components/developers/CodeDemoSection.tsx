@@ -72,7 +72,7 @@ export function CodeDemoSection() {
           {codeString}
         </SyntaxHighlighter>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 flex justify-center">
         <DemoButton
           variant="default"
           size="lg"
