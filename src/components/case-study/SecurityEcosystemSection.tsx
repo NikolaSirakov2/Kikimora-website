@@ -66,7 +66,7 @@ export function SecurityEcosystemSection() {
                   border-solid rounded-xl
                   ${
                     activeTab === index
-                      ? "text-blue-600 bg-white border-2 border-blue-600"
+                      ? "text-blue-600 bg-white border-2 border-transparent"
                       : "text-white bg-white/10 border border-white/20 hover:bg-white/20"
                   }
                   flex-1 min-w-[180px] h-16`}

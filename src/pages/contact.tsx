@@ -8,7 +8,7 @@ function ContactPage() {
       <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-4 mt-40">
         Ready to Secure Your Business?
       </h1>
-      <p className="text-lg md:text-xl text-[#3b82f6] text-center mb-8 max-w-2xl">
+      <p className="text-lg md:text-xl text-[#3b82f6] text-center mb-8 max-w-2xl mx-auto">
         Get a free consultation and learn how our managed security services can
         protect your organization
       </p>
