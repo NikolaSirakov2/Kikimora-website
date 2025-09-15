@@ -3,7 +3,6 @@ import {
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
-  PolarRadiusAxis,
   Tooltip,
 } from "recharts";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
@@ -137,9 +136,7 @@ export function ComparisonChartSection() {
           <div className="flex flex-wrap gap-6 justify-center">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-orange-500 rounded"></div>
-              <span className="text-sm font-medium text-white">
-                Kikimora
-              </span>
+              <span className="text-sm font-medium text-white">Kikimora</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-gray-600 rounded"></div>
