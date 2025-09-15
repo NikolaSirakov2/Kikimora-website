@@ -99,7 +99,6 @@ export function ComparisonChartSection() {
                   );
                 }}
               />
-              <PolarRadiusAxis angle={30} domain={[0, 10]} />
               <Radar
                 name="Kikimora"
                 dataKey="Kikimora"
