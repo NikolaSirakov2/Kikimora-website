@@ -18,40 +18,75 @@ const SecurityBundle: React.FC = () => {
         <div className="max-w-[1300px] mx-auto py-20 flex flex-col md:flex-row gap-8 items-start relative">
           {/* Security Center Image and Cards */}
           <div className="flex-1 flex justify-center items-center relative">
+            {/* Main Security Center Image */}
             <img
               ref={laptopRef}
               src="/security-centre.svg"
               alt="Security Center"
               className="w-[80vw] md:w-[40vw] h-[70vh] object-contain mb-40"
             />
-            {/* Discovery Card Overlapping */}
+            
+            {/* Red Cubes positioned directly on the image */}
+            {/* Discovery Card - Top Left area of the image */}
             <div
               ref={cardRef}
               className="absolute z-10"
-              style={{ top: "100px", left: 50 }}
+              style={{ 
+                top: "15%", 
+                left: "20%",
+                transform: "translate(-50%, -50%)"
+              }}
             >
               <DiscoveryCard />
             </div>
-            {/* Security Training Card Overlapping, below DiscoveryCard */}
-            <div className="absolute z-10" style={{ top: "400px", left: 40 }}>
+            
+            {/* Security Training Card - Left side of the image */}
+            <div 
+              className="absolute z-10" 
+              style={{ 
+                top: "45%", 
+                left: "15%",
+                transform: "translate(-50%, -50%)"
+              }}
+            >
               <SecurityTrainingCard />
             </div>
-            {/* Information Gathering Card Overlapping, top right */}
-            <div className="absolute z-10" style={{ top: "-30px", right: 0 }}>
+            
+            {/* Information Gathering Card - Top Right area of the image */}
+            <div 
+              className="absolute z-10" 
+              style={{ 
+                top: "20%", 
+                right: "15%",
+                transform: "translate(50%, -50%)"
+              }}
+            >
               <InformationGatheringCard />
             </div>
-            {/* Security Assessment Card Overlapping, bottom right */}
-            <div className="absolute z-10" style={{ top: "270px", right: 0 }}>
+            
+            {/* Security Assessment Card - Right side of the image */}
+            <div 
+              className="absolute z-10" 
+              style={{ 
+                top: "50%", 
+                right: "10%",
+                transform: "translate(50%, -50%)"
+              }}
+            >
               <SecurityAssessmentCard />
             </div>
-            {/* Defense Mechanisms Card at bottom middle */}
-            <div className="absolute z-10" style={{ top: "540px", right: 400 }}>
+            
+            {/* Defense Mechanisms Card - Bottom center of the image */}
+            <div 
+              className="absolute z-10" 
+              style={{ 
+                top: "75%", 
+                left: "50%",
+                transform: "translate(-50%, -50%)"
+              }}
+            >
               <DefenseMechanismsCard />
             </div>
-            {/* Login Card Overlapping, below SecurityTrainingCard */}
-            {/* <div className="absolute z-10" style={{ top: "370px", left: 0 }}>
-              <LoginCard />
-            </div> */}
           </div>
         </div>
       </section>

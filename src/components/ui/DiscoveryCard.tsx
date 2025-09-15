@@ -1,46 +1,58 @@
 import { useState } from "react";
-import { BorderBeam } from "@/components/magicui/border-beam";
+import { RiBox3Fill } from "react-icons/ri";
 
 export function DiscoveryCard() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className={`bg-white rounded-2xl shadow-lg p-6 w-70 flex flex-col drop-shadow-xl transition-all duration-300 ease-in-out relative ${
-        isHovered ? "max-h-[500px]" : "max-h-[130px]"
-      }`}
-      style={{ boxShadow: "0 4px 24px 0 rgba(0,0,0,0.06)" }}
-      role="region"
-      aria-label="Discovery Scope and Context"
+      className="relative transition-all duration-300 ease-in-out"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <BorderBeam
-        duration={3}
-        size={60}
-        colorFrom="#ff0000"
-        colorTo="#00ff00"
-        borderWidth={3}
-      />
-      <h2 className="text-xl font-bold text-gray-900 mb-4">Discovery</h2>
-      <div className="bg-gray-100 rounded-md px-4 py-2 mb-4">
-        <span className="text-md font-semibold text-gray-700">
-          Scope and Context
-        </span>
-      </div>
-      <ul
-        className={`list-disc list-inside space-y-2 text-gray-600 text-base transition-all duration-300 ease-in-out ${
-          isHovered
-            ? "opacity-100 max-h-32 mt-2"
-            : "opacity-0 max-h-0 mt-0 overflow-hidden pointer-events-none"
+      {/* Red Cube Icon - Default State */}
+      <div
+        className={`transition-all duration-300 ease-in-out cursor-pointer ${
+          isHovered ? "opacity-0 scale-75" : "opacity-100 scale-100"
         }`}
-        aria-hidden={!isHovered}
+        role="button"
+        aria-label="Discovery Scope and Context"
       >
-        <li>Governance</li>
-        <li>Business Logic</li>
-        <li>Data Flow Analysis</li>
-        <li>Threat Modeling</li>
-      </ul>
+        <RiBox3Fill 
+          className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" 
+        />
+      </div>
+
+      {/* Expanded Card - Hover State */}
+      <div
+        className={`fixed bg-white rounded-2xl shadow-lg p-6 w-80 max-w-[90vw] max-h-[80vh] overflow-y-auto flex flex-col drop-shadow-xl transition-all duration-300 ease-in-out ${
+          isHovered 
+            ? "opacity-100 scale-100 pointer-events-auto" 
+            : "opacity-0 scale-95 pointer-events-none"
+        }`}
+        style={{ 
+          boxShadow: "0 4px 24px 0 rgba(0,0,0,0.25)",
+          zIndex: 9999,
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)"
+        }}
+        role="region"
+        aria-label="Discovery Scope and Context Details"
+      >
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Discovery</h2>
+        <div className="bg-gray-100 rounded-md px-4 py-2 mb-4">
+          <span className="text-md font-semibold text-gray-700">
+            Scope and Context
+          </span>
+        </div>
+        <ul className="list-disc list-inside space-y-2 text-gray-600 text-base">
+          <li>Governance</li>
+          <li>Business Logic</li>
+          <li>Data Flow Analysis</li>
+          <li>Threat Modeling</li>
+        </ul>
+      </div>
     </div>
   );
 }
