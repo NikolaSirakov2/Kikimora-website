@@ -41,7 +41,7 @@ export function ContactForm({
           name="email"
           required
           className={inputClasses}
-          placeholder="Enter your email address"
+          placeholder="Email"
         />
         <ValidationError
           prefix="Email"

@@ -73,7 +73,7 @@ export default function TryKikimoraFooter() {
                     type="email"
                     name="email"
                     required
-                    placeholder="Enter your email"
+                    placeholder="Email"
                     className="w-full px-3 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-[#29ABE2] focus:border-[#29ABE2] transition-colors duration-200 text-sm"
                   />
                   <ValidationError

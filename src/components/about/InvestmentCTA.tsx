@@ -13,7 +13,7 @@ export function InvestmentCTA() {
             <div className="flex gap-4">
               <input
                 type="email"
-                placeholder="Enter your Email"
+                placeholder="Email"
                 className="flex-1 bg-transparent border border-[#1E3D59] rounded-lg px-4 py-3 text-white placeholder:text-white/40 font-montserrat focus:outline-none focus:border-[#00E5BE]"
               />
               <Button className="font-montserrat px-6 py-3 rounded-lg flex items-center gap-2 transition-colors">

@@ -43,16 +43,16 @@ export function GetInTouch() {
               <div className="flex flex-col gap-4">
                 <input
                   type="text"
-                  placeholder="Enter your names"
+                  placeholder="Names"
                   className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
                 />
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Email"
                   className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
                 />
                 <textarea
-                  placeholder="Enter your message"
+                  placeholder="Message"
                   rows={6}
                   className="bg-transparent border border-white/20 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE] resize-none"
                 />

@@ -114,7 +114,7 @@ export function Newsletter() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
+                  placeholder="Email"
                   className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white font-montserrat text-sm placeholder:text-white/40 focus:outline-none focus:border-[#00E5BE]"
                   required
                 />
