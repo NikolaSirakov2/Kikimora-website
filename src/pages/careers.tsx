@@ -113,7 +113,7 @@ export const roles = [
 
 export function Careers() {
   return (
-    <AnimatedBackground className="w-[99.1vw] min-h-screen flex flex-col items-center pt-24">
+    <AnimatedBackground className="w-[99.1vw] min-h-screen flex flex-col items-center pt-48">
       {/* Header */}
       <header className="w-full py-14 flex flex-col items-center my-10">
         <h1 className="text-5xl md:text-6xl font-bold text-white text-center tracking-tight drop-shadow-lg">

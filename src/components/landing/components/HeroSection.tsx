@@ -87,7 +87,7 @@ export const HeroSection = ({ onRegisterClick }: HeroSectionProps) => {
   };
 
   return (
-    <div className="relative flex min-h-[70vh] items-center justify-center px-4 pb-52 pt-32 pt-24">
+    <div className="relative flex min-h-[70vh] items-center justify-center px-4 pb-52 pt-48">
       {/* WebGL Background */}
       <div className="absolute inset-0 h-full w-full overflow-hidden">
         <DarkVeil />

@@ -2,7 +2,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function AboutHeader() {
   return (
-    <AnimatedBackground className="w-[99.1vw] py-20 pt-24 flex flex-col items-center justify-center text-center">
+    <AnimatedBackground className="w-[99.1vw] py-20 pt-48 flex flex-col items-center justify-center text-center">
       <h1
         className="text-white text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg mt-20"
         aria-label="Security That Scales With You"

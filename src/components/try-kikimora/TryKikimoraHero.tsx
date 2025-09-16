@@ -23,7 +23,7 @@ function FeatureCard({
 export default function TryKikimoraHero() {
   return (
     <AnimatedBackground className="min-h-[90vh] w-[99.1vw] flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center mb-12 pt-24">
+      <div className="flex flex-col items-center mb-12 pt-48">
         <span className="bg-[#22305A] text-[#7FB3FF] px-6 py-2 rounded-full text-base font-medium mb-6">
           Everything you need
         </span>

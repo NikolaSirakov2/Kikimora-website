@@ -9,7 +9,7 @@ function StartupHeroSection() {
   return (
     <>
       <AnimatedBackground className="relative w-[99.1vw]">
-        <div className="relative mx-auto max-w-7xl px-4 py-32 pt-24 text-center text-white sm:px-6 sm:py-48 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 py-32 pt-48 text-center text-white sm:px-6 sm:py-48 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
             Move Fast. Don't Break Your Business.
           </h1>

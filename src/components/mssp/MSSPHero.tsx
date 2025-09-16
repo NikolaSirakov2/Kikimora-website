@@ -8,7 +8,7 @@ export function MSSPHero() {
   return (
     <>
       <AnimatedBackground className="min-h-[50vh] w-[99.1vw] flex items-center justify-center py-16">
-        <div className="max-w-[1300px] mx-auto w-full pt-24">
+        <div className="max-w-[1300px] mx-auto w-full pt-48">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center ml-20">
               {/* Left Column - Text Content */}

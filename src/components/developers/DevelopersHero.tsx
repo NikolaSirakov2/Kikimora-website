@@ -5,7 +5,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 export function DevelopersHero() {
   return (
     <AnimatedBackground className="relative">
-      <div className="px-4 sm:px-6 lg:px-8 pt-20 pt-24 pb-32 relative z-10">
+      <div className="px-4 sm:px-6 lg:px-8 pt-20 pt-48 pb-32 relative z-10">
         {/* Main heading */}
         <h1 className="text-5xl text-white   text-center max-w-5xl mx-auto leading-tight mb-6 mt-20">
           Empower your application with advanced security

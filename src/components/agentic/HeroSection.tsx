@@ -72,7 +72,7 @@ const HeroSection = () => {
     }
   };
   return (
-    <div className="relative min-h-[70vh] flex items-center justify-center px-4 w-[99.12vw] pt-24">
+    <div className="relative min-h-[70vh] flex items-center justify-center px-4 w-[99.12vw] pt-48">
       {/* WebGL Background */}
       <div className="absolute inset-0 overflow-hidden">
         <DarkVeil />

@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <>
       <AnimatedBackground className="pt-20 w-[99.1vw] flex items-center justify-center min-h-[600px] px-8 md:px-16 lg:p-24">
-        <div className="w-[1200px] flex justify-between items-center pt-24">
+        <div className="w-[1200px] flex justify-between items-center pt-48">
           <div className="flex flex-col gap-6 max-w-[600px]">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center">
