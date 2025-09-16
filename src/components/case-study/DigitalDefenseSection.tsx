@@ -68,13 +68,6 @@ export function DigitalDefenseSection() {
           ))}
         </div>
 
-        {/* Section Title */}
-        <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white">
-            {activeTabData.header}
-          </h2>
-        </div>
-
         {/* Main Content Area - Placeholder */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-gray-800 rounded-lg p-8 min-h-[400px] flex items-center justify-center border border-gray-700">

@@ -2,21 +2,18 @@ import { FiZap, FiDatabase, FiCloud, FiUsers } from "react-icons/fi";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 interface StatCardProps {
-  icon: React.ReactNode;
   statistic: string;
   description: string;
 }
 
 const StatCard: React.FC<StatCardProps> = ({
-  icon,
   statistic,
   description,
 }) => {
   return (
-    <div className="bg-gray-900 rounded-lg p-6 border border-gray-800 hover:border-gray-700 transition-colors duration-200">
+    <div className="bg-transparent">
       <div className="flex flex-col items-center text-center space-y-4">
-        <div className="text-rose-500 text-3xl">{icon}</div>
-        <div className="text-4xl font-bold text-white">{statistic}</div>
+        <div className="text-4xl font-bold text-blue-500">{statistic}</div>
         <div className="text-sm text-gray-300 leading-relaxed">
           {description}
         </div>
@@ -61,7 +58,6 @@ export function FintechStatisticsSection() {
             {stats.map((stat, index) => (
               <StatCard
                 key={index}
-                icon={stat.icon}
                 statistic={stat.statistic}
                 description={stat.description}
               />
