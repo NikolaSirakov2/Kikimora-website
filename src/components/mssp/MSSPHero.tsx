@@ -61,28 +61,40 @@ export function MSSPHero() {
                 <div className="flex flex-col gap-4 my-8 w-full">
                 <input
                   type="text"
-                  placeholder="Enter your name"
-                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
+                  placeholder="Name"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="email"
-                  placeholder="Enter your work email"
-                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
+                  placeholder="Email"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none hover:border-white/80 transition-colors duration-200"
                 />
                 <input
                   type="text"
-                  placeholder="Enter your company name"
-                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
+                  placeholder="Company name"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none hover:border-white/80 transition-colors duration-200"
                 />
-                <input
-                  type="text"
-                  placeholder="Company size (optional)"
-                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
-                />
+                <select
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat focus:outline-none hover:border-white/80 transition-colors duration-200 appearance-none cursor-pointer"
+                  defaultValue=""
+                >
+                  <option value="" disabled className="text-gray-500 bg-gray-800">
+                    Company size (optional)
+                  </option>
+                  <option value="1-10" className="text-gray-900 bg-white">
+                    1-10
+                  </option>
+                  <option value="10-50" className="text-gray-900 bg-white">
+                    10-50
+                  </option>
+                  <option value="50-200" className="text-gray-900 bg-white">
+                    50-200
+                  </option>
+                </select>
                 <input
                   type="text"
                   placeholder="Number of assets (optional)"
-                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none focus:border-blue-600 hover:border-white/80 transition-colors duration-200"
+                  className="w-full bg-transparent border border-white/60 rounded-lg px-4 py-3 text-white font-montserrat placeholder:text-white/80 focus:outline-none hover:border-white/80 transition-colors duration-200"
                 />
                 <button 
                   className="font-montserrat font-semibold text-black bg-white rounded-xl w-fit shadow-lg hover:shadow-xl transition-all duration-300 hover:transparant"
