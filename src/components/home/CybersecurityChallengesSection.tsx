@@ -684,7 +684,7 @@ const ImpactMatrix: React.FC<ImpactMatrixProps> = ({ matrix }) => {
 };
 
 const Footer = () => (
-  <footer className="text-center mt-12 py-6 border-t border-slate-200">
+  <footer className="text-center mt-12 py-6">
     <p className="text-slate-500">
       This interactive report is a synthesized analysis based on the "European
       Cybersecurity Challenges Deep Dive" document.

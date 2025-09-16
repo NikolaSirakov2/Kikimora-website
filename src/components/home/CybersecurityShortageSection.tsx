@@ -7,14 +7,14 @@ export function CybersecurityShortageSection() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Top Statistics Block */}
-          <div className="bg-red-100/90 max-w-5xl mx-auto backdrop-blur-md rounded-lg p-8 mb-8 shadow-lg border border-red-200/50">
+          <div className="bg-transparent max-w-5xl mx-auto backdrop-blur-md rounded-lg p-8 mb-8">
             <div className="grid md:grid-cols-2 gap-8 text-center">
               {/* Left Section */}
               <div>
                 <div className="text-5xl font-bold text-red-600 mb-2">
                   347,000+
                 </div>
-                <div className="text-gray-900">
+                <div className="text-white">
                   Cybersecurity professionals shortage
                 </div>
               </div>
@@ -22,7 +22,7 @@ export function CybersecurityShortageSection() {
               {/* Right Section */}
               <div>
                 <div className="text-5xl font-bold text-red-600 mb-2">76%</div>
-                <div className="text-gray-900">
+                <div className="text-white">
                   Staff lack formal qualifications
                 </div>
               </div>
