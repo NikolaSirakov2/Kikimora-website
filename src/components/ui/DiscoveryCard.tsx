@@ -10,15 +10,17 @@ export function DiscoveryCard() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Red Cube Icon - Default State */}
+      {/* Header - Default State */}
       <div
-        className={`transition-all duration-300 ease-in-out cursor-pointer ${
+        className={`transition-all duration-300 ease-in-out cursor-pointer bg-white rounded-lg shadow-md px-4 py-2 ${
           isHovered ? "opacity-0 scale-75" : "opacity-100 scale-100"
         }`}
         role="button"
         aria-label="Discovery Scope and Context"
       >
-        <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
+        <h3 className="text-sm font-bold text-gray-900 whitespace-nowrap">
+          Discovery
+        </h3>
       </div>
 
       {/* Expanded Card - Hover State */}

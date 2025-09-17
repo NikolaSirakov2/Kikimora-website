@@ -33,7 +33,7 @@ const SecurityBundle: React.FC = () => {
               className="absolute z-10"
               style={{
                 top: "15%",
-                left: "20%",
+                left: "0%",
                 transform: "translate(-50%, -50%)",
               }}
             >
