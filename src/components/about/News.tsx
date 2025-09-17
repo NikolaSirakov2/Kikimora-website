@@ -33,9 +33,7 @@ export function News() {
         <div className="max-w-[1300px] w-full">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-white text-5xl mb-4">
-              News about us
-            </h2>
+            <h2 className="text-white text-5xl mb-4">News about us</h2>
             <p className="text-white/60 font-montserrat text-lg">
               Stay up to date with
             </p>
@@ -49,7 +47,7 @@ export function News() {
               .map((article) => (
                 <div key={article.id} className="relative group cursor-pointer">
                   {/* Image Placeholder */}
-                  <div className="aspect-[20/9] rounded-3xl overflow-hidden bg-[#002A4E] mb-4">
+                  <div className="aspect-[20/9] rounded-3xl overflow-hidden bg-gray-800/80 backdrop-blur-md mb-4">
                     <div className="w-full h-full bg-gradient-to-br from-[#002A4E] to-[#001E38] flex items-center justify-center">
                       <span className="text-white/30 font-montserrat">
                         Team Photo
@@ -78,7 +76,7 @@ export function News() {
                     className="flex gap-6 group cursor-pointer"
                   >
                     {/* Image Placeholder */}
-                    <div className="w-[19rem] h-48 rounded-2xl overflow-hidden bg-[#002A4E] flex-shrink-0">
+                    <div className="w-[19rem] h-48 rounded-2xl overflow-hidden bg-gray-800/80 backdrop-blur-md flex-shrink-0">
                       <div className="w-full h-full bg-gradient-to-br from-[#002A4E] to-[#001E38] flex items-center justify-center">
                         <span className="text-white/30 font-montserrat text-sm">
                           {article.title.includes("CVSS")

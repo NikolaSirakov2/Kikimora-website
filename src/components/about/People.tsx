@@ -55,7 +55,7 @@ export function People() {
             {teamMembers.map((member, index) => (
               <div key={index} className="flex flex-col">
                 {/* Photo Placeholder */}
-                <div className="aspect-square bg-[#002A4E] rounded-3xl mb-4" />
+                <div className="aspect-square bg-gray-800/80 backdrop-blur-md rounded-3xl mb-4" />
 
                 {/* Info */}
                 <h3 className="text-white text-lg mb-1">{member.name}</h3>
@@ -112,7 +112,7 @@ export function People() {
 
             {/* Join Us Card */}
             <div className="flex flex-col">
-              <div className="aspect-square bg-[#002A4E] rounded-3xl mb-4 flex flex-col items-center justify-center p-8 text-center">
+              <div className="aspect-square bg-gray-800/80 backdrop-blur-md rounded-3xl mb-4 flex flex-col items-center justify-center p-8 text-center">
                 <h3 className="text-white text-2xl mb-2">You can be the</h3>
                 <span className="text-[#00E5BE]   text-2xl mb-4">next</span>
                 <button className="text-white/60 hover:text-white font-montserrat text-sm">

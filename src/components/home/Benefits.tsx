@@ -21,7 +21,7 @@ export function Benefits() {
         {/* Benefits Grid */}
         <div className="grid grid-cols-2 gap-8 w-full max-w-[1200px] z-10">
           {/* Enhanced efficiency */}
-          <div className="bg-[#002A4E] rounded-lg p-8">
+          <div className="bg-gray-800/80 backdrop-blur-md rounded-lg p-8">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-white text-2xl font-montserrat mb-4">
@@ -37,7 +37,7 @@ export function Benefits() {
           </div>
 
           {/* Higher productivity */}
-          <div className="bg-[#002A4E] rounded-lg p-8">
+          <div className="bg-gray-800/80 backdrop-blur-md rounded-lg p-8">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-white text-2xl font-montserrat mb-4">
@@ -54,7 +54,7 @@ export function Benefits() {
           </div>
 
           {/* Faster time to remediate */}
-          <div className="bg-[#002A4E] rounded-lg p-8">
+          <div className="bg-gray-800/80 backdrop-blur-md rounded-lg p-8">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-white text-2xl font-montserrat mb-4">
@@ -71,7 +71,7 @@ export function Benefits() {
           </div>
 
           {/* Informed decision-making */}
-          <div className="bg-[#002A4E] rounded-lg p-8">
+          <div className="bg-gray-800/80 backdrop-blur-md rounded-lg p-8">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-white text-2xl font-montserrat mb-4">
@@ -88,7 +88,7 @@ export function Benefits() {
           </div>
 
           {/* Advanced compliance speed */}
-          <div className="bg-[#002A4E] rounded-lg p-8">
+          <div className="bg-gray-800/80 backdrop-blur-md rounded-lg p-8">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-white text-2xl font-montserrat mb-4">
@@ -105,7 +105,7 @@ export function Benefits() {
           </div>
 
           {/* Significant expense reduction */}
-          <div className="bg-[#002A4E] rounded-lg p-8">
+          <div className="bg-gray-800/80 backdrop-blur-md rounded-lg p-8">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-white text-2xl font-montserrat mb-4">

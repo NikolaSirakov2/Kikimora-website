@@ -9,7 +9,7 @@ interface BlogPostProps {
 function BlogPost({ date, title, description, isLarge }: BlogPostProps) {
   if (isLarge) {
     return (
-      <div className="bg-[#002A4E] rounded-3xl overflow-hidden h-full">
+      <div className="bg-gray-800/80 backdrop-blur-md rounded-3xl overflow-hidden h-full">
         <div className="relative aspect-[16/9]">
           <div className="w-full h-full bg-[#00539B]" />
         </div>
@@ -23,7 +23,7 @@ function BlogPost({ date, title, description, isLarge }: BlogPostProps) {
   }
 
   return (
-    <div className="bg-[#002A4E] rounded-3xl overflow-hidden flex">
+    <div className="bg-gray-800/80 backdrop-blur-md rounded-3xl overflow-hidden flex">
       <div className="relative w-[240px] flex-shrink-0">
         <div className="w-full h-full bg-[#00539B]" />
       </div>

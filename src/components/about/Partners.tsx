@@ -13,7 +13,7 @@ export function Partners() {
                 <div className="flex items-center gap-4 mb-6">
                   {/* Logo placeholder */}
                   <div className="bg-white rounded-lg p-2 w-12 h-12 flex items-center justify-center">
-                    <div className="w-8 h-8 bg-[#002A4E]" />
+                    <div className="w-8 h-8 bg-gray-800/80 backdrop-blur-md" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-white text-2xl">SoCyber</span>
