@@ -149,6 +149,82 @@ const SecurityBundle: React.FC = () => {
             >
               <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
             </div>
+
+            {/* Connection Lines from Cards to Red Cubes */}
+            {/* Line 1: Discovery Card (15%, 10%) to Red Cube 1 (23%, 20%) */}
+            <div
+              className="absolute z-4"
+              style={{
+                top: "15%",
+                left: "13%",
+                width: "9%",
+                height: "2px",
+                background: "linear-gradient(135deg, #dc2626, #ef4444)",
+                transform: "rotate(38deg)",
+                transformOrigin: "0 0",
+                boxShadow: "0 0 4px rgba(239, 68, 68, 0.6)",
+              }}
+            />
+
+            {/* Line 2: Security Training Card (45%, 5%) to Red Cube 2 (57%, 22%) */}
+            <div
+              className="absolute z-4"
+              style={{
+                top: "45%",
+                left: "10%",
+                width: "15%",
+                height: "2px",
+                background: "linear-gradient(90deg, #dc2626, #ef4444)",
+                transform: "rotate(35deg)",
+                transformOrigin: "0 0",
+                boxShadow: "0 0 4px rgba(239, 68, 68, 0.6)",
+              }}
+            />
+
+            {/* Line 3: Information Gathering Card (20%, right: 0%) to Red Cube 3 (29%, right: 15%) */}
+            <div
+              className="absolute z-4"
+              style={{
+                top: "20%",
+                right: "0%",
+                width: "16%",
+                height: "2px",
+                background: "linear-gradient(90deg, #dc2626, #ef4444)",
+                transform: "rotate(-25deg)",
+                transformOrigin: "100% 0",
+                boxShadow: "0 0 4px rgba(239, 68, 68, 0.6)",
+              }}
+            />
+
+            {/* Line 4: Security Assessment Card (55%, right: 0%) to Red Cube 4 (48%, right: 17%) */}
+            <div
+              className="absolute z-4"
+              style={{
+                top: "55%",
+                right: "0%",
+                width: "17%",
+                height: "2px",
+                background: "linear-gradient(90deg, #dc2626, #ef4444)",
+                transform: "rotate(16deg)",
+                transformOrigin: "100% 0",
+                boxShadow: "0 0 4px rgba(239, 68, 68, 0.6)",
+              }}
+            />
+
+            {/* Line 5: Defense Mechanisms Card (85%, 50%) to Red Cube 5 (70%, 55%) */}
+            <div
+              className="absolute z-4"
+              style={{
+                top: "85%",
+                left: "53%",
+                width: "11%",
+                height: "2px",
+                background: "linear-gradient(90deg, #dc2626, #ef4444)",
+                transform: "rotate(-80deg)",
+                transformOrigin: "0 0",
+                boxShadow: "0 0 4px rgba(239, 68, 68, 0.6)",
+              }}
+            />
           </div>
         </div>
       </section>
