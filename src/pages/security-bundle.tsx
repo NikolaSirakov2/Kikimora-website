@@ -5,6 +5,7 @@ import { InformationGatheringCard } from "../components/ui/InformationGatheringC
 import { SecurityAssessmentCard } from "../components/ui/SecurityAssessmentCard";
 import { DefenseMechanismsCard } from "../components/ui/DefenseMechanismsCard";
 import { AnimatedBackground } from "../components/ui/AnimatedBackground";
+import { RiBox3Fill } from "react-icons/ri";
 // import { LoginCard } from "../components/ui/LoginCard";
 
 const SecurityBundle: React.FC = () => {
@@ -33,7 +34,7 @@ const SecurityBundle: React.FC = () => {
               className="absolute z-10"
               style={{
                 top: "15%",
-                left: "0%",
+                left: "10%",
                 transform: "translate(-50%, -50%)",
               }}
             >
@@ -45,7 +46,7 @@ const SecurityBundle: React.FC = () => {
               className="absolute z-10"
               style={{
                 top: "45%",
-                left: "15%",
+                left: "5%",
                 transform: "translate(-50%, -50%)",
               }}
             >
@@ -57,7 +58,7 @@ const SecurityBundle: React.FC = () => {
               className="absolute z-10"
               style={{
                 top: "20%",
-                right: "15%",
+                right: "0%",
                 transform: "translate(50%, -50%)",
               }}
             >
@@ -68,8 +69,8 @@ const SecurityBundle: React.FC = () => {
             <div
               className="absolute z-10"
               style={{
-                top: "50%",
-                right: "10%",
+                top: "55%",
+                right: "0%",
                 transform: "translate(50%, -50%)",
               }}
             >
@@ -80,12 +81,73 @@ const SecurityBundle: React.FC = () => {
             <div
               className="absolute z-10"
               style={{
-                top: "75%",
+                top: "85%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
               }}
             >
               <DefenseMechanismsCard />
+            </div>
+
+            {/* Independent Red Cubes in Original Positions */}
+            {/* Red Cube 1 - Top Left area of the image */}
+            <div
+              className="absolute z-5"
+              style={{
+                top: "23%",
+                left: "20%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
+            </div>
+
+            {/* Red Cube 2 - Left side of the image */}
+            <div
+              className="absolute z-5"
+              style={{
+                top: "57%",
+                left: "22%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
+            </div>
+
+            {/* Red Cube 3 - Top Right area of the image */}
+            <div
+              className="absolute z-5"
+              style={{
+                top: "29%",
+                right: "15%",
+                transform: "translate(50%, -50%)",
+              }}
+            >
+              <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
+            </div>
+
+            {/* Red Cube 4 - Right side of the image */}
+            <div
+              className="absolute z-5"
+              style={{
+                top: "48%",
+                right: "17%",
+                transform: "translate(50%, -50%)",
+              }}
+            >
+              <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
+            </div>
+
+            {/* Red Cube 5 - Bottom center of the image */}
+            <div
+              className="absolute z-5"
+              style={{
+                top: "70%",
+                left: "55%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
             </div>
           </div>
         </div>
