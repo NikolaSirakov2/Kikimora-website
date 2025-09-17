@@ -18,24 +18,22 @@ export function DiscoveryCard() {
         role="button"
         aria-label="Discovery Scope and Context"
       >
-        <RiBox3Fill 
-          className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" 
-        />
+        <RiBox3Fill className="w-6 h-6 text-red-500 drop-shadow-lg hover:text-red-400 transition-colors duration-200" />
       </div>
 
       {/* Expanded Card - Hover State */}
       <div
         className={`fixed bg-white rounded-2xl shadow-lg p-6 w-80 max-w-[90vw] max-h-[80vh] overflow-y-auto flex flex-col drop-shadow-xl transition-all duration-300 ease-in-out ${
-          isHovered 
-            ? "opacity-100 scale-100 pointer-events-auto" 
+          isHovered
+            ? "opacity-100 scale-100 pointer-events-auto"
             : "opacity-0 scale-95 pointer-events-none"
         }`}
-        style={{ 
+        style={{
           boxShadow: "0 4px 24px 0 rgba(0,0,0,0.25)",
           zIndex: 9999,
           top: "50%",
           left: "50%",
-          transform: "translate(-50%, -50%)"
+          transform: "translate(-50%, -50%)",
         }}
         role="region"
         aria-label="Discovery Scope and Context Details"

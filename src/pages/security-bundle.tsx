@@ -25,64 +25,64 @@ const SecurityBundle: React.FC = () => {
               alt="Security Center"
               className="w-[80vw] md:w-[40vw] h-[70vh] object-contain mb-40"
             />
-            
+
             {/* Red Cubes positioned directly on the image */}
             {/* Discovery Card - Top Left area of the image */}
             <div
               ref={cardRef}
               className="absolute z-10"
-              style={{ 
-                top: "15%", 
+              style={{
+                top: "15%",
                 left: "20%",
-                transform: "translate(-50%, -50%)"
+                transform: "translate(-50%, -50%)",
               }}
             >
               <DiscoveryCard />
             </div>
-            
+
             {/* Security Training Card - Left side of the image */}
-            <div 
-              className="absolute z-10" 
-              style={{ 
-                top: "45%", 
+            <div
+              className="absolute z-10"
+              style={{
+                top: "45%",
                 left: "15%",
-                transform: "translate(-50%, -50%)"
+                transform: "translate(-50%, -50%)",
               }}
             >
               <SecurityTrainingCard />
             </div>
-            
+
             {/* Information Gathering Card - Top Right area of the image */}
-            <div 
-              className="absolute z-10" 
-              style={{ 
-                top: "20%", 
+            <div
+              className="absolute z-10"
+              style={{
+                top: "20%",
                 right: "15%",
-                transform: "translate(50%, -50%)"
+                transform: "translate(50%, -50%)",
               }}
             >
               <InformationGatheringCard />
             </div>
-            
+
             {/* Security Assessment Card - Right side of the image */}
-            <div 
-              className="absolute z-10" 
-              style={{ 
-                top: "50%", 
+            <div
+              className="absolute z-10"
+              style={{
+                top: "50%",
                 right: "10%",
-                transform: "translate(50%, -50%)"
+                transform: "translate(50%, -50%)",
               }}
             >
               <SecurityAssessmentCard />
             </div>
-            
+
             {/* Defense Mechanisms Card - Bottom center of the image */}
-            <div 
-              className="absolute z-10" 
-              style={{ 
-                top: "75%", 
+            <div
+              className="absolute z-10"
+              style={{
+                top: "75%",
                 left: "50%",
-                transform: "translate(-50%, -50%)"
+                transform: "translate(-50%, -50%)",
               }}
             >
               <DefenseMechanismsCard />
