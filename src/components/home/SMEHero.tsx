@@ -9,7 +9,7 @@ function SMEHero() {
   return (
     <>
       <AnimatedBackground className="w-[99.1vw] flex flex-col items-center py-24 pt-48 px-4 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold pt-36 text-white leading-tight">
           Stop Juggling Threats and
           <br />
           Regulations.

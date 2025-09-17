@@ -3,7 +3,7 @@ import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function PricingSection() {
   return (
-    <AnimatedBackground className="w-[99.1vw] py-16 flex flex-col items-center">
+    <AnimatedBackground className="w-[99.1vw] pt-48 flex flex-col items-center">
       <h2 className="text-[32px] font-bold text-white text-center mb-4 mt-20">
         Flexible Security Plans
       </h2>
