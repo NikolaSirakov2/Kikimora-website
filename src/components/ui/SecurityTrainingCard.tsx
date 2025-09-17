@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { RiBox3Fill } from "react-icons/ri";
 
 export function SecurityTrainingCard() {
   const [isHovered, setIsHovered] = useState(false);

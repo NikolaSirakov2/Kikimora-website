@@ -1,4 +1,3 @@
-import { FaBullseye, FaMoneyBillWave, FaCalendarAlt } from "react-icons/fa";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 
 export function SMEAttackStatsSection() {
@@ -17,16 +16,18 @@ export function SMEAttackStatsSection() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1: Attack Rate */}
             <div className="bg-transparent backdrop-blur-md rounded-lg p-8 text-center">
-              <div className="text-5xl font-bold text-blue-500 mb-2 ml-2">73%</div>
-              <div className="text-xl font-bold text-white mb-2">
-                Attacked
+              <div className="text-5xl font-bold text-blue-500 mb-2 ml-2">
+                73%
               </div>
+              <div className="text-xl font-bold text-white mb-2">Attacked</div>
               <p className="text-white">German SMEs in 2023</p>
             </div>
 
             {/* Card 2: Average Cost */}
             <div className="bg-transparent backdrop-blur-md rounded-lg p-8 text-center">
-              <div className="text-5xl font-bold text-blue-500 mb-2 ml-2">€120K</div>
+              <div className="text-5xl font-bold text-blue-500 mb-2 ml-2">
+                €120K
+              </div>
               <div className="text-xl font-bold text-white mb-2">
                 Average cost
               </div>
