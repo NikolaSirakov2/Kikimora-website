@@ -15,7 +15,7 @@ function TestimonialCard({
   company,
 }: TestimonialCardProps) {
   return (
-    <div className="min-w-[400px] bg-[#002A4E] rounded-3xl p-8 flex flex-col">
+    <div className="min-w-[400px] bg-gray-800/80 backdrop-blur-md rounded-3xl p-8 flex flex-col">
       <p className="text-white/80 text-lg font-montserrat mb-8 flex-grow">
         "{quote}"
       </p>
