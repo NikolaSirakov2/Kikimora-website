@@ -105,12 +105,12 @@ function ComplianceSection() {
           </p>
         </div>
         <div className="mt-12 rounded-lg shadow-lg overflow-hidden">
-          <div className="flex bg-gray-100">
+          <div className="flex bg-white">
             {complianceData.map((tab, index) => (
               <div key={tab.id} className="flex w-1/2">
                 <button
                   onClick={() => setActiveTab(tab.id)}
-                  className={`w-full py-4 text-center font-medium bg-white text-black hover:bg-white focus:outline-none focus:ring-0 border-0`}
+                  className={`w-full py-4 text-center font-medium bg-white text-black hover:bg-white focus:outline-none focus:ring-0 border-0 rounded-none`}
                   style={{
                     transition: "none",
                   }}
@@ -118,7 +118,7 @@ function ComplianceSection() {
                   {tab.name}
                 </button>
                 {index === 0 && (
-                  <div className="w-px bg-gray-300 self-stretch"></div>
+                  <div className="w-px bg-black h-8 self-center"></div>
                 )}
               </div>
             ))}
