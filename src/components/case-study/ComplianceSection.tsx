@@ -106,27 +106,27 @@ function ComplianceSection() {
         </div>
         <div className="mt-12 rounded-lg shadow-lg overflow-hidden">
           <div className="flex bg-gray-100">
-            {complianceData.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`w-1/2 py-4 text-center font-medium transition-colors duration-200 focus:outline-none ${
-                  activeTab === tab.id
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                {tab.name}
-              </button>
+            {complianceData.map((tab, index) => (
+              <div key={tab.id} className="flex w-1/2">
+                <button
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`w-full py-4 text-center font-medium bg-white text-black hover:bg-white focus:outline-none focus:ring-0 border-0`}
+                  style={{
+                    transition: "none",
+                  }}
+                >
+                  {tab.name}
+                </button>
+                {index === 0 && (
+                  <div className="w-px bg-gray-300 self-stretch"></div>
+                )}
+              </div>
             ))}
           </div>
 
           <div className="p-8 bg-white">
             {activeTabData && (
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">
-                  {activeTabData.title}
-                </h3>
                 <p className="mt-4 text-base text-gray-600">
                   {activeTabData.description}
                 </p>
