@@ -34,7 +34,6 @@ function ScheduleDemoSection() {
               type="text"
               required
               className="w-full px-4 py-2 rounded-lg bg-[#353f54] text-white border border-[#3d465a] focus:border-blue-500 focus:outline-none placeholder:text-white/60"
-              placeholder="Your Name"
               aria-label="Your Name"
             />
           </div>
@@ -48,7 +47,6 @@ function ScheduleDemoSection() {
               type="text"
               required
               className="w-full px-4 py-2 rounded-lg bg-[#353f54] text-white border border-[#3d465a] focus:border-blue-500 focus:outline-none placeholder:text-white/60"
-              placeholder="Company Name"
               aria-label="Company Name"
             />
           </div>
@@ -64,7 +62,6 @@ function ScheduleDemoSection() {
               type="text"
               required
               className="w-full px-4 py-2 rounded-lg bg-[#353f54] text-white border border-[#3d465a] focus:border-blue-500 focus:outline-none placeholder:text-white/60"
-              placeholder="Your Role"
               aria-label="Your Role"
             />
           </div>
@@ -78,7 +75,6 @@ function ScheduleDemoSection() {
               type="email"
               required
               className="w-full px-4 py-2 rounded-lg bg-[#353f54] text-white border border-[#3d465a] focus:border-blue-500 focus:outline-none placeholder:text-white/60"
-              placeholder="email@company.com"
               aria-label="Business Email"
             />
           </div>

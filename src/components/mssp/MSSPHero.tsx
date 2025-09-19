@@ -57,7 +57,16 @@ export function MSSPHero() {
               </div>
 
               {/* Right Column - Contact Form */}
-              <div className="bg-gray-100/20 backdrop-blur-sm p-4 rounded-lg flex justify-center items-center">
+              <div 
+                className="relative p-6 rounded-2xl flex justify-center items-center border border-white/20 shadow-2xl shadow-blue-500/10 backdrop-blur-xl"
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  backdropFilter: "blur(20px)",
+                  WebkitBackdropFilter: "blur(20px)",
+                  border: "1px solid rgba(255, 255, 255, 0.2)",
+                  boxShadow: "0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3)",
+                }}
+              >
                 <div className="flex flex-col gap-4 my-8 w-full">
                 <input
                   type="text"
