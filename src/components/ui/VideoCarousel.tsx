@@ -127,7 +127,7 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
         {/* Video Carousel */}
         <div className="relative w-full h-[320px] flex items-center justify-center">
           {/* Video Container */}
-          <div className="relative w-[90%] h-[90%] p-8 flex items-center justify-center rounded-2xl">
+          <div className="relative w-[90%] h-[90%] py-8 flex items-center justify-center rounded-2xl">
             {videos.map((video, index) => (
               <video
                 key={index}
@@ -147,7 +147,7 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
         </div>
 
         {/* Hover-activated buttons */}
-        <div className="flex justify-center gap-6 pb-4 px-4">
+        <div className="flex justify-center gap-6 px-4">
           {videos.map((video, index) => (
             <HoverVideoButton key={index} index={index} title={video.title} />
           ))}
