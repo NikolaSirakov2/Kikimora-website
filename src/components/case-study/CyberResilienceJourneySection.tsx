@@ -56,7 +56,7 @@ export const CyberResilienceJourneySection: React.FC = () => {
                     </div>
 
                     {/* Center - Circle */}
-                    <div className="flex-shrink-0 w-8 h-8 bg-white rounded-full border-8 border-blue-500 shadow-lg relative z-10"></div>
+                    <div className="flex-shrink-0 w-8 h-8 bg-white rounded-full shadow-lg relative z-10"></div>
 
                     {/* Right side - Description */}
                     <div className="w-1/2 pl-8">
