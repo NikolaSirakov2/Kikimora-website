@@ -127,12 +127,12 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
         {/* Video Carousel */}
         <div className="relative w-full h-[320px] flex items-center justify-center">
           {/* Video Container */}
-          <div className="relative w-[90%] h-[90%] p-8 flex items-center justify-center">
+          <div className="relative w-[90%] h-[90%] p-8 flex items-center justify-center rounded-2xl">
             {videos.map((video, index) => (
               <video
                 key={index}
                 ref={(el) => (videoRefs.current[index] = el)}
-                className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${
+                className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 rounded-2xl ${
                   index === currentVideoIndex ? "opacity-100" : "opacity-0"
                 }`}
                 src={video.src}
@@ -183,14 +183,20 @@ function HoverVideoButton({ index, title }: { index: number; title: string }) {
   return (
     <button
       className={`
-        px-6 py-2 text-white font-montserrat font-medium text-base
-        bg-transparent border border-white/30 rounded-lg
-        transition-all duration-300 hover:bg-white/10 hover:border-white/50
-        whitespace-nowrap truncate
-        ${isHovered || currentVideoIndex === index ? "bg-white/20 border-white/60 text-white" : ""}
+        px-6 py-1 font-montserrat font-medium text-base
+        border border-white/30 border-transparent focus:border-transparent focus-visible:border-transparent
+        rounded-full
+        transition-all duration-300 whitespace-nowrap truncate
+        outline-none ring-0 focus:outline-none focus:ring-0 active:outline-none active:ring-0 focus-visible:outline-none focus-visible:ring-0
+        ${
+          currentVideoIndex === index
+            ? "bg-white text-black border-white/80"
+            : "bg-transparent text-white hover:bg-white/10 hover:border-white/50"
+        }
       `}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      tabIndex={0}
     >
       {title}
     </button>
