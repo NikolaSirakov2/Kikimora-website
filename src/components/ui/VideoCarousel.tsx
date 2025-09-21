@@ -116,18 +116,23 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
 
   return (
     <VideoContext.Provider value={contextValue}>
-      <div className={`space-y-8 ${className}`}>
+      <div
+        className={`space-y-8 ${className} relative w-[110%] max-w-none h-[420px] rounded-2xl overflow-hidden border border-white/10`}
+        style={{
+          backgroundImage: 'url(/videos-bg.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         {/* Video Carousel */}
-        <div
-          className={`relative w-full h-[500px] bg-black/20 rounded-2xl overflow-hidden border border-white/10`}
-        >
+        <div className="relative w-full h-[320px] flex items-center justify-center">
           {/* Video Container */}
-          <div className="relative w-full h-full">
+          <div className="relative w-[90%] h-[90%] p-8 flex items-center justify-center">
             {videos.map((video, index) => (
               <video
                 key={index}
                 ref={(el) => (videoRefs.current[index] = el)}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${
                   index === currentVideoIndex ? "opacity-100" : "opacity-0"
                 }`}
                 src={video.src}
@@ -142,7 +147,7 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
         </div>
 
         {/* Hover-activated buttons */}
-        <div className="flex justify-center gap-6">
+        <div className="flex justify-center gap-6 pb-4 px-4">
           {videos.map((video, index) => (
             <HoverVideoButton key={index} index={index} title={video.title} />
           ))}
@@ -178,9 +183,10 @@ function HoverVideoButton({ index, title }: { index: number; title: string }) {
   return (
     <button
       className={`
-        px-6 py-3 text-white font-montserrat font-medium text-lg
+        px-6 py-2 text-white font-montserrat font-medium text-base
         bg-transparent border border-white/30 rounded-lg
         transition-all duration-300 hover:bg-white/10 hover:border-white/50
+        whitespace-nowrap truncate
         ${isHovered || currentVideoIndex === index ? "bg-white/20 border-white/60 text-white" : ""}
       `}
       onMouseEnter={handleMouseEnter}

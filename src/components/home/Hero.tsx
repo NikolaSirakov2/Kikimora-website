@@ -1,61 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { FloatingStatsImage } from "@/components/ui/FloatingStatsImage";
 import { AnimatedBackground } from "@/components/ui/AnimatedBackground";
 import { VideoCarouselWithButtons } from "@/components/ui/VideoCarousel";
 
 export function Hero() {
-  const stats = [
-    {
-      text: "Reduce security incidents by up to",
-      value: "35%",
-      valueColor: "green" as const,
-      position: {
-        top: "-30px",
-        left: "60%",
-      },
-    },
-    {
-      text: "Cut operational costs by up to",
-      value: "70%",
-      valueColor: "red" as const,
-      position: {
-        top: "65%",
-        left: "-10px",
-        translate: "-50%",
-      },
-    },
-    {
-      text: "Complete compliance tasks",
-      value: "40% quicker",
-      valueColor: "green" as const,
-      position: {
-        bottom: "-40px",
-        left: "50%",
-        translate: "-50%",
-      },
-    },
-    {
-      text: "Reduction of 'Critical' Vulnerabilities",
-      value: "99%",
-      valueColor: "red" as const,
-      position: {
-        top: "46.67%",
-        right: "-120px",
-        translate: "-50%",
-      },
-    },
-  ];
-
   return (
     <AnimatedBackground className="w-[99.1vw]">
       <div className="max-w-[1500px] mx-auto py-20 pt-48">
-        {/* Video Carousel Section */}
-        <section className="mb-16 relative z-10">
-          <div className="max-w-6xl mx-auto px-8">
-            <VideoCarouselWithButtons className="w-full" />
-          </div>
-        </section>
-
         <section className="h-3/5 relative z-10">
           <div className="h-3/4 flex items-center">
             {/* Left side - Content */}
@@ -84,13 +34,9 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Right side - Image */}
+            {/* Right side - Video Carousel */}
             <div className="w-1/2 flex justify-center mt-10">
-              <FloatingStatsImage
-                imageSrc="/menu3.jfif"
-                imageAlt="Kikimora Security"
-                stats={stats}
-              />
+              <VideoCarouselWithButtons className="w-full max-w-[550px]" />
             </div>
           </div>
         </section>
