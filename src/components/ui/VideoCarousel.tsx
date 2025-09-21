@@ -159,7 +159,6 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
 
 // Individual hover button component
 function HoverVideoButton({ index, title }: { index: number; title: string }) {
-  const [isHovered, setIsHovered] = useState(false);
   const context = useContext(VideoContext);
 
   if (!context) {
@@ -170,13 +169,11 @@ function HoverVideoButton({ index, title }: { index: number; title: string }) {
     context;
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
     setCurrentVideoIndex(index);
     playVideo(index);
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
     pauseAllVideos();
   };
 
