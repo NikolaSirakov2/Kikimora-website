@@ -127,7 +127,7 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
         {/* Video Carousel */}
         <div className="relative w-full h-[320px] flex items-center justify-center">
           {/* Video Container */}
-          <div className="relative w-[90%] h-[90%] py-8 flex items-center justify-center rounded-2xl">
+          <div className="relative w-[90%] h-[90%] pt-8 flex items-center justify-center rounded-2xl">
             {videos.map((video, index) => (
               <video
                 key={index}
