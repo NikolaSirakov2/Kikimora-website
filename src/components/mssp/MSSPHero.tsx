@@ -99,6 +99,9 @@ export function MSSPHero() {
                   <option value="50-200" className="text-gray-900 bg-white">
                     50-200
                   </option>
+                  <option value="200+" className="text-gray-900 bg-white">
+                    200+
+                  </option>
                 </select>
                 <input
                   type="text"
