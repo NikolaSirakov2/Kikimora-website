@@ -185,7 +185,7 @@ function HoverVideoButton({ index, title }: { index: number; title: string }) {
         ${
           currentVideoIndex === index
             ? "bg-blue-200/80 text-black border-blue-200/80"
-            : "bg-blue-100/80 text-black border-blue-100/80 hover:bg-blue-200/80"
+            : "bg-blue-50/80 text-black border-blue-100/80 hover:bg-blue-200/80"
         }
       `}
       onMouseEnter={handleMouseEnter}
