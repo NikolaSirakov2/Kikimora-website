@@ -125,12 +125,12 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
         }}
       >
         {/* Video Container - takes almost full size with more padding */}
-        <div className="absolute inset-x-6 inset-y-2 flex items-center justify-center">
+        <div className="absolute inset-x-6 inset-y-2 flex items-center justify-center overflow-hidden rounded-2xl">
           {videos.map((video, index) => (
             <video
               key={index}
               ref={(el) => (videoRefs.current[index] = el)}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 rounded-2xl ${
                 index === currentVideoIndex ? "opacity-100" : "opacity-0"
               }`}
               src={video.src}
