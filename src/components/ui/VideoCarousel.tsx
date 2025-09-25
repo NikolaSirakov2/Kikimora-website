@@ -117,37 +117,34 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
   return (
     <VideoContext.Provider value={contextValue}>
       <div
-        className={`space-y-8 ${className} relative w-[110%] max-w-none h-[420px] rounded-2xl overflow-hidden border border-white/10`}
+        className={`relative ${className} w-[110%] max-w-none h-[420px] rounded-2xl overflow-hidden border border-white/10`}
         style={{
-          backgroundImage: 'url(/videos-bg.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage: "url(/videos-bg.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
-        {/* Video Carousel */}
-        <div className="relative w-full h-[320px] flex items-center justify-center">
-          {/* Video Container */}
-          <div className="relative w-[90%] h-[90%] pt-8 flex items-center justify-center rounded-2xl">
-            {videos.map((video, index) => (
-              <video
-                key={index}
-                ref={(el) => (videoRefs.current[index] = el)}
-                className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 rounded-2xl ${
-                  index === currentVideoIndex ? "opacity-100" : "opacity-0"
-                }`}
-                src={video.src}
-                muted
-                loop={false}
-                onEnded={handleVideoEnd}
-                onPlay={handleVideoPlay}
-                onPause={handleVideoPause}
-              />
-            ))}
-          </div>
+        {/* Video Container - takes almost full size with more padding */}
+        <div className="absolute inset-x-6 inset-y-2 flex items-center justify-center overflow-hidden rounded-2xl">
+          {videos.map((video, index) => (
+            <video
+              key={index}
+              ref={(el) => (videoRefs.current[index] = el)}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 rounded-2xl ${
+                index === currentVideoIndex ? "opacity-100" : "opacity-0"
+              }`}
+              src={video.src}
+              muted
+              loop={false}
+              onEnded={handleVideoEnd}
+              onPlay={handleVideoPlay}
+              onPause={handleVideoPause}
+            />
+          ))}
         </div>
 
-        {/* Hover-activated buttons */}
-        <div className="flex justify-center gap-6 px-4">
+        {/* Hover-activated buttons - positioned at bottom */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex justify-center gap-3 px-4">
           {videos.map((video, index) => (
             <HoverVideoButton key={index} index={index} title={video.title} />
           ))}
@@ -159,7 +156,6 @@ function VideoCarouselInner({ className = "" }: VideoCarouselProps) {
 
 // Individual hover button component
 function HoverVideoButton({ index, title }: { index: number; title: string }) {
-  const [isHovered, setIsHovered] = useState(false);
   const context = useContext(VideoContext);
 
   if (!context) {
@@ -170,28 +166,26 @@ function HoverVideoButton({ index, title }: { index: number; title: string }) {
     context;
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
     setCurrentVideoIndex(index);
     playVideo(index);
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
     pauseAllVideos();
   };
 
   return (
     <button
       className={`
-        px-6 py-1 font-montserrat font-medium text-base
-        border border-white/30 border-transparent focus:border-transparent focus-visible:border-transparent
-        rounded-full
+        px-3 py-1 font-montserrat font-medium text-sm
+        border focus:border-transparent focus-visible:border-transparent
+        rounded-lg
         transition-all duration-300 whitespace-nowrap truncate
         outline-none ring-0 focus:outline-none focus:ring-0 active:outline-none active:ring-0 focus-visible:outline-none focus-visible:ring-0
         ${
           currentVideoIndex === index
-            ? "bg-white text-black border-white/80"
-            : "bg-transparent text-white hover:bg-white/10 hover:border-white/50"
+            ? "bg-blue-200/80 text-black border-blue-200/80"
+            : "bg-blue-50/80 text-black border-blue-100/80 hover:bg-blue-200/80"
         }
       `}
       onMouseEnter={handleMouseEnter}
